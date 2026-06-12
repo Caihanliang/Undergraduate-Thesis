@@ -1,0 +1,24 @@
+2026-04-02 09:21:44,210 - easytorch-training - INFO - Initializing training.
+2026-04-02 09:21:44,211 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-02 09:21:44,211 - easytorch-training - INFO - Building training data loader.
+2026-04-02 09:21:44,244 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/launcher/launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 418, in train
+    self.init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 159, in init_training
+    super().init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 332, in init_training
+    self.train_data_loader = self.build_train_data_loader(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 234, in build_train_data_loader
+    dataset = self.build_train_dataset(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 229, in build_train_dataset
+    dataset = cfg["DATASET"]["TYPE"](
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/data/simple_tsf_dataset.py", line 234, in __init__
+    self.data = self._load_data()
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/data/simple_tsf_dataset.py", line 254, in _load_data
+    train_idx = np.load('main-master/'+self.data_file_path + sample_path + "/idx_train.npy")
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'main-master/datasets/HNGS512/24_8/idx_train.npy'
+

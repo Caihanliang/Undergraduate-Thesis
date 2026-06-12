@@ -1,0 +1,32 @@
+2026-04-02 11:39:21,660 - easytorch-training - INFO - Initializing training.
+2026-04-02 11:39:21,660 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-02 11:39:21,660 - easytorch-training - INFO - Building training data loader.
+2026-04-02 11:39:21,694 - easytorch-training - INFO - Train dataset length: 859
+2026-04-02 11:39:22,555 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+2026-04-02 11:39:22,556 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7212fc0e5390>
+2026-04-02 11:39:22,556 - easytorch-training - INFO - Loading Checkpoint from 'checkpoints/FaST/HNGS_512_50_24_8/93bcc7fd7df0a188ae3f5bceb16153ce/FaST_50.pt'
+2026-04-02 11:39:23,036 - easytorch-training - INFO - Resume training
+2026-04-02 11:39:23,036 - easytorch-training - INFO - Initializing validation.
+2026-04-02 11:39:23,036 - easytorch-training - INFO - Building val data loader.
+2026-04-02 11:39:23,067 - easytorch-training - INFO - Validation dataset length: 286
+2026-04-02 11:39:23,097 - easytorch-training - INFO - Test dataset length: 288
+2026-04-02 11:39:23,097 - easytorch-training - INFO - Number of parameters: 435272
+2026-04-02 11:39:23,097 - easytorch-training - INFO - The training finished at 2026-04-02 11:39:23
+2026-04-02 11:39:23,097 - easytorch-training - INFO - Evaluating the best model on the test set.
+2026-04-02 11:39:23,097 - easytorch-training - INFO - Loading Checkpoint from 'checkpoints/FaST/HNGS_512_50_24_8/93bcc7fd7df0a188ae3f5bceb16153ce/FaST_best_val_MAE.pt'
+2026-04-02 11:39:24,315 - easytorch-training - INFO - Result <test>: [test/time: 0.78 (s), test/loss: 0.0226, test/MAE: 0.1028, test/RMSE: 0.2505, test/MAPE: 0.7008]
+2026-04-02 11:39:24,315 - easytorch-training - INFO - Test results saved to checkpoints/FaST/HNGS_512_50_24_8/93bcc7fd7df0a188ae3f5bceb16153ce/test_results.npz.
+2026-04-02 11:39:24,315 - easytorch-training - INFO - Test metrics saved to checkpoints/FaST/HNGS_512_50_24_8/93bcc7fd7df0a188ae3f5bceb16153ce/test_metrics.json.

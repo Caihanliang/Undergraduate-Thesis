@@ -1,0 +1,28 @@
+2026-04-07 18:06:10,949 - easytorch-evaluation - INFO - Loading Checkpoint from 'checkpoints/FaST/HNGS_LC_50_24_8_1/727bd5e506f06d14ac9f52e57f203ab1/FaST_best_val_MAE.pt'
+2026-04-07 18:06:11,491 - easytorch-evaluation - ERROR - Traceback (most recent call last):
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/launcher.py", line 77, in evaluation_func
+    runner.test_pipeline(cfg=cfg, save_metrics=False, save_results=False)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/utils/dist.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 574, in test_pipeline
+    self.init_test(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 190, in init_test
+    super().init_test(cfg)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/utils/dist.py", line 102, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 383, in init_test
+    self.test_data_loader = self.build_test_data_loader(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 293, in build_test_data_loader
+    dataset = self.build_test_dataset(cfg)
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 307, in build_test_dataset
+    dataset = cfg["DATASET"]["TYPE"](
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/data/simple_tsf_dataset.py", line 234, in __init__
+    self.data = self._load_data()
+  File "/home/user/Downloads/cai/FaST-main-24_8/FaST-main/main-master/basicts/data/simple_tsf_dataset.py", line 255, in _load_data
+    train_idx = np.load('main-master/'+self.data_file_path + sample_path + "/idx_train.npy")
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'main-master/datasets/HNGS_LC/24_8/idx_train.npy'
+

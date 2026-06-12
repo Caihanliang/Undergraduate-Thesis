@@ -1,0 +1,656 @@
+# 优化后的车流量分析报告
+## 分析概况
+- 分析时间范围: 2023-09-01 00:00 至 2023-10-31 23:00
+- 总站点数量: 161 个
+- 工作日数据量: 1032 条记录
+- 休息日数据量: 432 条记录
+
+## 分析标准
+1. 峰值定义：取该时段最高流量值，所有等于该值或相差≤5%的时段均计入
+2. 谷值定义：取该时段最低流量值，所有等于该值或相差≤5%的时段均计入
+3. 每个类别最多保留10个时段/流量值，避免冗余
+
+## 各站点详细分析
+Station_001: 
+Workday: traffic flow range 441-5720, peak time 16:00:00, 17:00:00, peak flow 5720, 5700, low-peak time 02:00:00, 03:00:00, low-peak flow 441, 453; 
+Off-day: traffic flow range 512-3950, peak time 13:00:00, 10:00:00, 17:00:00, 14:00:00, peak flow 3950, 3930, 3870, 3830, 3790, low-peak time 03:00:00, low-peak flow 512, 523, 528
+
+Station_002: 
+Workday: traffic flow range 15-4760, peak time 15:00:00, 16:00:00, 14:00:00, peak flow 4760, 4710, 4570, low-peak time 04:00:00, low-peak flow 15; 
+Off-day: traffic flow range 0-3710, peak time 10:00:00, 09:00:00, peak flow 3710, 3590, low-peak time 00:00:00, 01:00:00, 02:00:00, 03:00:00, 04:00:00, low-peak flow 0
+
+Station_003: 
+Workday: traffic flow range 315-7110, peak time 15:00:00, peak flow 7110, low-peak time 02:00:00, 03:00:00, low-peak flow 315, 324; 
+Off-day: traffic flow range 520-5390, peak time 17:00:00, peak flow 5390, low-peak time 03:00:00, 02:00:00, low-peak flow 520, 526, 541, 543
+
+Station_004: 
+Workday: traffic flow range 261-5650, peak time 14:00:00, 16:00:00, 15:00:00, peak flow 5650, 5520, 5480, 5460, low-peak time 04:00:00, 03:00:00, low-peak flow 261, 270; 
+Off-day: traffic flow range 280-4520, peak time 14:00:00, 15:00:00, 09:00:00, peak flow 4520, 4490, 4480, 4470, 4460, 4370, low-peak time 03:00:00, low-peak flow 280, 282, 288, 289
+
+Station_005: 
+Workday: traffic flow range 160-5940, peak time 15:00:00, 17:00:00, 14:00:00, peak flow 5940, 5700, low-peak time 03:00:00, low-peak flow 160; 
+Off-day: traffic flow range 128-4380, peak time 18:00:00, 17:00:00, 08:00:00, 14:00:00, 10:00:00, peak flow 4380, 4340, 4330, 4280, 4240, low-peak time 04:00:00, 03:00:00, low-peak flow 128, 133
+
+Station_006: 
+Workday: traffic flow range 723-7240, peak time 08:00:00, 14:00:00, 15:00:00, 09:00:00, peak flow 7240, 7230, 7160, 7140, 6990, 6880, low-peak time 03:00:00, low-peak flow 723, 757; 
+Off-day: traffic flow range 681-6530, peak time 14:00:00, peak flow 6530, low-peak time 03:00:00, 01:00:00, low-peak flow 681, 709
+
+Station_007: 
+Workday: traffic flow range 347-6630, peak time 15:00:00, 14:00:00, peak flow 6630, 6440, 6420, low-peak time 03:00:00, low-peak flow 347; 
+Off-day: traffic flow range 389-4980, peak time 14:00:00, peak flow 4980, low-peak time 02:00:00, 03:00:00, 01:00:00, low-peak flow 389, 404, 408
+
+Station_008: 
+Workday: traffic flow range 726-7980, peak time 15:00:00, peak flow 7980, low-peak time 03:00:00, 04:00:00, low-peak flow 726, 753, 757; 
+Off-day: traffic flow range 737-6710, peak time 15:00:00, 14:00:00, 09:00:00, peak flow 6710, 6600, 6490, 6400, low-peak time 03:00:00, low-peak flow 737, 762
+
+Station_009: 
+Workday: traffic flow range 464-5780, peak time 15:00:00, 14:00:00, 16:00:00, peak flow 5780, 5720, 5650, 5630, 5540, low-peak time 04:00:00, low-peak flow 464; 
+Off-day: traffic flow range 495-5050, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 5050, 5030, 4950, low-peak time 04:00:00, low-peak flow 495
+
+Station_010: 
+Workday: traffic flow range 521-6490, peak time 15:00:00, 14:00:00, peak flow 6490, 6290, low-peak time 04:00:00, low-peak flow 521; 
+Off-day: traffic flow range 585-5450, peak time 14:00:00, 16:00:00, 11:00:00, 10:00:00, peak flow 5450, 5280, 5220, 5180, low-peak time 04:00:00, low-peak flow 585, 590
+
+Station_011: 
+Workday: traffic flow range 577-5850, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 5850, 5680, 5650, 5640, low-peak time 04:00:00, low-peak flow 577; 
+Off-day: traffic flow range 543-5560, peak time 15:00:00, 11:00:00, 09:00:00, 14:00:00, 16:00:00, 10:00:00, peak flow 5560, 5450, 5440, 5380, 5370, 5340, low-peak time 05:00:00, 03:00:00, low-peak flow 543, 570
+
+Station_012: 
+Workday: traffic flow range 566-6640, peak time 14:00:00, 16:00:00, peak flow 6640, 6350, low-peak time 04:00:00, 03:00:00, 05:00:00, low-peak flow 566, 576, 583, 587; 
+Off-day: traffic flow range 608-6470, peak time 15:00:00, 14:00:00, 16:00:00, peak flow 6470, 6200, 6150, low-peak time 05:00:00, 03:00:00, low-peak flow 608, 612, 621, 637
+
+Station_013: 
+Workday: traffic flow range 443-5570, peak time 14:00:00, 12:00:00, 11:00:00, 16:00:00, 10:00:00, 17:00:00, 13:00:00, 15:00:00, peak flow 5570, 5510, 5500, 5490, 5440, 5420, 5390, 5350, 5340, low-peak time 04:00:00, low-peak flow 443; 
+Off-day: traffic flow range 550-5480, peak time 16:00:00, peak flow 5480, low-peak time 04:00:00, 05:00:00, low-peak flow 550, 551, 556, 557, 559
+
+Station_014: 
+Workday: traffic flow range 480-5960, peak time 20:00:00, peak flow 5960, low-peak time 04:00:00, low-peak flow 480; 
+Off-day: traffic flow range 384-5550, peak time 10:00:00, 11:00:00, peak flow 5550, 5380, low-peak time 05:00:00, low-peak flow 384
+
+Station_015: 
+Workday: traffic flow range 535-5450, peak time 08:00:00, 10:00:00, 11:00:00, 14:00:00, 09:00:00, peak flow 5450, 5400, 5310, 5300, 5220, low-peak time 04:00:00, 05:00:00, low-peak flow 535, 536, 539, 540, 546; 
+Off-day: traffic flow range 561-5650, peak time 11:00:00, 12:00:00, peak flow 5650, 5420, low-peak time 04:00:00, 05:00:00, low-peak flow 561, 571, 579
+
+Station_016: 
+Workday: traffic flow range 58-2940, peak time 15:00:00, 09:00:00, 16:00:00, 14:00:00, peak flow 2940, 2890, 2810, low-peak time 03:00:00, low-peak flow 58; 
+Off-day: traffic flow range 53-2310, peak time 10:00:00, peak flow 2310, low-peak time 03:00:00, low-peak flow 53
+
+Station_017: 
+Workday: traffic flow range 102-4390, peak time 09:00:00, peak flow 4390, low-peak time 02:00:00, low-peak flow 102, 105; 
+Off-day: traffic flow range 103-2830, peak time 10:00:00, 13:00:00, peak flow 2830, 2730, low-peak time 03:00:00, low-peak flow 103
+
+Station_018: 
+Workday: traffic flow range 101-4340, peak time 16:00:00, 09:00:00, 15:00:00, peak flow 4340, 4280, 4160, low-peak time 03:00:00, 02:00:00, low-peak flow 101, 104; 
+Off-day: traffic flow range 82-3740, peak time 11:00:00, peak flow 3740, low-peak time 02:00:00, low-peak flow 82
+
+Station_019: 
+Workday: traffic flow range 207-4940, peak time 15:00:00, 16:00:00, peak flow 4940, 4890, 4710, low-peak time 02:00:00, 03:00:00, low-peak flow 207, 209, 213, 217; 
+Off-day: traffic flow range 197-4700, peak time 10:00:00, peak flow 4700, low-peak time 03:00:00, low-peak flow 197
+
+Station_020: 
+Workday: traffic flow range 81-3640, peak time 09:00:00, 16:00:00, peak flow 3640, 3590, low-peak time 03:00:00, low-peak flow 81; 
+Off-day: traffic flow range 93-3240, peak time 10:00:00, peak flow 3240, low-peak time 02:00:00, 03:00:00, low-peak flow 93, 94
+
+Station_021: 
+Workday: traffic flow range 80-3600, peak time 16:00:00, peak flow 3600, low-peak time 03:00:00, low-peak flow 80; 
+Off-day: traffic flow range 89-3320, peak time 10:00:00, peak flow 3320, low-peak time 03:00:00, low-peak flow 89
+
+Station_022: 
+Workday: traffic flow range 146-4980, peak time 15:00:00, 16:00:00, 09:00:00, peak flow 4980, 4760, 4740, low-peak time 03:00:00, low-peak flow 146; 
+Off-day: traffic flow range 143-4800, peak time 10:00:00, peak flow 4800, low-peak time 02:00:00, low-peak flow 143
+
+Station_023: 
+Workday: traffic flow range 114-5190, peak time 15:00:00, peak flow 5190, low-peak time 02:00:00, low-peak flow 114; 
+Off-day: traffic flow range 129-4470, peak time 10:00:00, peak flow 4470, low-peak time 02:00:00, 03:00:00, low-peak flow 129, 130, 133
+
+Station_024: 
+Workday: traffic flow range 99-3920, peak time 14:00:00, peak flow 3920, low-peak time 02:00:00, low-peak flow 99; 
+Off-day: traffic flow range 108-3300, peak time 10:00:00, 15:00:00, peak flow 3300, 3150, low-peak time 04:00:00, low-peak flow 108
+
+Station_025: 
+Workday: traffic flow range 112-3370, peak time 09:00:00, 10:00:00, 15:00:00, peak flow 3370, 3300, 3280, low-peak time 04:00:00, low-peak flow 112; 
+Off-day: traffic flow range 137-3290, peak time 09:00:00, 14:00:00, peak flow 3290, 3230, low-peak time 05:00:00, 04:00:00, low-peak flow 137, 143
+
+Station_026: 
+Workday: traffic flow range 94-3290, peak time 11:00:00, 15:00:00, 14:00:00, 12:00:00, peak flow 3290, 3210, 3180, 3150, 3140, low-peak time 04:00:00, low-peak flow 94; 
+Off-day: traffic flow range 121-2950, peak time 14:00:00, 13:00:00, 11:00:00, peak flow 2950, 2850, 2840, low-peak time 04:00:00, low-peak flow 121
+
+Station_027: 
+Workday: traffic flow range 114-3270, peak time 15:00:00, peak flow 3270, low-peak time 04:00:00, low-peak flow 114, 115; 
+Off-day: traffic flow range 115-2660, peak time 09:00:00, 10:00:00, 14:00:00, 13:00:00, peak flow 2660, 2640, 2590, 2550, low-peak time 04:00:00, 01:00:00, low-peak flow 115, 118
+
+Station_028: 
+Workday: traffic flow range 126-3270, peak time 16:00:00, peak flow 3270, low-peak time 04:00:00, low-peak flow 126; 
+Off-day: traffic flow range 132-3250, peak time 16:00:00, peak flow 3250, low-peak time 03:00:00, low-peak flow 132
+
+Station_029: 
+Workday: traffic flow range 113-3390, peak time 11:00:00, peak flow 3390, low-peak time 03:00:00, low-peak flow 113; 
+Off-day: traffic flow range 128-2930, peak time 15:00:00, peak flow 2930, low-peak time 02:00:00, 04:00:00, low-peak flow 128, 134
+
+Station_030: 
+Workday: traffic flow range 4-1070, peak time 10:00:00, peak flow 1070, low-peak time 02:00:00, 03:00:00, low-peak flow 4; 
+Off-day: traffic flow range 4-609, peak time 15:00:00, 14:00:00, peak flow 609, 584, low-peak time 03:00:00, low-peak flow 4
+
+Station_031: 
+Workday: traffic flow range 494-4360, peak time 16:00:00, 15:00:00, 14:00:00, peak flow 4360, 4350, 4330, 4320, 4240, low-peak time 01:00:00, low-peak flow 494; 
+Off-day: traffic flow range 682-3730, peak time 14:00:00, 10:00:00, peak flow 3730, 3600, low-peak time 03:00:00, 02:00:00, 01:00:00, low-peak flow 682, 699, 714
+
+Station_032: 
+Workday: traffic flow range 528-4450, peak time 14:00:00, 15:00:00, 16:00:00, 17:00:00, peak flow 4450, 4430, 4360, 4250, 4240, low-peak time 01:00:00, low-peak flow 528; 
+Off-day: traffic flow range 571-3600, peak time 10:00:00, 09:00:00, 11:00:00, peak flow 3600, 3520, 3430, low-peak time 03:00:00, 02:00:00, 04:00:00, low-peak flow 571, 592
+
+Station_033: 
+Workday: traffic flow range 527-5930, peak time 14:00:00, 15:00:00, peak flow 5930, 5720, low-peak time 03:00:00, low-peak flow 527; 
+Off-day: traffic flow range 557-5300, peak time 15:00:00, peak flow 5300, 5040, low-peak time 02:00:00, 03:00:00, low-peak flow 557, 574, 580
+
+Station_034: 
+Workday: traffic flow range 460-5820, peak time 16:00:00, 15:00:00, peak flow 5820, 5730, 5700, 5650, 5630, 5580, 5550, low-peak time 03:00:00, low-peak flow 460; 
+Off-day: traffic flow range 912-5430, peak time 15:00:00, 14:00:00, 16:00:00, peak flow 5430, 5260, 5240, 5160, low-peak time 03:00:00, low-peak flow 912
+
+Station_035: 
+Workday: traffic flow range 447-6770, peak time 16:00:00, peak flow 6770, 6450, low-peak time 04:00:00, low-peak flow 447; 
+Off-day: traffic flow range 767-6140, peak time 14:00:00, 13:00:00, 10:00:00, 09:00:00, peak flow 6140, 6040, 5850, 5840, low-peak time 03:00:00, low-peak flow 767
+
+Station_036: 
+Workday: traffic flow range 880-7110, peak time 15:00:00, 16:00:00, 13:00:00, 14:00:00, 17:00:00, peak flow 7110, 7100, 7040, 6860, 6830, 6820, 6800, 6770, 6760, low-peak time 03:00:00, low-peak flow 880; 
+Off-day: traffic flow range 1150-7690, peak time 16:00:00, 14:00:00, peak flow 7690, 7480, low-peak time 03:00:00, low-peak flow 1150
+
+Station_037: 
+Workday: traffic flow range 859-6470, peak time 15:00:00, 14:00:00, peak flow 6470, 6240, 6170, low-peak time 02:00:00, 04:00:00, low-peak flow 859, 881; 
+Off-day: traffic flow range 962-5790, peak time 11:00:00, 10:00:00, 14:00:00, 16:00:00, peak flow 5790, 5780, 5710, 5590, 5560, low-peak time 01:00:00, 02:00:00, low-peak flow 962, 1010
+
+Station_038: 
+Workday: traffic flow range 446-6940, peak time 11:00:00, 16:00:00, 15:00:00, peak flow 6940, 6830, 6690, low-peak time 03:00:00, low-peak flow 446; 
+Off-day: traffic flow range 734-5720, peak time 14:00:00, 15:00:00, 11:00:00, 09:00:00, 17:00:00, peak flow 5720, 5670, 5660, 5560, 5460, low-peak time 02:00:00, low-peak flow 734, 770
+
+Station_039: 
+Workday: traffic flow range 835-7000, peak time 17:00:00, 15:00:00, 14:00:00, 16:00:00, 13:00:00, peak flow 7000, 6980, 6960, 6880, 6760, 6710, low-peak time 03:00:00, low-peak flow 835; 
+Off-day: traffic flow range 1240-5690, peak time 12:00:00, 15:00:00, 11:00:00, 09:00:00, 17:00:00, 10:00:00, 16:00:00, peak flow 5690, 5600, 5580, 5510, 5460, 5410, low-peak time 03:00:00, 04:00:00, low-peak flow 1240, 1270, 1290
+
+Station_040: 
+Workday: traffic flow range 684-5700, peak time 10:00:00, 15:00:00, peak flow 5700, 5560, low-peak time 04:00:00, 03:00:00, low-peak flow 684, 716; 
+Off-day: traffic flow range 1100-5010, peak time 13:00:00, 09:00:00, peak flow 5010, 4760, low-peak time 04:00:00, 03:00:00, 05:00:00, 02:00:00, low-peak flow 1100, 1110, 1140, 1150
+
+Station_041: 
+Workday: traffic flow range 531-4830, peak time 11:00:00, peak flow 4830, low-peak time 04:00:00, low-peak flow 531; 
+Off-day: traffic flow range 665-4330, peak time 14:00:00, peak flow 4330, low-peak time 04:00:00, low-peak flow 665
+
+Station_042: 
+Workday: traffic flow range 139-4530, peak time 14:00:00, 11:00:00, 09:00:00, 15:00:00, 10:00:00, 16:00:00, 17:00:00, peak flow 4530, 4510, 4500, 4490, 4370, 4360, 4340, 4320, 4310, low-peak time 18:00:00, low-peak flow 139; 
+Off-day: traffic flow range 937-4880, peak time 14:00:00, peak flow 4880, low-peak time 03:00:00, low-peak flow 937
+
+Station_043: 
+Workday: traffic flow range 315-4920, peak time 18:00:00, peak flow 4920, low-peak time 18:00:00, low-peak flow 315; 
+Off-day: traffic flow range 925-4120, peak time 15:00:00, 16:00:00, peak flow 4120, 4010, 3980, low-peak time 04:00:00, 03:00:00, low-peak flow 925, 932
+
+Station_044: 
+Workday: traffic flow range 653-5000, peak time 10:00:00, peak flow 5000, low-peak time 03:00:00, 05:00:00, low-peak flow 653, 668; 
+Off-day: traffic flow range 929-3880, peak time 12:00:00, 11:00:00, 10:00:00, peak flow 3880, 3870, 3790, low-peak time 03:00:00, 04:00:00, low-peak flow 929, 942
+
+Station_045: 
+Workday: traffic flow range 396-6140, peak time 15:00:00, 16:00:00, 11:00:00, 10:00:00, 14:00:00, peak flow 6140, 6120, 6090, 6070, 5950, 5930, 5900, 5860, low-peak time 03:00:00, 04:00:00, low-peak flow 396, 403; 
+Off-day: traffic flow range 533-6350, peak time 16:00:00, 15:00:00, peak flow 6350, 6270, low-peak time 03:00:00, 04:00:00, low-peak flow 533, 540, 559
+
+Station_046: 
+Workday: traffic flow range 490-6370, peak time 15:00:00, 16:00:00, 14:00:00, peak flow 6370, 6190, 6150, 6140, 6110, 6090, low-peak time 03:00:00, low-peak flow 490, 493; 
+Off-day: traffic flow range 530-6330, peak time 16:00:00, 14:00:00, 15:00:00, peak flow 6330, 6170, 6160, 6020, low-peak time 04:00:00, 03:00:00, low-peak flow 530, 542, 549, 553
+
+Station_047: 
+Workday: traffic flow range 501-6130, peak time 15:00:00, peak flow 6130, 6010, low-peak time 03:00:00, low-peak flow 501, 512, 517; 
+Off-day: traffic flow range 508-6020, peak time 16:00:00, peak flow 6020, low-peak time 04:00:00, 03:00:00, low-peak flow 508, 521, 525, 532
+
+Station_048: 
+Workday: traffic flow range 367-5760, peak time 15:00:00, 11:00:00, 14:00:00, peak flow 5760, 5680, 5480, low-peak time 03:00:00, low-peak flow 367; 
+Off-day: traffic flow range 412-5430, peak time 14:00:00, 16:00:00, 10:00:00, 11:00:00, 15:00:00, peak flow 5430, 5380, 5350, 5240, 5200, low-peak time 03:00:00, low-peak flow 412, 416
+
+Station_049: 
+Workday: traffic flow range 337-4680, peak time 16:00:00, 15:00:00, 14:00:00, 11:00:00, 17:00:00, peak flow 4680, 4660, 4610, 4590, 4570, 4520, 4480, low-peak time 03:00:00, low-peak flow 337; 
+Off-day: traffic flow range 358-5060, peak time 16:00:00, peak flow 5060, low-peak time 04:00:00, 03:00:00, low-peak flow 358, 372, 374
+
+Station_050: 
+Workday: traffic flow range 284-5090, peak time 16:00:00, peak flow 5090, low-peak time 04:00:00, low-peak flow 284; 
+Off-day: traffic flow range 294-5160, peak time 15:00:00, 16:00:00, peak flow 5160, 4980, low-peak time 03:00:00, low-peak flow 294, 304
+
+Station_051: 
+Workday: traffic flow range 519-6460, peak time 14:00:00, 16:00:00, 15:00:00, peak flow 6460, 6330, 6270, low-peak time 04:00:00, low-peak flow 519; 
+Off-day: traffic flow range 587-6060, peak time 15:00:00, 20:00:00, 16:00:00, peak flow 6060, 5950, 5920, low-peak time 04:00:00, low-peak flow 587, 589
+
+Station_052: 
+Workday: traffic flow range 453-5670, peak time 14:00:00, 15:00:00, 10:00:00, 17:00:00, 12:00:00, peak flow 5670, 5650, 5630, 5550, 5520, 5500, 5460, low-peak time 04:00:00, low-peak flow 453; 
+Off-day: traffic flow range 527-5630, peak time 14:00:00, 13:00:00, 15:00:00, 16:00:00, peak flow 5630, 5610, 5530, 5400, 5350, low-peak time 04:00:00, low-peak flow 527
+
+Station_053: 
+Workday: traffic flow range 371-6120, peak time 13:00:00, peak flow 6120, low-peak time 02:00:00, 03:00:00, low-peak flow 371, 373; 
+Off-day: traffic flow range 384-5100, peak time 09:00:00, 10:00:00, 11:00:00, peak flow 5100, 4930, 4880, low-peak time 03:00:00, 04:00:00, low-peak flow 384, 387
+
+Station_054: 
+Workday: traffic flow range 104-2980, peak time 14:00:00, peak flow 2980, low-peak time 03:00:00, low-peak flow 104; 
+Off-day: traffic flow range 126-2570, peak time 11:00:00, peak flow 2570, low-peak time 02:00:00, low-peak flow 126
+
+Station_055: 
+Workday: traffic flow range 154-3740, peak time 13:00:00, 15:00:00, peak flow 3740, 3560, low-peak time 02:00:00, low-peak flow 154; 
+Off-day: traffic flow range 160-3660, peak time 11:00:00, 10:00:00, peak flow 3660, 3610, low-peak time 03:00:00, 04:00:00, 02:00:00, low-peak flow 160, 164, 165
+
+Station_056: 
+Workday: traffic flow range 64-3950, peak time 15:00:00, 14:00:00, peak flow 3950, 3940, low-peak time 03:00:00, low-peak flow 64, 67; 
+Off-day: traffic flow range 70-4110, peak time 14:00:00, peak flow 4110, low-peak time 03:00:00, low-peak flow 70
+
+Station_057: 
+Workday: traffic flow range 11-1300, peak time 10:00:00, peak flow 1300, low-peak time 02:00:00, 03:00:00, low-peak flow 11; 
+Off-day: traffic flow range 8-1010, peak time 13:00:00, peak flow 1010, low-peak time 04:00:00, low-peak flow 8
+
+Station_058: 
+Workday: traffic flow range 33-1240, peak time 12:00:00, 13:00:00, 17:00:00, peak flow 1240, 1220, 1180, low-peak time 03:00:00, low-peak flow 33; 
+Off-day: traffic flow range 32-1050, peak time 11:00:00, 10:00:00, peak flow 1050, 1020, low-peak time 04:00:00, low-peak flow 32
+
+Station_059: 
+Workday: traffic flow range 252-4100, peak time 17:00:00, peak flow 4100, low-peak time 04:00:00, 02:00:00, 03:00:00, 01:00:00, low-peak flow 252, 255, 261, 262, 264; 
+Off-day: traffic flow range 261-2620, peak time 10:00:00, peak flow 2620, low-peak time 04:00:00, 03:00:00, low-peak flow 261, 269, 274
+
+Station_060: 
+Workday: traffic flow range 231-3750, peak time 14:00:00, 10:00:00, 07:00:00, peak flow 3750, 3680, 3640, 3590, low-peak time 04:00:00, low-peak flow 231; 
+Off-day: traffic flow range 201-3170, peak time 12:00:00, 07:00:00, 09:00:00, peak flow 3170, 3120, 3040, low-peak time 04:00:00, low-peak flow 201
+
+Station_061: 
+Workday: traffic flow range 214-3070, peak time 16:00:00, 10:00:00, peak flow 3070, 3050, low-peak time 05:00:00, low-peak flow 214; 
+Off-day: traffic flow range 254-2870, peak time 17:00:00, 09:00:00, 14:00:00, 15:00:00, peak flow 2870, 2860, 2800, 2760, low-peak time 04:00:00, low-peak flow 254
+
+Station_062: 
+Workday: traffic flow range 74-3340, peak time 12:00:00, 11:00:00, 09:00:00, peak flow 3340, 3300, 3230, low-peak time 04:00:00, low-peak flow 74; 
+Off-day: traffic flow range 56-2700, peak time 13:00:00, peak flow 2700, low-peak time 04:00:00, low-peak flow 56
+
+Station_063: 
+Workday: traffic flow range 123-2250, peak time 15:00:00, peak flow 2250, low-peak time 05:00:00, low-peak flow 123; 
+Off-day: traffic flow range 107-3380, peak time 14:00:00, peak flow 3380, low-peak time 05:00:00, low-peak flow 107
+
+Station_064: 
+Workday: traffic flow range 63-2120, peak time 09:00:00, 10:00:00, 14:00:00, peak flow 2120, 2110, 2070, 2050, 2020, low-peak time 00:00:00, low-peak flow 63; 
+Off-day: traffic flow range 58-2180, peak time 16:00:00, peak flow 2180, low-peak time 04:00:00, low-peak flow 58
+
+Station_065: 
+Workday: traffic flow range 190-3070, peak time 15:00:00, 10:00:00, peak flow 3070, 2950, low-peak time 03:00:00, 04:00:00, low-peak flow 190, 191; 
+Off-day: traffic flow range 182-2700, peak time 05:00:00, 09:00:00, 12:00:00, 15:00:00, peak flow 2700, 2670, 2650, 2620, low-peak time 03:00:00, low-peak flow 182
+
+Station_066: 
+Workday: traffic flow range 85-2450, peak time 18:00:00, 10:00:00, peak flow 2450, 2370, low-peak time 03:00:00, low-peak flow 85; 
+Off-day: traffic flow range 108-1830, peak time 14:00:00, 10:00:00, 09:00:00, peak flow 1830, 1800, 1770, low-peak time 02:00:00, low-peak flow 108
+
+Station_067: 
+Workday: traffic flow range 266-4060, peak time 14:00:00, 15:00:00, peak flow 4060, 3950, low-peak time 03:00:00, 04:00:00, low-peak flow 266, 274, 276; 
+Off-day: traffic flow range 260-3680, peak time 13:00:00, 14:00:00, peak flow 3680, 3530, low-peak time 04:00:00, low-peak flow 260, 271
+
+Station_068: 
+Workday: traffic flow range 198-4250, peak time 09:00:00, 14:00:00, 11:00:00, 16:00:00, 15:00:00, 13:00:00, peak flow 4250, 4200, 4160, 4080, 4070, 4050, low-peak time 04:00:00, 02:00:00, low-peak flow 198, 204; 
+Off-day: traffic flow range 190-3610, peak time 10:00:00, 11:00:00, peak flow 3610, 3470, low-peak time 01:00:00, low-peak flow 190
+
+Station_069: 
+Workday: traffic flow range 400-4260, peak time 16:00:00, peak flow 4260, low-peak time 04:00:00, low-peak flow 400, 407, 418; 
+Off-day: traffic flow range 391-3230, peak time 15:00:00, peak flow 3230, low-peak time 04:00:00, low-peak flow 391
+
+Station_070: 
+Workday: traffic flow range 407-3550, peak time 13:00:00, 16:00:00, 14:00:00, peak flow 3550, 3420, 3410, low-peak time 03:00:00, 04:00:00, low-peak flow 407, 427; 
+Off-day: traffic flow range 386-3130, peak time 11:00:00, peak flow 3130, low-peak time 05:00:00, low-peak flow 386
+
+Station_071: 
+Workday: traffic flow range 405-3700, peak time 14:00:00, peak flow 3700, low-peak time 02:00:00, 03:00:00, 04:00:00, low-peak flow 405, 407, 410, 422, 423; 
+Off-day: traffic flow range 415-2630, peak time 11:00:00, 10:00:00, 15:00:00, peak flow 2630, 2590, 2560, 2540, low-peak time 03:00:00, 02:00:00, low-peak flow 415, 433
+
+Station_072: 
+Workday: traffic flow range 362-3200, peak time 17:00:00, 14:00:00, 15:00:00, 13:00:00, peak flow 3200, 3120, 3110, 3070, low-peak time 03:00:00, low-peak flow 362, 377, 379; 
+Off-day: traffic flow range 353-2490, peak time 14:00:00, 13:00:00, 11:00:00, 16:00:00, 10:00:00, peak flow 2490, 2420, 2380, 2370, low-peak time 04:00:00, low-peak flow 353
+
+Station_073: 
+Workday: traffic flow range 371-3900, peak time 11:00:00, 15:00:00, 14:00:00, 12:00:00, peak flow 3900, 3860, 3780, 3750, 3720, low-peak time 03:00:00, 04:00:00, 01:00:00, low-peak flow 371, 384, 386; 
+Off-day: traffic flow range 397-3330, peak time 17:00:00, peak flow 3330, 3280, low-peak time 04:00:00, low-peak flow 397, 398
+
+Station_074: 
+Workday: traffic flow range 391-4440, peak time 16:00:00, peak flow 4440, low-peak time 03:00:00, low-peak flow 391; 
+Off-day: traffic flow range 391-3120, peak time 15:00:00, 14:00:00, 11:00:00, 13:00:00, 19:00:00, 16:00:00, 12:00:00, peak flow 3120, 3070, 3050, 3030, 3000, 2980, 2970, low-peak time 04:00:00, low-peak flow 391
+
+Station_075: 
+Workday: traffic flow range 23-1180, peak time 17:00:00, 11:00:00, 16:00:00, 15:00:00, 14:00:00, peak flow 1180, 1160, 1140, 1130, low-peak time 04:00:00, low-peak flow 23; 
+Off-day: traffic flow range 21-939, peak time 14:00:00, 17:00:00, peak flow 939, 921, low-peak time 04:00:00, low-peak flow 21
+
+Station_076: 
+Workday: traffic flow range 20-1060, peak time 16:00:00, 15:00:00, peak flow 1060, 1030, 1020, low-peak time 02:00:00, low-peak flow 20; 
+Off-day: traffic flow range 32-811, peak time 10:00:00, 09:00:00, peak flow 811, 773, low-peak time 02:00:00, low-peak flow 32
+
+Station_077: 
+Workday: traffic flow range 28-1750, peak time 10:00:00, 09:00:00, peak flow 1750, 1740, low-peak time 02:00:00, low-peak flow 28; 
+Off-day: traffic flow range 30-1390, peak time 10:00:00, peak flow 1390, 1350, low-peak time 02:00:00, low-peak flow 30
+
+Station_078: 
+Workday: traffic flow range 14-1810, peak time 10:00:00, 11:00:00, peak flow 1810, 1780, 1720, low-peak time 04:00:00, low-peak flow 14; 
+Off-day: traffic flow range 25-1520, peak time 16:00:00, 15:00:00, peak flow 1520, 1460, low-peak time 04:00:00, low-peak flow 25
+
+Station_079: 
+Workday: traffic flow range 312-6930, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 6930, 6680, 6620, low-peak time 03:00:00, low-peak flow 312; 
+Off-day: traffic flow range 376-6250, peak time 10:00:00, 15:00:00, 09:00:00, 14:00:00, peak flow 6250, 6150, 6120, 5980, low-peak time 04:00:00, low-peak flow 376
+
+Station_080: 
+Workday: traffic flow range 628-2630, peak time 23:00:00, 17:00:00, 18:00:00, 19:00:00, 20:00:00, 21:00:00, 22:00:00, 00:00:00, 01:00:00, 02:00:00, peak flow 2630, low-peak time 04:00:00, low-peak flow 628; 
+Off-day: traffic flow range 2630-2630, peak time 23:00:00, 00:00:00, 01:00:00, 02:00:00, 03:00:00, 04:00:00, 05:00:00, 06:00:00, 07:00:00, 08:00:00, peak flow 2630, low-peak time 00:00:00, 01:00:00, 02:00:00, 03:00:00, 04:00:00, low-peak flow 2630
+
+Station_081: 
+Workday: traffic flow range 414-4120, peak time 10:00:00, 14:00:00, 17:00:00, 19:00:00, 13:00:00, 15:00:00, 20:00:00, peak flow 4120, 4090, 4060, 4030, 4010, 3980, 3960, 3920, low-peak time 03:00:00, low-peak flow 414, 430, 433; 
+Off-day: traffic flow range 407-3620, peak time 09:00:00, 15:00:00, 08:00:00, peak flow 3620, 3500, 3460, low-peak time 03:00:00, low-peak flow 407, 418
+
+Station_082: 
+Workday: traffic flow range 497-6230, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 6230, 6180, 6140, 6110, 6100, 6080, 6070, 5960, low-peak time 03:00:00, 04:00:00, low-peak flow 497, 518; 
+Off-day: traffic flow range 586-5680, peak time 16:00:00, peak flow 5680, low-peak time 03:00:00, 04:00:00, 02:00:00, low-peak flow 586, 591, 609, 610, 614
+
+Station_083: 
+Workday: traffic flow range 384-5860, peak time 14:00:00, 11:00:00, peak flow 5860, 5790, low-peak time 03:00:00, 04:00:00, low-peak flow 384, 397, 403; 
+Off-day: traffic flow range 367-5000, peak time 16:00:00, peak flow 5000, low-peak time 03:00:00, 04:00:00, low-peak flow 367, 383
+
+Station_084: 
+Workday: traffic flow range 330-6050, peak time 15:00:00, 16:00:00, 14:00:00, peak flow 6050, 6000, 5810, low-peak time 03:00:00, low-peak flow 330, 336, 342; 
+Off-day: traffic flow range 339-5680, peak time 15:00:00, peak flow 5680, 5610, low-peak time 03:00:00, 04:00:00, 02:00:00, low-peak flow 339, 346, 347
+
+Station_085: 
+Workday: traffic flow range 306-3380, peak time 14:00:00, 15:00:00, peak flow 3380, 3290, 3260, low-peak time 03:00:00, low-peak flow 306, 321; 
+Off-day: traffic flow range 277-3200, peak time 14:00:00, 15:00:00, peak flow 3200, 3140, 3060, low-peak time 03:00:00, low-peak flow 277, 284
+
+Station_086: 
+Workday: traffic flow range 408-5270, peak time 10:00:00, peak flow 5270, low-peak time 03:00:00, 04:00:00, low-peak flow 408, 410, 414, 422; 
+Off-day: traffic flow range 382-4720, peak time 15:00:00, peak flow 4720, low-peak time 03:00:00, 02:00:00, low-peak flow 382, 390
+
+Station_087: 
+Workday: traffic flow range 499-5460, peak time 17:00:00, 15:00:00, 16:00:00, 11:00:00, peak flow 5460, 5340, 5280, low-peak time 04:00:00, low-peak flow 499, 507; 
+Off-day: traffic flow range 517-4880, peak time 15:00:00, 16:00:00, peak flow 4880, 4740, low-peak time 04:00:00, 02:00:00, low-peak flow 517, 539, 540
+
+Station_088: 
+Workday: traffic flow range 289-4020, peak time 15:00:00, 14:00:00, 17:00:00, 10:00:00, peak flow 4020, 4010, 3860, low-peak time 04:00:00, 03:00:00, low-peak flow 289, 296; 
+Off-day: traffic flow range 344-3710, peak time 17:00:00, 15:00:00, peak flow 3710, 3690, low-peak time 01:00:00, 02:00:00, 04:00:00, low-peak flow 344, 346, 357
+
+Station_089: 
+Workday: traffic flow range 350-3680, peak time 16:00:00, 23:00:00, 15:00:00, 17:00:00, 20:00:00, 14:00:00, 18:00:00, peak flow 3680, 3640, 3620, 3600, 3580, 3570, low-peak time 04:00:00, low-peak flow 350; 
+Off-day: traffic flow range 394-3300, peak time 15:00:00, 10:00:00, peak flow 3300, 3220, low-peak time 04:00:00, low-peak flow 394
+
+Station_090: 
+Workday: traffic flow range 248-4140, peak time 14:00:00, 16:00:00, peak flow 4140, 4020, low-peak time 01:00:00, low-peak flow 248; 
+Off-day: traffic flow range 242-3740, peak time 11:00:00, 17:00:00, peak flow 3740, 3570, low-peak time 04:00:00, low-peak flow 242
+
+Station_091: 
+Workday: traffic flow range 165-2850, peak time 11:00:00, peak flow 2850, low-peak time 02:00:00, low-peak flow 165; 
+Off-day: traffic flow range 199-2200, peak time 11:00:00, 10:00:00, 13:00:00, 09:00:00, peak flow 2200, 2150, 2090, low-peak time 04:00:00, 03:00:00, low-peak flow 199, 207
+
+Station_092: 
+Workday: traffic flow range 193-3550, peak time 16:00:00, 17:00:00, 15:00:00, peak flow 3550, 3510, 3460, low-peak time 03:00:00, low-peak flow 193; 
+Off-day: traffic flow range 183-2170, peak time 10:00:00, 12:00:00, 16:00:00, peak flow 2170, 2090, 2070, low-peak time 03:00:00, low-peak flow 183
+
+Station_093: 
+Workday: traffic flow range 86-1810, peak time 15:00:00, 16:00:00, peak flow 1810, 1780, low-peak time 03:00:00, low-peak flow 86; 
+Off-day: traffic flow range 91-1500, peak time 15:00:00, peak flow 1500, low-peak time 04:00:00, 03:00:00, low-peak flow 91, 93
+
+Station_094: 
+Workday: traffic flow range 2-2000, peak time 10:00:00, 11:00:00, 16:00:00, 14:00:00, 12:00:00, 15:00:00, peak flow 2000, 1990, 1970, 1960, 1950, 1920, 1910, low-peak time 09:00:00, low-peak flow 2; 
+Off-day: traffic flow range 90-1990, peak time 10:00:00, 11:00:00, 15:00:00, peak flow 1990, 1970, 1900, low-peak time 04:00:00, low-peak flow 90, 94
+
+Station_095: 
+Workday: traffic flow range 193-3540, peak time 15:00:00, peak flow 3540, low-peak time 02:00:00, 03:00:00, low-peak flow 193, 194; 
+Off-day: traffic flow range 185-2950, peak time 12:00:00, peak flow 2950, low-peak time 04:00:00, low-peak flow 185
+
+Station_096: 
+Workday: traffic flow range 184-2820, peak time 17:00:00, 16:00:00, 11:00:00, 18:00:00, peak flow 2820, 2800, 2700, 2680, low-peak time 03:00:00, 02:00:00, 01:00:00, low-peak flow 184, 187, 188, 190; 
+Off-day: traffic flow range 199-2650, peak time 11:00:00, peak flow 2650, low-peak time 02:00:00, low-peak flow 199
+
+Station_097: 
+Workday: traffic flow range 186-4050, peak time 17:00:00, 15:00:00, 16:00:00, 18:00:00, 11:00:00, peak flow 4050, 3980, 3970, 3950, 3930, 3900, 3880, 3870, low-peak time 03:00:00, low-peak flow 186; 
+Off-day: traffic flow range 189-3660, peak time 11:00:00, 10:00:00, peak flow 3660, 3590, 3520, 3510, low-peak time 02:00:00, low-peak flow 189
+
+Station_098: 
+Workday: traffic flow range 45-2560, peak time 11:00:00, peak flow 2560, low-peak time 04:00:00, low-peak flow 45, 46; 
+Off-day: traffic flow range 56-2110, peak time 10:00:00, 11:00:00, 12:00:00, peak flow 2110, 2050, 2030, 2010, low-peak time 03:00:00, low-peak flow 56
+
+Station_099: 
+Workday: traffic flow range 54-1480, peak time 11:00:00, 10:00:00, 09:00:00, 16:00:00, 15:00:00, peak flow 1480, 1470, 1430, 1410, low-peak time 03:00:00, 04:00:00, low-peak flow 54, 55, 56; 
+Off-day: traffic flow range 55-1390, peak time 11:00:00, 10:00:00, peak flow 1390, 1350, low-peak time 03:00:00, 04:00:00, low-peak flow 55, 57
+
+Station_100: 
+Workday: traffic flow range 47-1550, peak time 14:00:00, 11:00:00, 10:00:00, peak flow 1550, 1530, 1510, 1500, low-peak time 03:00:00, 04:00:00, low-peak flow 47, 48; 
+Off-day: traffic flow range 46-1410, peak time 12:00:00, 11:00:00, peak flow 1410, 1350, low-peak time 03:00:00, low-peak flow 46
+
+Station_101: 
+Workday: traffic flow range 60-1410, peak time 15:00:00, 11:00:00, 10:00:00, peak flow 1410, 1370, 1350, low-peak time 05:00:00, low-peak flow 60; 
+Off-day: traffic flow range 71-1230, peak time 10:00:00, 12:00:00, peak flow 1230, 1200, low-peak time 03:00:00, 05:00:00, low-peak flow 71, 72
+
+Station_102: 
+Workday: traffic flow range 77-1870, peak time 14:00:00, 15:00:00, peak flow 1870, 1820, low-peak time 03:00:00, 04:00:00, low-peak flow 77, 80; 
+Off-day: traffic flow range 71-1410, peak time 11:00:00, 10:00:00, peak flow 1410, 1350, low-peak time 04:00:00, low-peak flow 71
+
+Station_103: 
+Workday: traffic flow range 68-1790, peak time 14:00:00, peak flow 1790, low-peak time 03:00:00, low-peak flow 68; 
+Off-day: traffic flow range 70-1330, peak time 11:00:00, peak flow 1330, low-peak time 05:00:00, 04:00:00, low-peak flow 70
+
+Station_104: 
+Workday: traffic flow range 77-2340, peak time 10:00:00, peak flow 2340, low-peak time 03:00:00, low-peak flow 77; 
+Off-day: traffic flow range 85-1500, peak time 10:00:00, 15:00:00, peak flow 1500, 1490, low-peak time 03:00:00, low-peak flow 85
+
+Station_105: 
+Workday: traffic flow range 178-3150, peak time 10:00:00, peak flow 3150, low-peak time 02:00:00, 04:00:00, low-peak flow 178; 
+Off-day: traffic flow range 190-2480, peak time 10:00:00, 15:00:00, peak flow 2480, 2430, low-peak time 04:00:00, 02:00:00, low-peak flow 190, 197
+
+Station_106: 
+Workday: traffic flow range 156-3210, peak time 17:00:00, 10:00:00, 16:00:00, 15:00:00, peak flow 3210, 3070, 3050, low-peak time 03:00:00, low-peak flow 156; 
+Off-day: traffic flow range 193-2600, peak time 10:00:00, 15:00:00, 14:00:00, peak flow 2600, 2520, 2500, low-peak time 03:00:00, 04:00:00, low-peak flow 193, 198
+
+Station_107: 
+Workday: traffic flow range 250-3560, peak time 14:00:00, 16:00:00, peak flow 3560, 3500, low-peak time 03:00:00, 04:00:00, low-peak flow 250, 260, 261, 262; 
+Off-day: traffic flow range 255-2910, peak time 15:00:00, 16:00:00, peak flow 2910, 2850, low-peak time 03:00:00, low-peak flow 255
+
+Station_108: 
+Workday: traffic flow range 386-4300, peak time 15:00:00, peak flow 4300, low-peak time 04:00:00, 02:00:00, low-peak flow 386, 392; 
+Off-day: traffic flow range 473-3270, peak time 15:00:00, 10:00:00, 14:00:00, peak flow 3270, 3260, 3210, 3200, 3170, low-peak time 00:00:00, low-peak flow 473
+
+Station_109: 
+Workday: traffic flow range 471-4230, peak time 14:00:00, peak flow 4230, low-peak time 03:00:00, low-peak flow 471; 
+Off-day: traffic flow range 574-3160, peak time 14:00:00, 10:00:00, 15:00:00, peak flow 3160, 3150, 3120, 3070, low-peak time 02:00:00, 03:00:00, low-peak flow 574, 575
+
+Station_110: 
+Workday: traffic flow range 476-3350, peak time 16:00:00, peak flow 3350, low-peak time 03:00:00, low-peak flow 476; 
+Off-day: traffic flow range 496-2580, peak time 11:00:00, 14:00:00, 13:00:00, 15:00:00, peak flow 2580, 2540, 2500, low-peak time 02:00:00, low-peak flow 496
+
+Station_111: 
+Workday: traffic flow range 33-1050, peak time 21:00:00, peak flow 1050, low-peak time 02:00:00, low-peak flow 33; 
+Off-day: traffic flow range 29-741, peak time 15:00:00, 10:00:00, peak flow 741, 733, low-peak time 13:00:00, 04:00:00, low-peak flow 29, 30
+
+Station_112: 
+Workday: traffic flow range 38-1940, peak time 16:00:00, peak flow 1940, low-peak time 04:00:00, low-peak flow 38; 
+Off-day: traffic flow range 43-1630, peak time 10:00:00, peak flow 1630, low-peak time 04:00:00, 03:00:00, low-peak flow 43, 45
+
+Station_113: 
+Workday: traffic flow range 46-2690, peak time 16:00:00, 15:00:00, peak flow 2690, 2610, low-peak time 04:00:00, 03:00:00, low-peak flow 46, 47, 48; 
+Off-day: traffic flow range 37-1850, peak time 10:00:00, peak flow 1850, low-peak time 04:00:00, low-peak flow 37
+
+Station_114: 
+Workday: traffic flow range 20-2370, peak time 14:00:00, 10:00:00, 16:00:00, 11:00:00, peak flow 2370, 2280, 2260, low-peak time 04:00:00, low-peak flow 20; 
+Off-day: traffic flow range 22-1660, peak time 16:00:00, 15:00:00, peak flow 1660, 1600, low-peak time 05:00:00, low-peak flow 22
+
+Station_115: 
+Workday: traffic flow range 39-2430, peak time 10:00:00, 16:00:00, peak flow 2430, 2380, 2330, low-peak time 04:00:00, low-peak flow 39; 
+Off-day: traffic flow range 43-1980, peak time 10:00:00, peak flow 1980, 1940, low-peak time 04:00:00, low-peak flow 43
+
+Station_116: 
+Workday: traffic flow range 213-3860, peak time 15:00:00, peak flow 3860, low-peak time 02:00:00, 04:00:00, low-peak flow 213, 216, 222; 
+Off-day: traffic flow range 219-2760, peak time 14:00:00, 15:00:00, 10:00:00, peak flow 2760, 2730, 2660, low-peak time 05:00:00, low-peak flow 219
+
+Station_117: 
+Workday: traffic flow range 111-3060, peak time 17:00:00, 20:00:00, peak flow 3060, 2940, low-peak time 02:00:00, low-peak flow 111; 
+Off-day: traffic flow range 127-2350, peak time 15:00:00, 10:00:00, 16:00:00, peak flow 2350, 2240, low-peak time 02:00:00, 01:00:00, low-peak flow 127, 128
+
+Station_118: 
+Workday: traffic flow range 19-1940, peak time 09:00:00, 10:00:00, peak flow 1940, 1920, low-peak time 02:00:00, 03:00:00, low-peak flow 19; 
+Off-day: traffic flow range 19-1540, peak time 15:00:00, 16:00:00, 10:00:00, peak flow 1540, 1500, 1470, low-peak time 04:00:00, low-peak flow 19
+
+Station_119: 
+Workday: traffic flow range 21-1680, peak time 14:00:00, 10:00:00, 15:00:00, 09:00:00, peak flow 1680, 1620, 1610, 1600, low-peak time 03:00:00, low-peak flow 21; 
+Off-day: traffic flow range 28-1430, peak time 14:00:00, 15:00:00, peak flow 1430, 1400, low-peak time 02:00:00, 03:00:00, low-peak flow 28, 29
+
+Station_120: 
+Workday: traffic flow range 5-1520, peak time 15:00:00, 16:00:00, peak flow 1520, low-peak time 02:00:00, low-peak flow 5; 
+Off-day: traffic flow range 12-1440, peak time 16:00:00, peak flow 1440, low-peak time 04:00:00, 02:00:00, 03:00:00, low-peak flow 12
+
+Station_121: 
+Workday: traffic flow range 65-2430, peak time 15:00:00, peak flow 2430, low-peak time 04:00:00, low-peak flow 65; 
+Off-day: traffic flow range 86-1970, peak time 11:00:00, 13:00:00, peak flow 1970, 1890, low-peak time 04:00:00, low-peak flow 86
+
+Station_122: 
+Workday: traffic flow range 62-2390, peak time 16:00:00, 11:00:00, 14:00:00, 15:00:00, peak flow 2390, 2360, 2340, 2290, low-peak time 04:00:00, low-peak flow 62, 64; 
+Off-day: traffic flow range 91-2000, peak time 10:00:00, peak flow 2000, low-peak time 03:00:00, 02:00:00, low-peak flow 91, 93, 95
+
+Station_123: 
+Workday: traffic flow range 39-1920, peak time 15:00:00, 16:00:00, 12:00:00, peak flow 1920, 1850, low-peak time 02:00:00, low-peak flow 39; 
+Off-day: traffic flow range 48-1810, peak time 09:00:00, 10:00:00, peak flow 1810, 1720, low-peak time 03:00:00, low-peak flow 48
+
+Station_124: 
+Workday: traffic flow range 40-3910, peak time 22:00:00, peak flow 3910, low-peak time 02:00:00, 04:00:00, low-peak flow 40, 41, 42; 
+Off-day: traffic flow range 35-2670, peak time 14:00:00, 16:00:00, peak flow 2670, 2610, low-peak time 04:00:00, low-peak flow 35
+
+Station_125: 
+Workday: traffic flow range 10-1130, peak time 14:00:00, 15:00:00, peak flow 1130, 1120, low-peak time 03:00:00, low-peak flow 10; 
+Off-day: traffic flow range 13-1090, peak time 14:00:00, peak flow 1090, low-peak time 03:00:00, low-peak flow 13
+
+Station_126: 
+Workday: traffic flow range 100-4740, peak time 15:00:00, 16:00:00, peak flow 4740, 4680, 4520, low-peak time 02:00:00, low-peak flow 100; 
+Off-day: traffic flow range 119-4030, peak time 10:00:00, peak flow 4030, 3930, low-peak time 03:00:00, low-peak flow 119
+
+Station_127: 
+Workday: traffic flow range 62-3030, peak time 07:00:00, 09:00:00, 10:00:00, peak flow 3030, 2900, low-peak time 04:00:00, low-peak flow 62; 
+Off-day: traffic flow range 100-2350, peak time 10:00:00, 15:00:00, 16:00:00, peak flow 2350, 2270, 2240, low-peak time 04:00:00, low-peak flow 100
+
+Station_128: 
+Workday: traffic flow range 67-2790, peak time 14:00:00, peak flow 2790, low-peak time 03:00:00, low-peak flow 67; 
+Off-day: traffic flow range 80-2280, peak time 14:00:00, 15:00:00, peak flow 2280, 2210, 2190, low-peak time 03:00:00, low-peak flow 80
+
+Station_129: 
+Workday: traffic flow range 203-6240, peak time 14:00:00, 15:00:00, 10:00:00, peak flow 6240, 6120, 5990, 5950, 5930, low-peak time 03:00:00, low-peak flow 203, 209; 
+Off-day: traffic flow range 247-6100, peak time 15:00:00, 14:00:00, peak flow 6100, 5880, low-peak time 03:00:00, low-peak flow 247, 253, 254
+
+Station_130: 
+Workday: traffic flow range 85-5620, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 5620, 5590, 5540, 5510, low-peak time 03:00:00, 04:00:00, low-peak flow 85, 88, 89; 
+Off-day: traffic flow range 99-5490, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 5490, 5480, 5350, 5240, 5230, low-peak time 04:00:00, low-peak flow 99
+
+Station_131: 
+Workday: traffic flow range 34-5000, peak time 16:00:00, 15:00:00, peak flow 5000, 4790, 4770, low-peak time 03:00:00, low-peak flow 34; 
+Off-day: traffic flow range 94-4850, peak time 16:00:00, peak flow 4850, low-peak time 23:00:00, low-peak flow 94
+
+Station_132: 
+Workday: traffic flow range 134-4540, peak time 14:00:00, 15:00:00, 16:00:00, peak flow 4540, 4510, 4490, 4460, 4380, low-peak time 04:00:00, low-peak flow 134; 
+Off-day: traffic flow range 168-4540, peak time 15:00:00, peak flow 4540, low-peak time 05:00:00, 04:00:00, low-peak flow 168, 169, 170
+
+Station_133: 
+Workday: traffic flow range 147-3120, peak time 14:00:00, 13:00:00, 15:00:00, 12:00:00, peak flow 3120, 3050, 3040, 3010, low-peak time 02:00:00, 03:00:00, low-peak flow 147, 148, 151; 
+Off-day: traffic flow range 135-2230, peak time 11:00:00, 14:00:00, peak flow 2230, 2160, low-peak time 03:00:00, low-peak flow 135
+
+Station_134: 
+Workday: traffic flow range 86-2580, peak time 10:00:00, peak flow 2580, low-peak time 03:00:00, low-peak flow 86, 88; 
+Off-day: traffic flow range 89-2080, peak time 11:00:00, 10:00:00, peak flow 2080, 1990, low-peak time 03:00:00, low-peak flow 89
+
+Station_135: 
+Workday: traffic flow range 67-1870, peak time 10:00:00, peak flow 1870, low-peak time 02:00:00, 03:00:00, low-peak flow 67, 68, 69; 
+Off-day: traffic flow range 63-1640, peak time 11:00:00, peak flow 1640, low-peak time 03:00:00, low-peak flow 63
+
+Station_136: 
+Workday: traffic flow range 6-3110, peak time 10:00:00, 09:00:00, peak flow 3110, 3100, 3050, low-peak time 04:00:00, low-peak flow 6; 
+Off-day: traffic flow range 16-3060, peak time 10:00:00, peak flow 3060, low-peak time 02:00:00, 04:00:00, low-peak flow 16
+
+Station_137: 
+Workday: traffic flow range 8-2480, peak time 14:00:00, peak flow 2480, low-peak time 04:00:00, low-peak flow 8; 
+Off-day: traffic flow range 11-2040, peak time 10:00:00, peak flow 2040, low-peak time 04:00:00, low-peak flow 11
+
+Station_138: 
+Workday: traffic flow range 65-2370, peak time 10:00:00, peak flow 2370, low-peak time 02:00:00, low-peak flow 65; 
+Off-day: traffic flow range 73-2140, peak time 10:00:00, peak flow 2140, 2080, low-peak time 03:00:00, low-peak flow 73
+
+Station_139: 
+Workday: traffic flow range 41-2940, peak time 16:00:00, peak flow 2940, low-peak time 03:00:00, 04:00:00, low-peak flow 41, 42; 
+Off-day: traffic flow range 34-2270, peak time 16:00:00, peak flow 2270, low-peak time 04:00:00, low-peak flow 34
+
+Station_140: 
+Workday: traffic flow range 33-3860, peak time 16:00:00, 15:00:00, peak flow 3860, 3710, low-peak time 03:00:00, low-peak flow 33; 
+Off-day: traffic flow range 29-2820, peak time 15:00:00, 16:00:00, peak flow 2820, 2800, low-peak time 04:00:00, low-peak flow 29
+
+Station_141: 
+Workday: traffic flow range 68-2740, peak time 10:00:00, 09:00:00, peak flow 2740, 2720, low-peak time 02:00:00, low-peak flow 68; 
+Off-day: traffic flow range 63-2360, peak time 10:00:00, 16:00:00, peak flow 2360, 2260, low-peak time 02:00:00, low-peak flow 63
+
+Station_142: 
+Workday: traffic flow range 76-2450, peak time 13:00:00, 16:00:00, peak flow 2450, 2370, low-peak time 04:00:00, low-peak flow 76; 
+Off-day: traffic flow range 97-1970, peak time 15:00:00, 14:00:00, 13:00:00, peak flow 1970, 1950, 1930, low-peak time 02:00:00, low-peak flow 97
+
+Station_143: 
+Workday: traffic flow range 27-2560, peak time 14:00:00, peak flow 2560, low-peak time 02:00:00, low-peak flow 27; 
+Off-day: traffic flow range 47-1900, peak time 13:00:00, 15:00:00, peak flow 1900, 1820, low-peak time 02:00:00, low-peak flow 47
+
+Station_144: 
+Workday: traffic flow range 59-3550, peak time 00:00:00, peak flow 3550, low-peak time 04:00:00, 03:00:00, 02:00:00, low-peak flow 59, 61; 
+Off-day: traffic flow range 58-2550, peak time 15:00:00, 14:00:00, peak flow 2550, 2440, low-peak time 03:00:00, low-peak flow 58
+
+Station_145: 
+Workday: traffic flow range 59-3410, peak time 13:00:00, peak flow 3410, low-peak time 03:00:00, 04:00:00, low-peak flow 59, 61; 
+Off-day: traffic flow range 57-2600, peak time 16:00:00, 10:00:00, 15:00:00, peak flow 2600, 2560, 2480, low-peak time 03:00:00, low-peak flow 57
+
+Station_146: 
+Workday: traffic flow range 40-3910, peak time 17:00:00, peak flow 3910, low-peak time 03:00:00, 02:00:00, low-peak flow 40, 41; 
+Off-day: traffic flow range 58-2390, peak time 16:00:00, peak flow 2390, low-peak time 03:00:00, 05:00:00, low-peak flow 58, 60
+
+Station_147: 
+Workday: traffic flow range 33-3230, peak time 16:00:00, peak flow 3230, low-peak time 03:00:00, low-peak flow 33; 
+Off-day: traffic flow range 28-2240, peak time 10:00:00, peak flow 2240, low-peak time 03:00:00, low-peak flow 28
+
+Station_148: 
+Workday: traffic flow range 46-3470, peak time 15:00:00, peak flow 3470, low-peak time 03:00:00, 04:00:00, low-peak flow 46, 48; 
+Off-day: traffic flow range 50-2680, peak time 10:00:00, 16:00:00, 15:00:00, 09:00:00, peak flow 2680, 2670, 2620, 2550, low-peak time 03:00:00, 02:00:00, low-peak flow 50
+
+Station_149: 
+Workday: traffic flow range 26-2750, peak time 14:00:00, peak flow 2750, low-peak time 03:00:00, 02:00:00, low-peak flow 26, 27; 
+Off-day: traffic flow range 26-1990, peak time 15:00:00, 16:00:00, peak flow 1990, 1950, low-peak time 03:00:00, 02:00:00, low-peak flow 26, 27
+
+Station_150: 
+Workday: traffic flow range 12-2470, peak time 15:00:00, 14:00:00, 11:00:00, peak flow 2470, 2440, 2420, low-peak time 01:00:00, 04:00:00, low-peak flow 12; 
+Off-day: traffic flow range 26-2040, peak time 15:00:00, peak flow 2040, low-peak time 03:00:00, low-peak flow 26
+
+Station_151: 
+Workday: traffic flow range 2-1060, peak time 10:00:00, peak flow 1060, low-peak time 03:00:00, low-peak flow 2; 
+Off-day: traffic flow range 5-1050, peak time 10:00:00, peak flow 1050, low-peak time 02:00:00, low-peak flow 5
+
+Station_152: 
+Workday: traffic flow range 129-3110, peak time 10:00:00, peak flow 3110, low-peak time 04:00:00, low-peak flow 129; 
+Off-day: traffic flow range 127-2790, peak time 15:00:00, peak flow 2790, low-peak time 04:00:00, 02:00:00, low-peak flow 127, 130
+
+Station_153: 
+Workday: traffic flow range 22-3760, peak time 11:00:00, peak flow 3760, low-peak time 01:00:00, low-peak flow 22; 
+Off-day: traffic flow range 45-3520, peak time 12:00:00, peak flow 3520, low-peak time 20:00:00, low-peak flow 45
+
+Station_154: 
+Workday: traffic flow range 0-714, peak time 15:00:00, 16:00:00, peak flow 714, 700, low-peak time 15:00:00, 04:00:00, 10:00:00, 11:00:00, 13:00:00, low-peak flow 0; 
+Off-day: traffic flow range 0-604, peak time 05:00:00, peak flow 604, low-peak time 11:00:00, low-peak flow 0
+
+Station_155: 
+Workday: traffic flow range 118-2120, peak time 10:00:00, 09:00:00, 15:00:00, peak flow 2120, 2040, 2020, low-peak time 03:00:00, 02:00:00, low-peak flow 118, 119; 
+Off-day: traffic flow range 108-2030, peak time 15:00:00, 10:00:00, 14:00:00, peak flow 2030, 1950, low-peak time 02:00:00, low-peak flow 108
+
+Station_156: 
+Workday: traffic flow range 33-1460, peak time 09:00:00, 10:00:00, 08:00:00, 16:00:00, 11:00:00, peak flow 1460, 1440, 1430, 1410, 1390, low-peak time 04:00:00, low-peak flow 33; 
+Off-day: traffic flow range 71-1590, peak time 16:00:00, 14:00:00, peak flow 1590, 1530, low-peak time 01:00:00, 04:00:00, 03:00:00, low-peak flow 71, 73, 74
+
+Station_157: 
+Workday: traffic flow range 14-944, peak time 14:00:00, peak flow 944, low-peak time 03:00:00, low-peak flow 14; 
+Off-day: traffic flow range 0-704, peak time 10:00:00, 11:00:00, peak flow 704, 685, low-peak time 18:00:00, 19:00:00, 20:00:00, 21:00:00, 22:00:00, low-peak flow 0
+
+Station_158: 
+Workday: traffic flow range 78-2760, peak time 15:00:00, 11:00:00, peak flow 2760, 2660, 2640, low-peak time 04:00:00, 03:00:00, 02:00:00, low-peak flow 78, 79, 80; 
+Off-day: traffic flow range 81-2260, peak time 15:00:00, 10:00:00, peak flow 2260, 2190, 2160, low-peak time 02:00:00, 03:00:00, low-peak flow 81, 83, 85
+
+Station_159: 
+Workday: traffic flow range 32-1600, peak time 10:00:00, 11:00:00, 15:00:00, peak flow 1600, 1560, low-peak time 02:00:00, low-peak flow 32, 33; 
+Off-day: traffic flow range 35-1360, peak time 11:00:00, 15:00:00, 10:00:00, 14:00:00, peak flow 1360, 1330, 1320, 1300, low-peak time 05:00:00, 03:00:00, low-peak flow 35, 36
+
+Station_160: 
+Workday: traffic flow range 36-1300, peak time 08:00:00, peak flow 1300, low-peak time 03:00:00, 01:00:00, low-peak flow 36, 37; 
+Off-day: traffic flow range 30-1170, peak time 09:00:00, peak flow 1170, low-peak time 03:00:00, low-peak flow 30
+
+Station_161: 
+Workday: traffic flow range 25-1890, peak time 15:00:00, 13:00:00, 11:00:00, 12:00:00, peak flow 1890, 1850, 1830, 1820, low-peak time 04:00:00, low-peak flow 25; 
+Off-day: traffic flow range 31-2390, peak time 10:00:00, peak flow 2390, low-peak time 04:00:00, low-peak flow 31

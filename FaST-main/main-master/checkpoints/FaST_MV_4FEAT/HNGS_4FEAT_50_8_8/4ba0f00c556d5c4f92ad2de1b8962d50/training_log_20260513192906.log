@@ -1,0 +1,369 @@
+2026-05-13 19:29:06,584 - easytorch-training - INFO - Initializing training.
+2026-05-13 19:29:06,584 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-05-13 19:29:06,584 - easytorch-training - INFO - Building training data loader.
+2026-05-13 19:29:06,584 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-05-13 19:29:06,597 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-05-13 19:29:06,597 - easytorch-training - INFO - Train data slice: [0:865], length=865, original indices [0:864]
+2026-05-13 19:29:06,598 - easytorch-training - INFO - Sliced data shape: (865, 98, 4), expected samples: 850
+2026-05-13 19:29:06,598 - easytorch-training - INFO - Train dataset length: 850
+2026-05-13 19:29:07,475 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+2026-05-13 19:29:07,475 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7e9e47512020>
+2026-05-13 19:29:07,475 - easytorch-training - INFO - Initializing validation.
+2026-05-13 19:29:07,475 - easytorch-training - INFO - Building val data loader.
+2026-05-13 19:29:07,475 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-05-13 19:29:07,479 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-05-13 19:29:07,479 - easytorch-training - INFO - Val data slice: [850:1153], length=303, original indices [865:1152]
+2026-05-13 19:29:07,479 - easytorch-training - INFO - Sliced data shape: (303, 98, 4), expected samples: 288
+2026-05-13 19:29:07,479 - easytorch-training - INFO - Validation dataset length: 288
+2026-05-13 19:29:07,480 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-05-13 19:29:07,482 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-05-13 19:29:07,483 - easytorch-training - INFO - Test data slice: [1138:], length=319, original indices [1153:]
+2026-05-13 19:29:07,483 - easytorch-training - INFO - Sliced data shape: (319, 98, 4), expected samples: 304
+2026-05-13 19:29:07,483 - easytorch-training - INFO - Test dataset length: 304
+2026-05-13 19:29:07,484 - easytorch-training - INFO - Number of parameters: 377008
+2026-05-13 19:29:07,484 - easytorch-training - INFO - Epoch 1 / 50
+2026-05-13 19:29:10,076 - easytorch-training - INFO - Result <train>: [train/time: 2.59 (s), train/lr: 1.00e-03, train/loss: 151.6230, train/MAE: 152.2218, train/RMSE: 289.9285, train/MAPE: 0.9148]
+2026-05-13 19:29:10,076 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:10,691 - easytorch-training - INFO - Result <val>: [val/time: 0.61 (s), val/loss: 97.9262, val/MAE: 98.4241, val/RMSE: 185.2817, val/MAPE: 0.7860]
+2026-05-13 19:29:10,710 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:10,727 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_01.pt saved
+2026-05-13 19:29:10,727 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:49
+2026-05-13 19:29:10,727 - easytorch-training - INFO - Epoch 2 / 50
+2026-05-13 19:29:12,612 - easytorch-training - INFO - Result <train>: [train/time: 1.88 (s), train/lr: 1.00e-03, train/loss: 106.6614, train/MAE: 107.2745, train/RMSE: 219.0031, train/MAPE: 0.5856]
+2026-05-13 19:29:12,612 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:13,117 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 76.8426, val/MAE: 77.3384, val/RMSE: 152.7827, val/MAPE: 0.6452]
+2026-05-13 19:29:13,136 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:13,149 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_02.pt saved
+2026-05-13 19:29:13,149 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:29
+2026-05-13 19:29:13,149 - easytorch-training - INFO - Epoch 3 / 50
+2026-05-13 19:29:14,955 - easytorch-training - INFO - Result <train>: [train/time: 1.81 (s), train/lr: 1.00e-03, train/loss: 91.7408, train/MAE: 92.1865, train/RMSE: 192.2509, train/MAPE: 0.5106]
+2026-05-13 19:29:14,955 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:15,456 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 64.3715, val/MAE: 64.8666, val/RMSE: 126.0096, val/MAPE: 0.5100]
+2026-05-13 19:29:15,475 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:15,487 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_03.pt saved
+2026-05-13 19:29:15,487 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:20
+2026-05-13 19:29:15,487 - easytorch-training - INFO - Epoch 4 / 50
+2026-05-13 19:29:17,263 - easytorch-training - INFO - Result <train>: [train/time: 1.78 (s), train/lr: 1.00e-03, train/loss: 85.0417, train/MAE: 85.5922, train/RMSE: 180.6706, train/MAPE: 0.4706]
+2026-05-13 19:29:17,263 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:17,785 - easytorch-training - INFO - Result <val>: [val/time: 0.52 (s), val/loss: 63.4483, val/MAE: 63.9430, val/RMSE: 128.1042, val/MAPE: 0.5345]
+2026-05-13 19:29:17,804 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:17,817 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_04.pt saved
+2026-05-13 19:29:17,817 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:16
+2026-05-13 19:29:17,817 - easytorch-training - INFO - Epoch 5 / 50
+2026-05-13 19:29:19,639 - easytorch-training - INFO - Result <train>: [train/time: 1.82 (s), train/lr: 1.00e-03, train/loss: 82.8673, train/MAE: 83.7502, train/RMSE: 180.2574, train/MAPE: 0.4562]
+2026-05-13 19:29:19,639 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:20,131 - easytorch-training - INFO - Result <val>: [val/time: 0.49 (s), val/loss: 62.1682, val/MAE: 62.6630, val/RMSE: 126.6805, val/MAPE: 0.5173]
+2026-05-13 19:29:20,149 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:20,161 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_05.pt saved
+2026-05-13 19:29:20,161 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:14
+2026-05-13 19:29:20,161 - easytorch-training - INFO - Epoch 6 / 50
+2026-05-13 19:29:21,959 - easytorch-training - INFO - Result <train>: [train/time: 1.80 (s), train/lr: 1.00e-03, train/loss: 83.0128, train/MAE: 83.2377, train/RMSE: 177.7322, train/MAPE: 0.4674]
+2026-05-13 19:29:21,959 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:22,474 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 60.7730, val/MAE: 61.2671, val/RMSE: 122.6622, val/MAPE: 0.4866]
+2026-05-13 19:29:22,521 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:22,533 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_06.pt saved
+2026-05-13 19:29:22,533 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:12
+2026-05-13 19:29:22,533 - easytorch-training - INFO - Epoch 7 / 50
+2026-05-13 19:29:24,324 - easytorch-training - INFO - Result <train>: [train/time: 1.79 (s), train/lr: 1.00e-03, train/loss: 81.6405, train/MAE: 82.0825, train/RMSE: 175.5162, train/MAPE: 0.4520]
+2026-05-13 19:29:24,324 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:24,837 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 58.0858, val/MAE: 58.5797, val/RMSE: 116.6687, val/MAPE: 0.4656]
+2026-05-13 19:29:24,856 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:24,868 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_07.pt saved
+2026-05-13 19:29:24,868 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:11
+2026-05-13 19:29:24,868 - easytorch-training - INFO - Epoch 8 / 50
+2026-05-13 19:29:26,631 - easytorch-training - INFO - Result <train>: [train/time: 1.76 (s), train/lr: 1.00e-03, train/loss: 79.1800, train/MAE: 79.6207, train/RMSE: 171.6287, train/MAPE: 0.4357]
+2026-05-13 19:29:26,631 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:27,137 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 58.0640, val/MAE: 58.5580, val/RMSE: 115.9816, val/MAPE: 0.4679]
+2026-05-13 19:29:27,155 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:27,168 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_08.pt saved
+2026-05-13 19:29:27,168 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:10
+2026-05-13 19:29:27,168 - easytorch-training - INFO - Epoch 9 / 50
+2026-05-13 19:29:28,957 - easytorch-training - INFO - Result <train>: [train/time: 1.79 (s), train/lr: 1.00e-03, train/loss: 78.2470, train/MAE: 78.7514, train/RMSE: 168.9491, train/MAPE: 0.4330]
+2026-05-13 19:29:28,957 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:29,468 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 59.1322, val/MAE: 59.6259, val/RMSE: 118.4431, val/MAPE: 0.4997]
+2026-05-13 19:29:29,481 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_09.pt saved
+2026-05-13 19:29:29,481 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:09
+2026-05-13 19:29:29,481 - easytorch-training - INFO - Epoch 10 / 50
+2026-05-13 19:29:31,248 - easytorch-training - INFO - Result <train>: [train/time: 1.77 (s), train/lr: 1.00e-03, train/loss: 76.8384, train/MAE: 77.5371, train/RMSE: 167.6682, train/MAPE: 0.4224]
+2026-05-13 19:29:31,248 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:31,746 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 57.9464, val/MAE: 58.4404, val/RMSE: 114.5079, val/MAPE: 0.4706]
+2026-05-13 19:29:31,794 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:31,807 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_10.pt saved
+2026-05-13 19:29:31,816 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:09
+2026-05-13 19:29:31,816 - easytorch-training - INFO - Epoch 11 / 50
+2026-05-13 19:29:33,568 - easytorch-training - INFO - Result <train>: [train/time: 1.75 (s), train/lr: 5.00e-04, train/loss: 75.7928, train/MAE: 76.3254, train/RMSE: 165.5373, train/MAPE: 0.4124]
+2026-05-13 19:29:33,568 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:34,051 - easytorch-training - INFO - Result <val>: [val/time: 0.48 (s), val/loss: 55.7816, val/MAE: 56.2751, val/RMSE: 111.8759, val/MAPE: 0.4458]
+2026-05-13 19:29:34,068 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:34,081 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_11.pt saved
+2026-05-13 19:29:34,081 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:08
+2026-05-13 19:29:34,081 - easytorch-training - INFO - Epoch 12 / 50
+2026-05-13 19:29:35,861 - easytorch-training - INFO - Result <train>: [train/time: 1.78 (s), train/lr: 5.00e-04, train/loss: 75.3821, train/MAE: 75.6423, train/RMSE: 164.0075, train/MAPE: 0.4107]
+2026-05-13 19:29:35,861 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:36,333 - easytorch-training - INFO - Result <val>: [val/time: 0.47 (s), val/loss: 55.5788, val/MAE: 56.0721, val/RMSE: 112.5310, val/MAPE: 0.4405]
+2026-05-13 19:29:36,352 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:36,364 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_12.pt saved
+2026-05-13 19:29:36,364 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:07
+2026-05-13 19:29:36,364 - easytorch-training - INFO - Epoch 13 / 50
+2026-05-13 19:29:38,148 - easytorch-training - INFO - Result <train>: [train/time: 1.78 (s), train/lr: 5.00e-04, train/loss: 74.2830, train/MAE: 74.9552, train/RMSE: 163.6621, train/MAPE: 0.4064]
+2026-05-13 19:29:38,149 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:38,624 - easytorch-training - INFO - Result <val>: [val/time: 0.48 (s), val/loss: 56.4905, val/MAE: 56.9839, val/RMSE: 114.3650, val/MAPE: 0.4675]
+2026-05-13 19:29:38,637 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_13.pt saved
+2026-05-13 19:29:38,637 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:07
+2026-05-13 19:29:38,638 - easytorch-training - INFO - Epoch 14 / 50
+2026-05-13 19:29:40,426 - easytorch-training - INFO - Result <train>: [train/time: 1.79 (s), train/lr: 5.00e-04, train/loss: 73.9990, train/MAE: 74.5748, train/RMSE: 163.8656, train/MAPE: 0.4034]
+2026-05-13 19:29:40,426 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:40,951 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 54.9077, val/MAE: 55.4009, val/RMSE: 109.0416, val/MAPE: 0.4485]
+2026-05-13 19:29:40,971 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:40,983 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_14.pt saved
+2026-05-13 19:29:40,983 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:07
+2026-05-13 19:29:40,983 - easytorch-training - INFO - Epoch 15 / 50
+2026-05-13 19:29:42,753 - easytorch-training - INFO - Result <train>: [train/time: 1.77 (s), train/lr: 5.00e-04, train/loss: 73.5886, train/MAE: 74.0363, train/RMSE: 161.8360, train/MAPE: 0.3997]
+2026-05-13 19:29:42,753 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:43,265 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 55.6580, val/MAE: 56.1511, val/RMSE: 110.9124, val/MAPE: 0.4553]
+2026-05-13 19:29:43,278 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_15.pt saved
+2026-05-13 19:29:43,278 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:43,278 - easytorch-training - INFO - Epoch 16 / 50
+2026-05-13 19:29:45,030 - easytorch-training - INFO - Result <train>: [train/time: 1.75 (s), train/lr: 5.00e-04, train/loss: 73.2953, train/MAE: 73.7286, train/RMSE: 161.8648, train/MAPE: 0.3983]
+2026-05-13 19:29:45,030 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:45,510 - easytorch-training - INFO - Result <val>: [val/time: 0.48 (s), val/loss: 54.1634, val/MAE: 54.6565, val/RMSE: 109.8186, val/MAPE: 0.4327]
+2026-05-13 19:29:45,529 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:45,541 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_16.pt saved
+2026-05-13 19:29:45,541 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:45,541 - easytorch-training - INFO - Epoch 17 / 50
+2026-05-13 19:29:47,324 - easytorch-training - INFO - Result <train>: [train/time: 1.78 (s), train/lr: 5.00e-04, train/loss: 73.0047, train/MAE: 73.4163, train/RMSE: 162.1746, train/MAPE: 0.3980]
+2026-05-13 19:29:47,324 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:47,818 - easytorch-training - INFO - Result <val>: [val/time: 0.49 (s), val/loss: 54.1540, val/MAE: 54.6470, val/RMSE: 106.7519, val/MAPE: 0.4335]
+2026-05-13 19:29:47,839 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:47,852 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_17.pt saved
+2026-05-13 19:29:47,852 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:47,852 - easytorch-training - INFO - Epoch 18 / 50
+2026-05-13 19:29:49,661 - easytorch-training - INFO - Result <train>: [train/time: 1.81 (s), train/lr: 5.00e-04, train/loss: 73.3686, train/MAE: 73.9730, train/RMSE: 161.4239, train/MAPE: 0.3993]
+2026-05-13 19:29:49,661 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:50,189 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 56.2506, val/MAE: 56.7437, val/RMSE: 116.3261, val/MAPE: 0.4675]
+2026-05-13 19:29:50,202 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_18.pt saved
+2026-05-13 19:29:50,202 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:50,202 - easytorch-training - INFO - Epoch 19 / 50
+2026-05-13 19:29:52,024 - easytorch-training - INFO - Result <train>: [train/time: 1.82 (s), train/lr: 5.00e-04, train/loss: 73.3384, train/MAE: 73.5201, train/RMSE: 161.8837, train/MAPE: 0.3974]
+2026-05-13 19:29:52,024 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:52,539 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 53.6520, val/MAE: 54.1449, val/RMSE: 105.6571, val/MAPE: 0.4312]
+2026-05-13 19:29:52,587 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:52,599 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_19.pt saved
+2026-05-13 19:29:52,599 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:52,599 - easytorch-training - INFO - Epoch 20 / 50
+2026-05-13 19:29:54,361 - easytorch-training - INFO - Result <train>: [train/time: 1.76 (s), train/lr: 5.00e-04, train/loss: 71.9148, train/MAE: 72.4614, train/RMSE: 159.1536, train/MAPE: 0.3932]
+2026-05-13 19:29:54,361 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:54,894 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 52.9829, val/MAE: 53.4760, val/RMSE: 105.4539, val/MAPE: 0.4213]
+2026-05-13 19:29:54,914 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:54,926 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_20.pt saved
+2026-05-13 19:29:54,936 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:06
+2026-05-13 19:29:54,936 - easytorch-training - INFO - Epoch 21 / 50
+2026-05-13 19:29:56,688 - easytorch-training - INFO - Result <train>: [train/time: 1.75 (s), train/lr: 2.50e-04, train/loss: 71.5132, train/MAE: 72.1095, train/RMSE: 159.0679, train/MAPE: 0.3890]
+2026-05-13 19:29:56,688 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:57,216 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 53.7147, val/MAE: 54.2076, val/RMSE: 108.7994, val/MAPE: 0.4368]
+2026-05-13 19:29:57,231 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_21.pt saved
+2026-05-13 19:29:57,231 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:29:57,231 - easytorch-training - INFO - Epoch 22 / 50
+2026-05-13 19:29:59,037 - easytorch-training - INFO - Result <train>: [train/time: 1.81 (s), train/lr: 2.50e-04, train/loss: 70.8942, train/MAE: 71.5416, train/RMSE: 157.2901, train/MAPE: 0.3865]
+2026-05-13 19:29:59,037 - easytorch-training - INFO - Start validation.
+2026-05-13 19:29:59,569 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 52.5599, val/MAE: 53.0527, val/RMSE: 105.6930, val/MAPE: 0.4241]
+2026-05-13 19:29:59,587 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:29:59,598 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_22.pt saved
+2026-05-13 19:29:59,599 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:29:59,599 - easytorch-training - INFO - Epoch 23 / 50
+2026-05-13 19:30:01,396 - easytorch-training - INFO - Result <train>: [train/time: 1.80 (s), train/lr: 2.50e-04, train/loss: 71.1474, train/MAE: 71.7119, train/RMSE: 158.5780, train/MAPE: 0.3881]
+2026-05-13 19:30:01,396 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:01,919 - easytorch-training - INFO - Result <val>: [val/time: 0.52 (s), val/loss: 52.5173, val/MAE: 53.0100, val/RMSE: 105.2498, val/MAPE: 0.4255]
+2026-05-13 19:30:01,938 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:01,950 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_23.pt saved
+2026-05-13 19:30:01,951 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:01,951 - easytorch-training - INFO - Epoch 24 / 50
+2026-05-13 19:30:03,721 - easytorch-training - INFO - Result <train>: [train/time: 1.77 (s), train/lr: 2.50e-04, train/loss: 71.2933, train/MAE: 71.6684, train/RMSE: 157.1234, train/MAPE: 0.3894]
+2026-05-13 19:30:03,722 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:04,271 - easytorch-training - INFO - Result <val>: [val/time: 0.55 (s), val/loss: 53.8215, val/MAE: 54.3142, val/RMSE: 109.5376, val/MAPE: 0.4407]
+2026-05-13 19:30:04,285 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_24.pt saved
+2026-05-13 19:30:04,285 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:04,286 - easytorch-training - INFO - Epoch 25 / 50
+2026-05-13 19:30:06,075 - easytorch-training - INFO - Result <train>: [train/time: 1.79 (s), train/lr: 2.50e-04, train/loss: 70.9807, train/MAE: 71.2860, train/RMSE: 157.2651, train/MAPE: 0.3846]
+2026-05-13 19:30:06,075 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:06,579 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 52.1507, val/MAE: 52.6435, val/RMSE: 104.0599, val/MAPE: 0.4181]
+2026-05-13 19:30:06,598 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:06,610 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_25.pt saved
+2026-05-13 19:30:06,610 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:06,610 - easytorch-training - INFO - Epoch 26 / 50
+2026-05-13 19:30:08,350 - easytorch-training - INFO - Result <train>: [train/time: 1.74 (s), train/lr: 2.50e-04, train/loss: 70.4841, train/MAE: 71.0475, train/RMSE: 157.1671, train/MAPE: 0.3839]
+2026-05-13 19:30:08,350 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:08,812 - easytorch-training - INFO - Result <val>: [val/time: 0.46 (s), val/loss: 52.1404, val/MAE: 52.6332, val/RMSE: 104.0968, val/MAPE: 0.4234]
+2026-05-13 19:30:08,861 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:08,882 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_26.pt saved
+2026-05-13 19:30:08,882 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:08,882 - easytorch-training - INFO - Epoch 27 / 50
+2026-05-13 19:30:10,581 - easytorch-training - INFO - Result <train>: [train/time: 1.70 (s), train/lr: 2.50e-04, train/loss: 70.1589, train/MAE: 70.8636, train/RMSE: 156.5950, train/MAPE: 0.3836]
+2026-05-13 19:30:10,582 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:11,079 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 51.7862, val/MAE: 52.2787, val/RMSE: 103.4958, val/MAPE: 0.4158]
+2026-05-13 19:30:11,099 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:11,111 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_27.pt saved
+2026-05-13 19:30:11,111 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:11,111 - easytorch-training - INFO - Epoch 28 / 50
+2026-05-13 19:30:12,923 - easytorch-training - INFO - Result <train>: [train/time: 1.81 (s), train/lr: 2.50e-04, train/loss: 70.3231, train/MAE: 70.8667, train/RMSE: 156.2950, train/MAPE: 0.3829]
+2026-05-13 19:30:12,924 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:13,432 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 52.1716, val/MAE: 52.6642, val/RMSE: 105.6273, val/MAPE: 0.4202]
+2026-05-13 19:30:13,445 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_28.pt saved
+2026-05-13 19:30:13,445 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:13,445 - easytorch-training - INFO - Epoch 29 / 50
+2026-05-13 19:30:15,267 - easytorch-training - INFO - Result <train>: [train/time: 1.82 (s), train/lr: 2.50e-04, train/loss: 69.9728, train/MAE: 70.5355, train/RMSE: 156.3856, train/MAPE: 0.3807]
+2026-05-13 19:30:15,268 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:15,793 - easytorch-training - INFO - Result <val>: [val/time: 0.53 (s), val/loss: 52.0875, val/MAE: 52.5802, val/RMSE: 103.7371, val/MAPE: 0.4213]
+2026-05-13 19:30:15,809 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_29.pt saved
+2026-05-13 19:30:15,809 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:15,809 - easytorch-training - INFO - Epoch 30 / 50
+2026-05-13 19:30:17,635 - easytorch-training - INFO - Result <train>: [train/time: 1.83 (s), train/lr: 2.50e-04, train/loss: 70.0254, train/MAE: 70.4795, train/RMSE: 156.0223, train/MAPE: 0.3811]
+2026-05-13 19:30:17,635 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:18,157 - easytorch-training - INFO - Result <val>: [val/time: 0.52 (s), val/loss: 52.0837, val/MAE: 52.5762, val/RMSE: 104.1210, val/MAPE: 0.4229]
+2026-05-13 19:30:18,170 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_30.pt saved
+2026-05-13 19:30:18,180 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:18,180 - easytorch-training - INFO - Epoch 31 / 50
+2026-05-13 19:30:19,908 - easytorch-training - INFO - Result <train>: [train/time: 1.73 (s), train/lr: 1.25e-04, train/loss: 69.5380, train/MAE: 70.0636, train/RMSE: 154.5057, train/MAPE: 0.3789]
+2026-05-13 19:30:19,908 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:20,426 - easytorch-training - INFO - Result <val>: [val/time: 0.52 (s), val/loss: 52.1858, val/MAE: 52.6784, val/RMSE: 105.1795, val/MAPE: 0.4207]
+2026-05-13 19:30:20,440 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_31.pt saved
+2026-05-13 19:30:20,440 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:05
+2026-05-13 19:30:20,440 - easytorch-training - INFO - Epoch 32 / 50
+2026-05-13 19:30:22,153 - easytorch-training - INFO - Result <train>: [train/time: 1.71 (s), train/lr: 1.25e-04, train/loss: 69.4227, train/MAE: 70.1695, train/RMSE: 155.1800, train/MAPE: 0.3792]
+2026-05-13 19:30:22,154 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:22,650 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 51.6548, val/MAE: 52.1472, val/RMSE: 104.1831, val/MAPE: 0.4151]
+2026-05-13 19:30:22,667 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:22,679 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_32.pt saved
+2026-05-13 19:30:22,679 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:22,679 - easytorch-training - INFO - Epoch 33 / 50
+2026-05-13 19:30:24,406 - easytorch-training - INFO - Result <train>: [train/time: 1.73 (s), train/lr: 1.25e-04, train/loss: 69.5000, train/MAE: 70.0458, train/RMSE: 155.7170, train/MAPE: 0.3784]
+2026-05-13 19:30:24,406 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:24,909 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 52.1121, val/MAE: 52.6046, val/RMSE: 105.9191, val/MAPE: 0.4220]
+2026-05-13 19:30:24,924 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_33.pt saved
+2026-05-13 19:30:24,924 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:24,924 - easytorch-training - INFO - Epoch 34 / 50
+2026-05-13 19:30:26,674 - easytorch-training - INFO - Result <train>: [train/time: 1.75 (s), train/lr: 1.25e-04, train/loss: 69.4967, train/MAE: 70.0882, train/RMSE: 155.5720, train/MAPE: 0.3770]
+2026-05-13 19:30:26,674 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:27,209 - easytorch-training - INFO - Result <val>: [val/time: 0.54 (s), val/loss: 51.5833, val/MAE: 52.0759, val/RMSE: 103.7210, val/MAPE: 0.4154]
+2026-05-13 19:30:27,228 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:27,240 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_34.pt saved
+2026-05-13 19:30:27,240 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:27,240 - easytorch-training - INFO - Epoch 35 / 50
+2026-05-13 19:30:28,961 - easytorch-training - INFO - Result <train>: [train/time: 1.72 (s), train/lr: 1.25e-04, train/loss: 68.9697, train/MAE: 69.7201, train/RMSE: 154.9750, train/MAPE: 0.3761]
+2026-05-13 19:30:28,961 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:29,471 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.4230, val/MAE: 51.9156, val/RMSE: 103.1911, val/MAPE: 0.4122]
+2026-05-13 19:30:29,490 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:29,502 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_35.pt saved
+2026-05-13 19:30:29,502 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:29,502 - easytorch-training - INFO - Epoch 36 / 50
+2026-05-13 19:30:31,221 - easytorch-training - INFO - Result <train>: [train/time: 1.72 (s), train/lr: 1.25e-04, train/loss: 68.9199, train/MAE: 69.6909, train/RMSE: 154.2566, train/MAPE: 0.3754]
+2026-05-13 19:30:31,221 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:31,742 - easytorch-training - INFO - Result <val>: [val/time: 0.52 (s), val/loss: 51.4822, val/MAE: 51.9746, val/RMSE: 103.5182, val/MAPE: 0.4158]
+2026-05-13 19:30:31,757 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_36.pt saved
+2026-05-13 19:30:31,757 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:31,757 - easytorch-training - INFO - Epoch 37 / 50
+2026-05-13 19:30:33,514 - easytorch-training - INFO - Result <train>: [train/time: 1.76 (s), train/lr: 1.25e-04, train/loss: 69.1633, train/MAE: 69.6149, train/RMSE: 155.3459, train/MAPE: 0.3752]
+2026-05-13 19:30:33,515 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:34,026 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.7581, val/MAE: 52.2506, val/RMSE: 104.0673, val/MAPE: 0.4234]
+2026-05-13 19:30:34,039 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_37.pt saved
+2026-05-13 19:30:34,039 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:34,039 - easytorch-training - INFO - Epoch 38 / 50
+2026-05-13 19:30:35,837 - easytorch-training - INFO - Result <train>: [train/time: 1.80 (s), train/lr: 1.25e-04, train/loss: 69.1243, train/MAE: 69.5947, train/RMSE: 154.7079, train/MAPE: 0.3760]
+2026-05-13 19:30:35,837 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:36,336 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 51.0952, val/MAE: 51.5877, val/RMSE: 102.1950, val/MAPE: 0.4107]
+2026-05-13 19:30:36,355 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:36,367 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_38.pt saved
+2026-05-13 19:30:36,367 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:36,367 - easytorch-training - INFO - Epoch 39 / 50
+2026-05-13 19:30:38,072 - easytorch-training - INFO - Result <train>: [train/time: 1.70 (s), train/lr: 1.25e-04, train/loss: 68.8328, train/MAE: 69.4735, train/RMSE: 154.7877, train/MAPE: 0.3746]
+2026-05-13 19:30:38,072 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:38,581 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.1847, val/MAE: 51.6772, val/RMSE: 102.5645, val/MAPE: 0.4106]
+2026-05-13 19:30:38,595 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_39.pt saved
+2026-05-13 19:30:38,595 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:38,595 - easytorch-training - INFO - Epoch 40 / 50
+2026-05-13 19:30:40,373 - easytorch-training - INFO - Result <train>: [train/time: 1.78 (s), train/lr: 1.25e-04, train/loss: 68.9943, train/MAE: 69.4494, train/RMSE: 154.4675, train/MAPE: 0.3759]
+2026-05-13 19:30:40,373 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:40,887 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.7103, val/MAE: 52.2029, val/RMSE: 103.9375, val/MAPE: 0.4197]
+2026-05-13 19:30:40,901 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_40.pt saved
+2026-05-13 19:30:40,912 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:40,912 - easytorch-training - INFO - Epoch 41 / 50
+2026-05-13 19:30:42,710 - easytorch-training - INFO - Result <train>: [train/time: 1.80 (s), train/lr: 6.25e-05, train/loss: 68.8976, train/MAE: 69.3556, train/RMSE: 153.9163, train/MAPE: 0.3746]
+2026-05-13 19:30:42,711 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:43,225 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.0397, val/MAE: 51.5321, val/RMSE: 102.7529, val/MAPE: 0.4112]
+2026-05-13 19:30:43,243 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:43,255 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_41.pt saved
+2026-05-13 19:30:43,256 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:43,256 - easytorch-training - INFO - Epoch 42 / 50
+2026-05-13 19:30:45,019 - easytorch-training - INFO - Result <train>: [train/time: 1.76 (s), train/lr: 6.25e-05, train/loss: 68.6385, train/MAE: 69.1799, train/RMSE: 153.7667, train/MAPE: 0.3735]
+2026-05-13 19:30:45,019 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:45,517 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 51.0833, val/MAE: 51.5758, val/RMSE: 102.2020, val/MAPE: 0.4119]
+2026-05-13 19:30:45,531 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_42.pt saved
+2026-05-13 19:30:45,531 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:45,531 - easytorch-training - INFO - Epoch 43 / 50
+2026-05-13 19:30:47,272 - easytorch-training - INFO - Result <train>: [train/time: 1.74 (s), train/lr: 6.25e-05, train/loss: 68.4325, train/MAE: 69.0906, train/RMSE: 153.4723, train/MAPE: 0.3737]
+2026-05-13 19:30:47,272 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:47,763 - easytorch-training - INFO - Result <val>: [val/time: 0.49 (s), val/loss: 50.8506, val/MAE: 51.3430, val/RMSE: 101.9372, val/MAPE: 0.4082]
+2026-05-13 19:30:47,781 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:30:47,793 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_43.pt saved
+2026-05-13 19:30:47,793 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:47,793 - easytorch-training - INFO - Epoch 44 / 50
+2026-05-13 19:30:49,556 - easytorch-training - INFO - Result <train>: [train/time: 1.76 (s), train/lr: 6.25e-05, train/loss: 68.7159, train/MAE: 69.1647, train/RMSE: 153.5952, train/MAPE: 0.3727]
+2026-05-13 19:30:49,556 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:50,058 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 51.1320, val/MAE: 51.6245, val/RMSE: 103.0182, val/MAPE: 0.4131]
+2026-05-13 19:30:50,071 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_44.pt saved
+2026-05-13 19:30:50,071 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:50,071 - easytorch-training - INFO - Epoch 45 / 50
+2026-05-13 19:30:51,863 - easytorch-training - INFO - Result <train>: [train/time: 1.79 (s), train/lr: 6.25e-05, train/loss: 68.5283, train/MAE: 69.0285, train/RMSE: 152.9880, train/MAPE: 0.3729]
+2026-05-13 19:30:51,863 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:52,375 - easytorch-training - INFO - Result <val>: [val/time: 0.51 (s), val/loss: 51.1186, val/MAE: 51.6111, val/RMSE: 102.8185, val/MAPE: 0.4122]
+2026-05-13 19:30:52,388 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_45.pt saved
+2026-05-13 19:30:52,389 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:52,389 - easytorch-training - INFO - Epoch 46 / 50
+2026-05-13 19:30:54,219 - easytorch-training - INFO - Result <train>: [train/time: 1.83 (s), train/lr: 6.25e-05, train/loss: 68.3042, train/MAE: 68.9189, train/RMSE: 153.1617, train/MAPE: 0.3716]
+2026-05-13 19:30:54,220 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:54,700 - easytorch-training - INFO - Result <val>: [val/time: 0.48 (s), val/loss: 51.1098, val/MAE: 51.6021, val/RMSE: 102.9579, val/MAPE: 0.4140]
+2026-05-13 19:30:54,714 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_46.pt saved
+2026-05-13 19:30:54,714 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:04
+2026-05-13 19:30:54,714 - easytorch-training - INFO - Epoch 47 / 50
+2026-05-13 19:30:56,482 - easytorch-training - INFO - Result <train>: [train/time: 1.77 (s), train/lr: 6.25e-05, train/loss: 68.6036, train/MAE: 68.9308, train/RMSE: 153.3829, train/MAPE: 0.3723]
+2026-05-13 19:30:56,483 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:56,969 - easytorch-training - INFO - Result <val>: [val/time: 0.49 (s), val/loss: 51.3516, val/MAE: 51.8440, val/RMSE: 103.5754, val/MAPE: 0.4179]
+2026-05-13 19:30:56,982 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_47.pt saved
+2026-05-13 19:30:56,982 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:03
+2026-05-13 19:30:56,982 - easytorch-training - INFO - Epoch 48 / 50
+2026-05-13 19:30:58,751 - easytorch-training - INFO - Result <train>: [train/time: 1.77 (s), train/lr: 6.25e-05, train/loss: 68.4400, train/MAE: 68.9592, train/RMSE: 152.8697, train/MAPE: 0.3732]
+2026-05-13 19:30:58,752 - easytorch-training - INFO - Start validation.
+2026-05-13 19:30:59,247 - easytorch-training - INFO - Result <val>: [val/time: 0.49 (s), val/loss: 51.3253, val/MAE: 51.8178, val/RMSE: 103.5096, val/MAPE: 0.4150]
+2026-05-13 19:30:59,260 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_48.pt saved
+2026-05-13 19:30:59,261 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:03
+2026-05-13 19:30:59,261 - easytorch-training - INFO - Epoch 49 / 50
+2026-05-13 19:31:01,074 - easytorch-training - INFO - Result <train>: [train/time: 1.81 (s), train/lr: 6.25e-05, train/loss: 68.3630, train/MAE: 68.8817, train/RMSE: 153.6410, train/MAPE: 0.3716]
+2026-05-13 19:31:01,074 - easytorch-training - INFO - Start validation.
+2026-05-13 19:31:01,573 - easytorch-training - INFO - Result <val>: [val/time: 0.50 (s), val/loss: 50.9463, val/MAE: 51.4387, val/RMSE: 102.4309, val/MAPE: 0.4105]
+2026-05-13 19:31:01,587 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_49.pt saved
+2026-05-13 19:31:01,587 - easytorch-training - INFO - The estimated training finish time is 2026-05-13 19:31:03
+2026-05-13 19:31:01,587 - easytorch-training - INFO - Epoch 50 / 50
+2026-05-13 19:31:03,410 - easytorch-training - INFO - Result <train>: [train/time: 1.82 (s), train/lr: 6.25e-05, train/loss: 68.4855, train/MAE: 68.8438, train/RMSE: 152.9715, train/MAPE: 0.3718]
+2026-05-13 19:31:03,411 - easytorch-training - INFO - Start validation.
+2026-05-13 19:31:03,961 - easytorch-training - INFO - Result <val>: [val/time: 0.55 (s), val/loss: 50.8173, val/MAE: 51.3097, val/RMSE: 101.9070, val/MAPE: 0.4091]
+2026-05-13 19:31:04,009 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt saved
+2026-05-13 19:31:04,022 - easytorch-training - INFO - Checkpoint checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_50.pt saved
+2026-05-13 19:31:04,031 - easytorch-training - INFO - The training finished at 2026-05-13 19:31:04
+2026-05-13 19:31:04,031 - easytorch-training - INFO - Evaluating the best model on the test set.
+2026-05-13 19:31:04,031 - easytorch-training - INFO - Loading Checkpoint from 'checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/FaST_MV_best_val_MAE.pt'
+2026-05-13 19:31:05,007 - easytorch-training - INFO - Result <test>: [test/time: 0.52 (s), test/loss: 53.7176, test/MAE: 51.7317, test/RMSE: 100.1418, test/MAPE: 0.4882]
+2026-05-13 19:31:05,008 - easytorch-training - INFO - Test results saved to checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/test_results.npz.
+2026-05-13 19:31:05,008 - easytorch-training - INFO - Test metrics saved to checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/4ba0f00c556d5c4f92ad2de1b8962d50/test_metrics.json.

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+unsloth_compiled_cache/
+results-quick518-optimized/checkpoint-*
+*.pt
+*.bin
+*.zip
+*.npz

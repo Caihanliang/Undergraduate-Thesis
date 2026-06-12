@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/data/GMAN(subway)"
+all_model_checkpoint_paths: "/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/data/GMAN(subway)"

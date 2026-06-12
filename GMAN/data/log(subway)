@@ -1,0 +1,10 @@
+time_slot=15, P=8, Q=8, L=5, K=8, d=8, train_ratio=0.7, val_ratio=0.1, test_ratio=0.2, batch_size=32, max_epoch=1000, patience=10, learning_rate=0.001, decay_epoch=5, traffic_file='/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/METR/data/subway.h5', SE_file='/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/METR/data/subway/SE.txt', model_file='/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/data/GMAN(subway)', log_file='/home/user/FSTLLM/contrast/Traffic-Benchmark-master/methods/GMAN/data/log(subway)'
+loading data...
+trainX: (9107, 8, 34)	trainY: (9107, 8, 34)
+valX:   (1289, 8, 34)		valY:   (1289, 8, 34)
+testX:  (2591, 8, 34)		testY:  (2591, 8, 34)
+data loaded!
+compiling model...
+trainable parameters: 886,977
+model compiled!
+**** training model ****

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-05-17T22:07:33.248427",
+  "description": "Lag-Llama高速公路交通流量预测评估结果",
+  "metrics": [
+    {
+      "feature": "小客车上行 (Passenger Car Up)",
+      "MAE": 108.2124,
+      "RMSE": 221.7849,
+      "MAPE": 61.41,
+      "sMAPE": 46.06,
+      "sample_count": 1774432
+    },
+    {
+      "feature": "小客车下行 (Passenger Car Down)",
+      "MAE": 108.2731,
+      "RMSE": 216.8883,
+      "MAPE": 63.32,
+      "sMAPE": 47.71,
+      "sample_count": 1774400
+    },
+    {
+      "feature": "非小客车上行 (Non-Passenger Car Up)",
+      "MAE": 39.6531,
+      "RMSE": 61.2488,
+      "MAPE": 45.33,
+      "sMAPE": 37.2,
+      "sample_count": 887216
+    },
+    {
+      "feature": "非小客车下行 (Non-Passenger Car Down)",
+      "MAE": 45.3913,
+      "RMSE": 68.9076,
+      "MAPE": 51.93,
+      "sMAPE": 41.95,
+      "sample_count": 887200
+    },
+    {
+      "feature": "全局平均 (Global Average)",
+      "MAE": 75.3825,
+      "RMSE": 142.2074,
+      "MAPE": 55.5,
+      "sMAPE": 43.23,
+      "sample_count": 5323248
+    }
+  ]
+}

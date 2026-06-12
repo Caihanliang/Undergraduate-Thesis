@@ -1,0 +1,45 @@
+{
+  "name": "hngs_multi",
+  "domain": "traffic flow",
+  "shape": [
+    1416,
+    160,
+    2
+  ],
+  "num_time_steps": 1416,
+  "num_nodes": 160,
+  "num_features": 2,
+  "feature_description": [
+    "light vehicle flow",
+    "non-light vehicle flow"
+  ],
+  "has_graph": true,
+  "frequency (minutes)": 60,
+  "description": "Hunan Highway Multi-Vehicle Dataset (Light + Non-Light)",
+  "time_range": "2023-09-01 to 2023-10-31",
+  "mean": [
+    0.0,
+    0.0
+  ],
+  "std": [
+    1.0,
+    1.0
+  ],
+  "regular_settings": {
+    "INPUT_LEN": 8,
+    "OUTPUT_LEN": 8,
+    "TRAIN_VAL_TEST_RATIO": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "NORM_EACH_CHANNEL": false,
+    "RESCALE": false,
+    "METRICS": [
+      "MAE",
+      "RMSE",
+      "MAPE"
+    ],
+    "NULL_VAL": 0.0
+  }
+}

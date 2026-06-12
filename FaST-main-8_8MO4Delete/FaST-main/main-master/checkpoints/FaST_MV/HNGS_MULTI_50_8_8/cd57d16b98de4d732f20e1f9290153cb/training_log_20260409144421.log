@@ -1,0 +1,50 @@
+2026-04-09 14:44:21,975 - easytorch-training - INFO - Initializing training.
+2026-04-09 14:44:21,975 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-09 14:44:21,975 - easytorch-training - INFO - Building training data loader.
+2026-04-09 14:44:21,981 - easytorch-training - INFO - Train dataset length: 831
+2026-04-09 14:44:23,008 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+2026-04-09 14:44:23,008 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7c4f4dd962f0>
+2026-04-09 14:44:23,008 - easytorch-training - INFO - Initializing validation.
+2026-04-09 14:44:23,008 - easytorch-training - INFO - Building val data loader.
+2026-04-09 14:44:23,011 - easytorch-training - INFO - Validation dataset length: 277
+2026-04-09 14:44:23,014 - easytorch-training - INFO - Test dataset length: 277
+2026-04-09 14:44:23,014 - easytorch-training - INFO - Number of parameters: 382828
+2026-04-09 14:44:23,014 - easytorch-training - INFO - Epoch 1 / 50
+2026-04-09 14:44:23,447 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/launcher/launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 448, in train
+    loss = self.train_iters(epoch, iter_index, data)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 411, in train_iters
+    forward_return = self.forward(
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/runner_zoo/simple_tsf_runner.py", line 101, in forward
+    model_return = self.model(history_data=history_data, future_data=future_data_4_dec,
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/FaST/arch/fast_arch_mv.py", line 428, in forward
+    x = self.revin(x, 'denorm')
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/FaST/arch/fast_arch_mv.py", line 464, in forward
+    x = self._denormalize(x)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/FaST/arch/fast_arch_mv.py", line 495, in _denormalize
+    x = x - self.affine_bias.view(1, 1, 1, -1)
+RuntimeError: The size of tensor a (8) must match the size of tensor b (2) at non-singleton dimension 3
+

@@ -1,0 +1,18 @@
+2026-04-10 18:25:46,957 - easytorch-training - INFO - Initializing training.
+2026-04-10 18:25:46,957 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-10 18:25:46,957 - easytorch-training - INFO - Building training data loader.
+2026-04-10 18:25:46,965 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/launcher/launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 418, in train
+    self.init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 159, in init_training
+    super().init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 332, in init_training
+    self.train_data_loader = self.build_train_data_loader(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 234, in build_train_data_loader
+    dataset = self.build_train_dataset(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 232, in build_train_dataset
+    self.logger.info(f"Train dataset length: {len(dataset)}")
+ValueError: __len__() should return >= 0
+

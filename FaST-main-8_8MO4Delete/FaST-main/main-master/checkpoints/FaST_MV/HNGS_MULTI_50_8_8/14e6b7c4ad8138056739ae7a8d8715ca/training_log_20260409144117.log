@@ -1,0 +1,20 @@
+2026-04-09 14:41:17,666 - easytorch-training - INFO - Initializing training.
+2026-04-09 14:41:17,666 - easytorch-training - INFO - Building training data loader.
+2026-04-09 14:41:17,672 - easytorch-training - INFO - Train dataset length: 831
+2026-04-09 14:41:17,704 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/launcher/launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 418, in train
+    self.init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 159, in init_training
+    super().init_training(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 332, in init_training
+    self.train_data_loader = self.build_train_data_loader(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 234, in build_train_data_loader
+    dataset = self.build_train_dataset(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 233, in build_train_dataset
+    batch_size = cfg["TRAIN"]["DATA"]["BATCH_SIZE"]
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/config/config.py", line 162, in __getitem__
+    value = super().__getitem__(keys[0])
+KeyError: 'DATA'
+

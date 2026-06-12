@@ -1,0 +1,44 @@
+2026-04-14 11:14:39,690 - easytorch-training - INFO - Initializing training.
+2026-04-14 11:14:39,690 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-14 11:14:39,690 - easytorch-training - INFO - Building training data loader.
+2026-04-14 11:14:39,690 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-14 11:14:39,697 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-14 11:14:39,697 - easytorch-training - INFO - Train data slice: [0:865], length=865, original indices [0:864]
+2026-04-14 11:14:39,698 - easytorch-training - INFO - Sliced data shape: (865, 157, 4), expected samples: 850
+2026-04-14 11:14:39,699 - easytorch-training - INFO - Train dataset length: 850
+2026-04-14 11:14:40,700 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+2026-04-14 11:14:40,701 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x76e33c0dd300>
+2026-04-14 11:14:40,701 - easytorch-training - INFO - Loading Checkpoint from 'checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/ddfb7b9aab4682869a56ef40d9afeb34/FaST_MV_50.pt'
+2026-04-14 11:14:41,053 - easytorch-training - INFO - Resume training
+2026-04-14 11:14:41,053 - easytorch-training - INFO - Initializing validation.
+2026-04-14 11:14:41,053 - easytorch-training - INFO - Building val data loader.
+2026-04-14 11:14:41,053 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-14 11:14:41,059 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-14 11:14:41,059 - easytorch-training - INFO - Val data slice: [850:1153], length=303, original indices [865:1152]
+2026-04-14 11:14:41,059 - easytorch-training - INFO - Sliced data shape: (303, 157, 4), expected samples: 288
+2026-04-14 11:14:41,059 - easytorch-training - INFO - Validation dataset length: 288
+2026-04-14 11:14:41,059 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-14 11:14:41,063 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-14 11:14:41,063 - easytorch-training - INFO - Test data slice: [1138:], length=319, original indices [1153:]
+2026-04-14 11:14:41,064 - easytorch-training - INFO - Sliced data shape: (319, 157, 4), expected samples: 304
+2026-04-14 11:14:41,064 - easytorch-training - INFO - Test dataset length: 304
+2026-04-14 11:14:41,064 - easytorch-training - INFO - Number of parameters: 382672
+2026-04-14 11:14:41,064 - easytorch-training - INFO - The training finished at 2026-04-14 11:14:41
+2026-04-14 11:14:41,064 - easytorch-training - INFO - Evaluating the best model on the test set.
+2026-04-14 11:14:41,064 - easytorch-training - INFO - Loading Checkpoint from 'checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/ddfb7b9aab4682869a56ef40d9afeb34/FaST_MV_best_val_MAE.pt'
+2026-04-14 11:14:42,292 - easytorch-training - INFO - Result <test>: [test/time: 0.89 (s), test/loss: 45.7163, test/MAE: 44.1946, test/RMSE: 88.7590, test/MAPE: 0.5449]
+2026-04-14 11:14:42,292 - easytorch-training - INFO - Test results saved to checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/ddfb7b9aab4682869a56ef40d9afeb34/test_results.npz.
+2026-04-14 11:14:42,292 - easytorch-training - INFO - Test metrics saved to checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8/ddfb7b9aab4682869a56ef40d9afeb34/test_metrics.json.

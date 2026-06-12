@@ -1,0 +1,28 @@
+✓ 正在启动【隐状态截获版】MAE 混合训练...
+正在加载数据并精简天气信息...
+✓ NPZ文件键名检测:
+  ytrue_train.npz 键名: ['target']
+  ypred_train.npz 键名: ['prediction']
+✓ 数据加载成功:
+  true_array shape: (850, 8, 157, 4)
+  pred_array shape: (850, 8, 157, 4)
+
+✓ 数据验证通过:
+  平均绝对误差 (MAE): 59.61
+
+原始数据形状分析:
+  true_array shape: (850, 8, 157, 4)
+  pred_array shape: (850, 8, 157, 4)
+
+✓ 维度对齐完成:
+  样本数: 850 | 站点数: 157 | 特征数: 4 | 序列长度: 8
+⚠️ 未找到英文事件文件: /home/user/Downloads/cai/FaST-main-8_8MO4Delete/FaST-main/config/cai/events_list_quan_en.csv
+==((====))==  Unsloth 2025.12.8: Fast Llama patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA RTX PRO 6000 Blackwell Workstation Edition. Num GPUs = 1. Max memory: 94.977 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.9.1+cu128. CUDA: 12.0. CUDA Toolkit: 12.8. Triton: 3.5.1
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.33.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+开始生成训练样本...
+
+===== 处理站点 1/157: Huangxing =====

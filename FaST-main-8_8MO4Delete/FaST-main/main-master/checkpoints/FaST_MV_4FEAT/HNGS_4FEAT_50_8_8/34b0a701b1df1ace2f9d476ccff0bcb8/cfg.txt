@@ -1,0 +1,75 @@
+DESCRIPTION: FaST-MV for 4-Feature Traffic Forecasting (LittleCar Up/Down + NonLittleCar Up/Down)
+fp16: True
+GPU_NUM: 1
+RUNNER: <class 'basicts.runners.runner_zoo.simple_tsf_runner.SimpleTimeSeriesForecastingRunner'>
+DATASET:
+  NAME: HNGS_4FEAT
+  TYPE: <class 'basicts.data.simple_tsf_dataset.MyTimeSeries'>
+  PARAM:
+    dataset_name: HNGS_4FEAT
+    train_val_test_ratio: [0.6, 0.2, 0.2]
+    input_len: 8
+    output_len: 8
+MODEL:
+  NAME: FaST_MV
+  ARCH: <class 'FaST.arch.fast_arch_mv.FaST_MV'>
+  PARAM:
+    num_nodes: 161
+    num_features: 4
+    input_len: 8
+    output_len: 8
+    layers: 3
+    num_experts: 8
+    hidden_dim: 64
+    num_agent: 32
+    use_revIN: True
+    channel_independent: True
+  FORWARD_FEATURES: [0, 1, 2, 3]
+  TARGET_FEATURES: [0, 1, 2, 3]
+METRICS:
+  FUNCS:
+    MAE: masked_ae
+    RMSE: masked_se
+    MAPE: masked_ape
+  TARGET: MAE
+  NULL_VAL: 0.0
+TRAIN:
+  NUM_EPOCHS: 50
+  CKPT_SAVE_DIR: checkpoints/FaST_MV_4FEAT/HNGS_4FEAT_50_8_8
+  LOSS: smooth_l1_loss_wrapper
+  OPTIM:
+    TYPE: Adam
+    PARAM:
+      lr: 0.001
+      weight_decay: 0.0001
+  LR_SCHEDULER:
+    TYPE: MultiStepLR
+    PARAM:
+      milestones: [10, 20, 30, 40, 50]
+      gamma: 0.5
+  DATA:
+    BATCH_SIZE: 32
+    SHUFFLE: True
+    PREFETCH: True
+    NUM_WORKERS: 4
+    PIN_MEMORY: True
+  CLIP_GRAD_PARAM:
+    max_norm: 5.0
+VAL:
+  INTERVAL: 1
+  DATA:
+    BATCH_SIZE: 32
+    PREFETCH: True
+    NUM_WORKERS: 4
+    PIN_MEMORY: True
+TEST:
+  INTERVAL: 200
+  DATA:
+    BATCH_SIZE: 32
+    PREFETCH: True
+    NUM_WORKERS: 4
+    PIN_MEMORY: True
+EVAL:
+  HORIZONS: []
+  USE_GPU: True
+MD5: 34b0a701b1df1ace2f9d476ccff0bcb8

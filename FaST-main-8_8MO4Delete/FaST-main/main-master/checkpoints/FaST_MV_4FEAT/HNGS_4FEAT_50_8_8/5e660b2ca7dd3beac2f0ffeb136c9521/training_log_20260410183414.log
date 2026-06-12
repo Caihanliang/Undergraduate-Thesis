@@ -1,0 +1,54 @@
+2026-04-10 18:34:14,550 - easytorch-training - INFO - Initializing training.
+2026-04-10 18:34:14,550 - easytorch-training - INFO - Set clip grad, param: {'max_norm': 5.0}
+2026-04-10 18:34:14,550 - easytorch-training - INFO - Building training data loader.
+2026-04-10 18:34:14,550 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-10 18:34:14,556 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-10 18:34:14,556 - easytorch-training - INFO - Train data slice: [0:865], length=865, original indices [0:864]
+2026-04-10 18:34:14,558 - easytorch-training - INFO - Sliced data shape: (865, 161, 4), expected samples: 850
+2026-04-10 18:34:14,558 - easytorch-training - INFO - Train dataset length: 850
+2026-04-10 18:34:15,598 - easytorch-training - INFO - Set optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.0001
+)
+2026-04-10 18:34:15,598 - easytorch-training - INFO - Set lr_scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7d92f43e92d0>
+2026-04-10 18:34:15,598 - easytorch-training - INFO - Initializing validation.
+2026-04-10 18:34:15,598 - easytorch-training - INFO - Building val data loader.
+2026-04-10 18:34:15,598 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-10 18:34:15,604 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-10 18:34:15,604 - easytorch-training - INFO - Val data slice: [850:1153], length=303, original indices [865:1152]
+2026-04-10 18:34:15,604 - easytorch-training - INFO - Sliced data shape: (303, 161, 4), expected samples: 288
+2026-04-10 18:34:15,604 - easytorch-training - INFO - Validation dataset length: 288
+2026-04-10 18:34:15,604 - easytorch-training - INFO - Loading data from: datasets/HNGS_4FEAT/his.npz
+2026-04-10 18:34:15,608 - easytorch-training - INFO - Loading indices from: datasets/HNGS_4FEAT/8_8/
+2026-04-10 18:34:15,608 - easytorch-training - INFO - Test data slice: [1138:], length=319, original indices [1153:]
+2026-04-10 18:34:15,609 - easytorch-training - INFO - Sliced data shape: (319, 161, 4), expected samples: 304
+2026-04-10 18:34:15,609 - easytorch-training - INFO - Test dataset length: 304
+2026-04-10 18:34:15,609 - easytorch-training - INFO - Number of parameters: 382960
+2026-04-10 18:34:15,609 - easytorch-training - INFO - Epoch 1 / 50
+2026-04-10 18:34:15,722 - easytorch-training - ERROR - Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/easytorch/launcher/launcher.py", line 31, in training_func
+    runner.train(cfg)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_epoch_runner.py", line 448, in train
+    loss = self.train_iters(epoch, iter_index, data)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/base_tsf_runner.py", line 411, in train_iters
+    forward_return = self.forward(
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/basicts/runners/runner_zoo/simple_tsf_runner.py", line 101, in forward
+    model_return = self.model(history_data=history_data, future_data=future_data_4_dec,
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/user/anaconda3/envs/cai-FST/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/user/Downloads/cai/FaST-main-8_8MO4/FaST-main/main-master/FaST/arch/fast_arch_mv.py", line 338, in forward
+    assert N == self.num_nodes, f"节点数不匹配: {N} vs {self.num_nodes}"
+AssertionError: 节点数不匹配: 161 vs 160
+

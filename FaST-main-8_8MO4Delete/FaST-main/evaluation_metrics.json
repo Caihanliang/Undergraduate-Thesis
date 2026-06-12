@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-05-09T22:02:58.823473",
+  "station_id": 7,
+  "station_name": "Taling is located inXiangtan City,affiliated toXuchang-Guangzhou Expressway,Xiangtan CityGDP is2741.84billion yuan,permanent population is about270.12 ten thousand  people.",
+  "num_samples": 300,
+  "metrics": {
+    "Passenger Car Up": {
+      "GNN": {
+        "MAE": 117.87,
+        "MAPE": 63.45,
+        "RMAE": 27.24
+      },
+      "LLM": {
+        "MAE": 122.86,
+        "MAPE": 75.24,
+        "RMAE": 28.4
+      }
+    },
+    "Passenger Car Down": {
+      "GNN": {
+        "MAE": 153.6,
+        "MAPE": 93.74,
+        "RMAE": 38.89
+      },
+      "LLM": {
+        "MAE": 141.67,
+        "MAPE": 82.36,
+        "RMAE": 35.87
+      }
+    },
+    "Non-Passenger Car Up": {
+      "GNN": {
+        "MAE": 150.71,
+        "MAPE": 58.92,
+        "RMAE": 32.36
+      },
+      "LLM": {
+        "MAE": 227.55,
+        "MAPE": 96.48,
+        "RMAE": 48.85
+      }
+    },
+    "Non-Passenger Car Down": {
+      "GNN": {
+        "MAE": 211.6,
+        "MAPE": 62.02,
+        "RMAE": 34.52
+      },
+      "LLM": {
+        "MAE": 387.78,
+        "MAPE": 119.31,
+        "RMAE": 63.25
+      }
+    }
+  }
+}

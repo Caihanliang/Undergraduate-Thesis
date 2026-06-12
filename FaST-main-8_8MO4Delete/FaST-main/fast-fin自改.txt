@@ -1,0 +1,540 @@
+"""
+python fin_fast_vals.py
+✅ 100% 对齐《高速交通流量影响因素专业总结》
+✅ 正常训练，loss不会归零
+✅ 原版风格输出：预测值、真实值、Loss 对账
+真实值 = 你数据里的真实交通流量
+预测值 = 大模型正在学、正在猜的数字
+"""
+import os
+os.environ['UNSLOTH_RETURN_LOGITS'] = '1'
+os.environ["UNSLOTH_SKIP_INIT_CHECK"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+
+import logging
+import random
+import torch
+import torch.nn.functional as F
+import pandas as pd
+import numpy as np
+import json
+from unsloth import FastLanguageModel
+from datasets import Dataset
+from transformers import TrainingArguments
+from trl import SFTTrainer
+from chinese_calendar import is_workday
+import re
+import sys
+import gc
+
+class Logger(object):
+    def __init__(self, filename="3training_0_421.txt"):
+        self.terminal = sys.stdout
+        self.log = open(filename, "w", encoding="utf-8")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+        self.log.flush()
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+sys.stdout = Logger("3training_0_011.txt")
+logging.getLogger("transformers.modeling_utils").setLevel(logging.ERROR)
+print("✓ 正在启动【隐状态截获版】MAE 混合训练...")
+
+# --- 路径配置 ---
+BASE_DATA_PATH = "/home/user/Downloads/cai/FaST-main-8_8MO4Delete/FaST-main/config/cai/"
+NOTTINGHAM_H5_PATH = BASE_DATA_PATH + "hngs.h5"
+
+FINETUNE_OUTPUT_PATH = "/home/user/Downloads/cai/FaST-main-8_8MO4Delete/FaST-main/config/cai/"
+YTRUE_TRAIN_PATH = FINETUNE_OUTPUT_PATH + "finetune_real_traffic.npz"
+YPRED_TRAIN_PATH = FINETUNE_OUTPUT_PATH + "finetune_data.npz"
+
+TEXT_FILES_PATH = BASE_DATA_PATH
+CARPARK_DES_PATH = TEXT_FILES_PATH + "station_list_hngs.txt"
+NATURAL_PATTERN_PATH = TEXT_FILES_PATH + "station_natural_list_4feat.txt"
+WEATHER_DATA_PATH = TEXT_FILES_PATH + "160站点天气信息/"
+EVENTS_CSV_PATH = TEXT_FILES_PATH + "events_list_quan_en.csv"
+HIS_DATA_CSV_PATH = TEXT_FILES_PATH + "his_data_with_index.csv"
+
+# --- 加载数据 ---
+print("正在加载数据并精简天气信息...")
+his_df = pd.read_csv(HIS_DATA_CSV_PATH)
+his_df['时间'] = pd.to_datetime(his_df['时间'])
+parking_data = his_df.set_index('时间').sort_index()
+
+npz_true = np.load(YTRUE_TRAIN_PATH)
+npz_pred = np.load(YPRED_TRAIN_PATH)
+
+print(f"✓ NPZ文件键名检测:")
+print(f"  ytrue_train.npz 键名: {list(npz_true.keys())}")
+print(f"  ypred_train.npz 键名: {list(npz_pred.keys())}")
+
+if 'target' in npz_true:
+    true_array = npz_true['target']
+elif 'arr_0' in npz_true:
+    true_array = npz_true['arr_0']
+else:
+    raise KeyError(f"ytrue_train.npz 未找到有效键")
+
+if 'prediction' in npz_pred:
+    pred_array = npz_pred['prediction']
+elif 'arr_0' in npz_pred:
+    pred_array = npz_pred['arr_0']
+else:
+    raise KeyError(f"ypred_train.npz 未找到有效键")
+
+print(f"✓ 数据加载成功:")
+print(f"  true_array shape: {true_array.shape}")
+print(f"  pred_array shape: {pred_array.shape}")
+
+if np.allclose(true_array, pred_array):
+    raise ValueError("❌ 预测值与真实值完全相同！请检查文件路径")
+else:
+    diff = np.abs(true_array - pred_array)
+    print(f"\n✓ 数据验证通过:")
+    print(f"  平均绝对误差 (MAE): {diff.mean():.2f}")
+
+# 加载站点列表
+with open(CARPARK_DES_PATH, "r", encoding='utf-8') as f:
+    carpark_des_list = [l.strip() for l in f if l.strip()]
+
+# 加载自然语言模式
+with open(NATURAL_PATTERN_PATH, "r", encoding='utf-8') as f:
+    natural_pattern_list = [l.strip() for l in f if l.strip()]
+
+# 维度对齐
+print(f"\n原始数据形状分析:")
+print(f"  true_array shape: {true_array.shape}")
+print(f"  pred_array shape: {pred_array.shape}")
+
+if true_array.ndim == 4:
+    if true_array.shape[1] == 8 and true_array.shape[3] == 4:
+        true_array = true_array.transpose(0, 2, 3, 1)
+        pred_array = pred_array.transpose(0, 2, 3, 1)
+    elif true_array.shape[1] == 4 and true_array.shape[3] == 8:
+        true_array = true_array.transpose(0, 2, 1, 3)
+        pred_array = pred_array.transpose(0, 2, 1, 3)
+
+num_samples, num_stations, num_features, seq_len = true_array.shape
+print(f"\n✓ 维度对齐完成:")
+print(f"  样本数: {num_samples} | 站点数: {num_stations} | 特征数: {num_features} | 序列长度: {seq_len}")
+
+FEATURE_NAMES = {
+    0: "Passenger Car Up",
+    1: "Passenger Car Down",
+    2: "Non-Passenger Car Up",
+    3: "Non-Passenger Car Down"
+}
+
+# 天气函数
+def get_weather_at_time(station_idx, target_time):
+    try:
+        weather_files = os.listdir(WEATHER_DATA_PATH)
+        station_prefix = f"{station_idx:03d}"
+        matched_file = None
+        for wf in weather_files:
+            if wf.startswith(station_prefix):
+                matched_file = wf
+                break
+        if not matched_file:
+            return "Unknown"
+
+        weather_path = os.path.join(WEATHER_DATA_PATH, matched_file)
+        if matched_file.endswith('.csv'):
+            weather_df_local = pd.read_csv(weather_path)
+        elif matched_file.endswith('.xlsx'):
+            weather_df_local = pd.read_excel(weather_path)
+        else:
+            return "Unknown"
+
+        date_col = None
+        for col in weather_df_local.columns:
+            if '日期' in col or 'date' in col.lower():
+                date_col = col
+                break
+        if not date_col:
+            return "Unknown"
+
+        weather_df_local['日期'] = pd.to_datetime(weather_df_local[date_col])
+        weather_df_local = weather_df_local.set_index('日期').sort_index()
+        code_col = None
+        for col in weather_df_local.columns:
+            if "天气代码" in col or "weather" in col.lower():
+                code_col = col
+                break
+        if not code_col:
+            return "Unknown"
+
+        idx = weather_df_local.index.get_indexer([target_time], method='pad')[0]
+        return str(weather_df_local.iloc[idx][code_col]) if idx != -1 else "Unknown"
+    except Exception:
+        return "Unknown"
+
+# 加载英文事件
+def load_english_events(path):
+    if not os.path.exists(path):
+        print(f"⚠️ 未找到英文事件文件: {path}")
+        return {}
+    try:
+        for enc in ['utf-8', 'gb18030']:
+            try:
+                df_ev = pd.read_csv(path, encoding=enc)
+                break
+            except:
+                continue
+
+        df_ev.columns = [c.strip() for c in df_ev.columns]
+        date_col = next((c for c in df_ev.columns if '日' in c or 'date' in c.lower()), df_ev.columns[0])
+        station_col = next((c for c in df_ev.columns if 'station' in c.lower()), df_ev.columns[1])
+        event_col = next((c for c in df_ev.columns if 'event' in c.lower()), df_ev.columns[2])
+
+        df_ev['日期'] = pd.to_datetime(df_ev[date_col]).dt.strftime('%Y-%m-%d')
+        event_dict = {}
+        for _, row in df_ev.iterrows():
+            dt = row['日期']
+            st = str(row[station_col]).strip()
+            ev = str(row[event_col]).strip()
+            if st and st != 'nan':
+                event_dict[(dt, st)] = ev
+        print(f"✅ 英文事件加载完成：{len(event_dict)} 条")
+        return event_dict
+    except Exception as e:
+        print(f"❌ 事件加载失败: {e}")
+        return {}
+
+precise_events_map = load_english_events(EVENTS_CSV_PATH)
+
+# ==============================================
+# ✅ ✅ ✅ 原版核心改进：混合损失训练器（直接照搬地铁版最强结构）
+# ==============================================
+class NoLogitMAEHybridTrainer(SFTTrainer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        local_tokenizer = getattr(self, "processing_class", self.tokenizer)
+        self.id_to_val = {}
+        all_digit_ids = []
+        for i in range(local_tokenizer.vocab_size):
+            t = local_tokenizer.decode([i]).strip()
+            if t and all(c.isdigit() for c in t):
+                try:
+                    self.id_to_val[i] = float(t)
+                    all_digit_ids.append(i)
+                except:
+                    pass
+        self.digit_ids = torch.tensor(all_digit_ids).to(self.args.device)
+        self.target_bracket_id = 510
+        print(f"✅ 捕获数字Token: {len(all_digit_ids)} 个")
+
+    def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
+        inputs["output_hidden_states"] = True
+        outputs = model(**inputs)
+        last_hidden = outputs.hidden_states[-1]
+        logits = model.lm_head(last_hidden.to(next(model.lm_head.parameters()).dtype))
+        ce_loss = outputs.loss if isinstance(outputs, dict) else outputs[0]
+
+        labels = inputs.get("labels")
+        shift_labels = labels[..., 1:].contiguous()
+        shift_logits = logits[..., :-1, :].contiguous()
+
+        # 原版核心：只锁定 Final Correction 后的数字
+        all_digit_mask = torch.isin(shift_labels, self.digit_ids)
+        digit_mask = torch.zeros_like(shift_labels, dtype=torch.bool)
+        for b in range(shift_labels.shape[0]):
+            bracket_pos = (shift_labels[b] == self.target_bracket_id).nonzero(as_tuple=True)[0]
+            if len(bracket_pos) > 0:
+                start_from = bracket_pos[-1].item() + 1
+                digit_mask[b, start_from:] = all_digit_mask[b, start_from:]
+        digit_mask &= (shift_labels != -100)
+
+        mae_loss = torch.tensor(0.0).to(self.args.device)
+        total_loss = ce_loss
+        expected_values = torch.tensor([]).to(self.args.device)
+
+        if digit_mask.any():
+            dig_logits = shift_logits[digit_mask][:, self.digit_ids]
+            probs = torch.softmax(dig_logits.to(torch.float32), dim=-1)
+            val_vec = torch.tensor([self.id_to_val[int(t)] for t in self.digit_ids]).to(self.args.device)
+            expected_values = (probs * val_vec).sum(dim=-1)
+            target_labels = shift_labels[digit_mask]
+            target_vals = torch.zeros_like(expected_values)
+            for i in range(len(target_labels)):
+                tid = int(target_labels[i])
+                target_vals[i] = self.id_to_val.get(tid, 0.0)
+            
+            mask = (target_vals != 0).float()
+            if mask.mean() > 0:
+                mask /= mask.mean()
+            
+            mae_loss = torch.mean(torch.abs(expected_values - target_vals) * mask)
+            total_loss = ce_loss + 0.11 * mae_loss
+
+            # ======================
+            # ✅ 原版风格：预测/真实值对账输出
+            # ======================
+            if self.state.global_step % 1 == 0:
+                sample_idx = 0
+                s_labels = shift_labels[sample_idx].cpu().numpy()
+                b_indices = (s_labels == self.target_bracket_id).nonzero()[0]
+
+                if len(b_indices) > 0:
+                    start_preview = max(0, b_indices[-1] - 150)
+                    relevant_ids = s_labels[start_preview:]
+                    safe_ids = [tid for tid in relevant_ids if tid != -100]
+                    raw_text_only = self.tokenizer.decode(safe_ids, skip_special_tokens=False).split('<|eot_id|>')[0] + " <|eot_id|>"
+
+                    prev_mae_bits = digit_mask[:sample_idx].sum().item()
+                    curr_mae_bits = digit_mask[sample_idx].sum().item()
+
+                    if curr_mae_bits > 0:
+                        batch_preds = expected_values[prev_mae_bits: prev_mae_bits + curr_mae_bits].cpu().tolist()
+                        start_ptr = b_indices[-1].item() + 1
+                        raw_token_seq = shift_labels[sample_idx, start_ptr:].cpu().tolist()
+
+                        final_pred_res = []
+                        final_true_res = []
+                        current_p_str = ""
+                        current_t_str = ""
+                        pred_ptr = 0
+
+                        for tid in raw_token_seq:
+                            if tid == -100 or tid == 128009: break
+                            if tid in self.id_to_val:
+                                token_char = self.tokenizer.decode([tid]).strip()
+                                current_t_str += token_char
+                                if pred_ptr < len(batch_preds):
+                                    p_val = int(round(batch_preds[pred_ptr]))
+                                    current_p_str += str(p_val)
+                                    pred_ptr += 1
+                            elif tid == 11 or tid == 60:
+                                if current_t_str:
+                                    final_true_res.append(int(current_t_str) if current_t_str.isdigit() else 0)
+                                    final_pred_res.append(int(current_p_str) if current_p_str.isdigit() else 0)
+                                    current_t_str = ""
+                                    current_p_str = ""
+
+                        print(f"\n" + "=" * 15 + " 核心客流对账单 (硬核对齐版) " + "=" * 15)
+                        print(f"Step: {self.state.global_step}")
+                        print(f"原文预览:\n{raw_text_only}")
+                        print(f"还原预测数值: {final_pred_res[:8]}")
+                        print(f"还原真实数值: {final_true_res[:8]}")
+                        print("-" * 60)
+                        print(f"Loss Total: {total_loss.item():.4f} | CE: {ce_loss.item():.4f} | MAE: {mae_loss.item():.4f}")
+                        print("=" * 65 + "\n")
+
+        return (total_loss, outputs) if return_outputs else total_loss
+
+# 加载模型
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name="/home/user/Llama-3.1-8B",
+    max_seq_length=1024,
+    load_in_4bit=True,
+    dtype=torch.bfloat16,
+    device_map={"": 0},
+)
+
+# 指令模板
+instruction_text = (
+    "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\n"
+    "You are a professional highway traffic flow refiner.\n"
+    "Follow these strict rules:\n"
+    "1. Passenger cars: strongly affected by weather, time, holidays, GDP, population, events.\n"
+    "2. Trucks: almost NOT affected by weather/time/GDP; only reduced on holidays.\n"
+    "3. Sunny/holidays/peaks/high GDP → increase passenger cars.\n"
+    "4. Rain/snow/fog/night/low GDP → decrease passenger cars.\n"
+    "5. Up/down trends similar; downstream stable.\n"
+    "Output reasoning + Final Correction.<|eot_id|>"
+    "<|start_header_id|>user<|end_header_id|>\n\n"
+    "Refine:\n"
+    "1. Station: {}\n"
+    "2. Feature: {}\n"
+    "3. Time: {} to {} | DayType: {}\n"
+    "4. Flow Pattern: {}\n"
+    "5. Weather: {}\n"
+    "6. GNN: {}\n"
+    "7. Event: {}<|eot_id|>"
+    "<|start_header_id|>assistant<|end_header_id|>\n\n"
+)
+
+generated_dataset = []
+# ERROR_THRESHOLD = 40.0
+ERROR_THRESHOLD = 60   # 平均误差有59.61
+
+NORMAL_SAMPLE_RATIO = 0.1
+
+print("开始生成 100% 对齐规则的 CoT 样本...")
+
+for j in range(num_stations):
+    full_desc = carpark_des_list[j]
+    station_name = full_desc.split(' ')[0].strip()
+    print(f"\n===== 处理站点 {j+1}/{num_stations}: {station_name} =====")
+
+    for feat_idx in range(num_features):
+        feat_name = FEATURE_NAMES[feat_idx]
+        print(f"   → 处理车流类型：{feat_name}")
+        is_passenger = feat_idx in (0, 1)
+        is_truck = feat_idx in (2, 3)
+        is_downstream = feat_idx == 1
+
+        pat_idx = j * num_features + feat_idx
+        if pat_idx >= len(natural_pattern_list):
+            continue
+        pat_str = natural_pattern_list[pat_idx]
+
+        for i in range(num_samples):
+            try:
+                # base_idx = i
+                base_idx = i + 8  # 前面8个要作为样本输出的
+
+                if base_idx + 7 >= len(parking_data):
+                    break
+                t3 = parking_data.index[base_idx]
+                t4 = parking_data.index[base_idx + 7]
+                date_key = t3.strftime('%Y-%m-%d')
+                h = t3.hour
+
+                # 先计算 day_type
+                is_work = is_workday(t3)
+                day_type = "Workday" if is_work else "Off-day"
+                
+                # 再拼接时间描述（修复变量未定义BUG）
+                t3_str = t3.strftime('%Y-%m-%d %H:%M')
+                t4_str = t4.strftime('%Y-%m-%d %H:%M')
+                weekday = t3.strftime('%A')
+                time_desc = f"{t3_str} to {t4_str} | {weekday} | {day_type}"
+
+                # 事件（全天有效，你要的逻辑）
+                event_info = precise_events_map.get((date_key, station_name), "None")
+                has_event = event_info != "None"
+                
+                pred_vals = pred_array[i, j, feat_idx]
+                true_vals = true_array[i, j, feat_idx]
+                mae = np.mean(np.abs(pred_vals - true_vals))
+                is_holiday = not is_work
+                weather = get_weather_at_time(j, t3)
+                gnn_vals = [int(round(v)) for v in pred_vals]
+
+                # ======================
+                # ✅ 原版优先级：误差 → 事件 → 普通
+                # ======================
+                reason = ""
+                if mae > ERROR_THRESHOLD:
+                    reason = "Error"
+                elif has_event:
+                    reason = "Event"
+                elif random.random() < NORMAL_SAMPLE_RATIO:
+                    reason = "Normal"
+                if not reason:
+                    continue
+
+                # 修正规则
+                adjusted = [float(v) for v in gnn_vals]
+                if is_passenger:
+                    if is_holiday: adjusted = [x*1.25 for x in adjusted]
+                    # 早高峰晚高峰
+                    if (7 <= h <=9) or (17<=h<=19) and is_work: adjusted = [x*1.15 for x in adjusted]
+                    # 夜间
+                    if h<6 or h>=23: adjusted = [x*0.7 for x in adjusted]
+                    
+                #     if "Sunny" in weather or "Cloudy" in weather: adjusted = [x*1.1 for x in adjusted]
+                #     if "Rain" in weather or "Snow" in weather or "Fog" in weather: adjusted = [x*0.85 for x in adjusted]
+                # if is_truck and is_holiday:
+                #     adjusted = [x*0.8 for x in adjusted]
+
+                    # ✅ 晴天 / 多云 → 流量上升
+                    if "晴" in weather or "多云" in weather:
+                        adjusted = [x*1.1 for x in adjusted]
+                    # ✅ 雨 / 雪 / 雾 → 流量下降
+                    if "雨" in weather or "雪" in weather or "雾" in weather:
+                        adjusted = [x*0.85 for x in adjusted]
+
+                final_corr = [max(0, round(x)) for x in adjusted]
+
+                # CoT
+                cot = []
+                cot.append(f"1. Station: {station_name} area.")
+                cot.append(f"2. Feature: {feat_name}; Time: {time_desc}; Event: {'Yes' if has_event else 'No'}.")
+                
+                if is_passenger:
+                    if has_event:
+                        cot.append(f"3. Reasoning: Special event → passenger car flow surges significantly.")
+                    elif is_holiday:
+                        cot.append(f"3. Reasoning: Holiday → passenger cars stay high.")
+                    elif (7<=h<=9) or (17<=h<=19):
+                        cot.append(f"3. Reasoning: Workday peak → passenger cars rise sharply.")
+                    elif h<6 or h>=23:
+                        cot.append(f"3. Reasoning: Night low-peak → passenger cars very low.")
+                    else:
+                        cot.append(f"3. Reasoning: Routine period → stable flow.")
+                else:
+                    cot.append(f"3. Reasoning: Trucks stable, limited only on holidays.")
+
+                cot.append(f"4. Weather: {weather} → impact as rules.")
+                cot.append(f"5. Economy: Based on local GDP & population.")
+                cot.append(f"6. Trend: Downstream stable" if is_downstream else f"6. Trend: Up/down consistent.")
+                cot.append(f"Final Correction: [{', '.join(map(str, final_corr))}]")
+                
+                cot_text = " ".join(cot) + " <|eot_id|>"
+                prompt = instruction_text.format(full_desc, feat_name, t3, t4, day_type, pat_str, weather, gnn_vals, event_info if has_event else "None")
+                full_text = prompt + cot_text
+
+                enc = tokenizer(full_text, truncation=True, max_length=1024, add_special_tokens=False)
+                prompt_enc = tokenizer(prompt, add_special_tokens=False)
+                p_len = len(prompt_enc["input_ids"])
+                labels = [-100] * p_len + enc["input_ids"][p_len:]
+
+                generated_dataset.append({
+                    "input_ids": enc["input_ids"],
+                    "labels": labels,
+                    "attention_mask": [1]*len(enc["input_ids"]),
+                    "reason": reason,
+                    "station": station_name
+                })
+            except Exception:
+                continue
+
+event_cnt = sum(1 for d in generated_dataset if d['reason']=='Event')
+err_cnt = sum(1 for d in generated_dataset if d['reason']=='Error')
+norm_cnt = sum(1 for d in generated_dataset if d['reason']=='Normal')
+
+print(f"\n✅ 样本生成完成：{len(generated_dataset)}")
+print(f"   事件样本: {event_cnt}")
+print(f"   误差样本: {err_cnt}")
+print(f"   普通样本: {norm_cnt}")
+
+with open("3training_0_011.json", "w", encoding="utf-8") as f:
+    json.dump(generated_dataset, f, ensure_ascii=False, indent=2)
+
+# 训练
+random.shuffle(generated_dataset)
+ds = Dataset.from_list(generated_dataset)
+
+model.config.output_hidden_states = True
+model = FastLanguageModel.get_peft_model(
+    model, r=32, target_modules=["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj","embed_tokens","lm_head"],
+    lora_alpha=16, lora_dropout=0, bias="none"
+)
+
+args = TrainingArguments(
+    output_dir="./results", num_train_epochs=10, per_device_train_batch_size=32,
+    gradient_accumulation_steps=1, optim="paged_adamw_8bit", learning_rate=5e-5,
+    bf16=True, logging_steps=1, report_to="none"
+)
+
+trainer = NoLogitMAEHybridTrainer(
+    model=model, train_dataset=ds, tokenizer=tokenizer, args=args,
+    max_seq_length=1024, packing=False
+)
+
+print("\n🚀 开始训练...")
+trainer.train()
+model.save_pretrained("llama-3-1-8b-subway-0-mae011")
+print("\n✅ 训练完成！")
+
+del model, trainer
+gc.collect()
+torch.cuda.empty_cache() 

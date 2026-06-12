@@ -1,0 +1,203 @@
+2026-04-23 18:04:01,546 [INFO] ============================================================
+2026-04-23 18:04:01,547 [INFO] TimesFM 微调训练 - 8输入8输出配置
+2026-04-23 18:04:01,547 [INFO] ============================================================
+2026-04-23 18:04:01,547 [INFO] 输入窗口: 8 小时
+2026-04-23 18:04:01,547 [INFO] 预测窗口: 8 小时
+2026-04-23 18:04:01,547 [INFO] ============================================================
+2026-04-23 18:04:03,395 [INFO] 使用设备: cuda
+2026-04-23 18:04:03,396 [INFO] 加载模型: google/timesfm-2.5-200m-transformers
+2026-04-23 18:04:07,203 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-23 18:04:07,608 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-23 18:04:07,969 [INFO] HTTP Request: GET https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-23 18:04:09,011 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-23 18:04:09,459 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-23 18:04:10,634 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-23 18:04:11,890 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-23 18:04:12,579 [INFO] HTTP Request: GET https://cas-bridge.xethub.hf.co/xet-bridge-us/699789f5f0b5adaaf0240536/59545b5f6a44258dc78d7be613a602db534495065ffe3eed2b68f12b7781c08e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20260423%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260423T100410Z&X-Amz-Expires=3600&X-Amz-Signature=46bd8121f33a3c73e6767d0cb1078da6a78425ee5b0866b6643077d758d47bcf&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&x-amz-checksum-mode=ENABLED&x-id=GetObject&Expires=1776942250&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc3Njk0MjI1MH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OTk3ODlmNWYwYjVhZGFhZjAyNDA1MzYvNTk1NDViNWY2YTQ0MjU4ZGM3OGQ3YmU2MTNhNjAyZGI1MzQ0OTUwNjVmZmUzZWVkMmI2OGYxMmI3NzgxYzA4ZSoifV19&Signature=TEyCTItbcMLiEwzdENOBGfqg8l6p5kbGZogNteR9kZzKnPcye7H8LEn9h98D0mGVMwORfa%7EUPCGD3lzhAaAImGQ1f0ZgLba5WXJxK54p7BDeYGIeA7NVoj%7EBBkaAgJ-XEqjE33eQ8QN9MmudigvnusfhpkRetqhWaRzu6clPDORMrWapq0ZP3uk33IygLsfFNu3y7Tsc97rE6q6j1OhOZNBVTM5UqpewI6oIxUoUZ0H4mM0VQgP14MsZ32TRLYQNfpH1Xi3YBhczxp305QEBzu6k8UyHyTnBrLzwWORA1imWqNe-GfYT2bxU4Y-xvABejTwsBrfJq5m85JHgfNf-lA__&Key-Pair-Id=K2L8F4GPSG1IFC "HTTP/1.1 200 OK"
+2026-04-23 18:07:02,366 [INFO] 实际使用的 context_len: 8, horizon_len: 8
+2026-04-23 18:07:02,366 [INFO] 配置: 8输入8输出
+2026-04-24 09:46:54,179 [INFO] ============================================================
+2026-04-24 09:46:54,179 [INFO] TimesFM 微调训练 - 8输入8输出配置
+2026-04-24 09:46:54,179 [INFO] ============================================================
+2026-04-24 09:46:54,179 [INFO] 输入窗口: 8 小时
+2026-04-24 09:46:54,179 [INFO] 预测窗口: 8 小时
+2026-04-24 09:46:54,179 [INFO] ============================================================
+2026-04-24 09:46:56,666 [INFO] 使用设备: cuda
+2026-04-24 09:46:56,666 [INFO] 加载模型: google/timesfm-2.5-200m-transformers
+2026-04-24 09:46:57,417 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 09:46:59,802 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 09:47:00,160 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 09:47:00,455 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 09:47:00,826 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-24 09:47:01,881 [INFO] 实际使用的 context_len: 8, horizon_len: 8
+2026-04-24 09:47:01,882 [INFO] 配置: 8输入8输出
+2026-04-24 09:47:02,469 [INFO] 从 /home/user/Downloads/cai/timesfm-master/dataset/preprocessed 加载交通流量数据...
+2026-04-24 09:47:02,493 [INFO] 加载了 628 个训练序列
+2026-04-24 09:47:02,493 [INFO] 加载了 628 个验证序列
+2026-04-24 09:47:02,493 [INFO] 特征名称: ['passenger_car_up', 'passenger_car_down', 'non_passenger_car_up', 'non_passenger_car_down']
+2026-04-24 09:47:02,493 [INFO] 配置: 8_input_8_output
+2026-04-24 09:47:02,611 [INFO] 数据集创建完成: 5000 个样本
+2026-04-24 09:47:02,616 [INFO] 验证集创建完成: 628 个样本
+2026-04-24 09:47:02,616 [INFO] 训练样本: 5000 (312 batches) | 验证样本: 628
+2026-04-24 11:45:14,751 [INFO] ============================================================
+2026-04-24 11:45:14,751 [INFO] TimesFM 微调训练 - 8输入8输出配置
+2026-04-24 11:45:14,751 [INFO] ============================================================
+2026-04-24 11:45:14,751 [INFO] 输入窗口: 8 小时
+2026-04-24 11:45:14,751 [INFO] 预测窗口: 8 小时
+2026-04-24 11:45:14,751 [INFO] ============================================================
+2026-04-24 11:45:16,643 [INFO] 使用设备: cuda
+2026-04-24 11:45:16,643 [INFO] 加载模型: google/timesfm-2.5-200m-transformers
+2026-04-24 11:45:17,324 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 11:45:20,915 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 11:45:21,516 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 11:45:21,724 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 11:45:22,974 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-24 11:45:23,273 [INFO] 实际使用的 context_len: 8, horizon_len: 8
+2026-04-24 11:45:23,273 [INFO] 配置: 8输入8输出
+2026-04-24 11:45:23,387 [INFO] 从 /home/user/Downloads/cai/timesfm-master/dataset/preprocessed 加载交通流量数据...
+2026-04-24 11:45:23,406 [INFO] 加载了 628 个训练序列
+2026-04-24 11:45:23,406 [INFO] 加载了 628 个验证序列
+2026-04-24 11:45:23,406 [INFO] 特征名称: ['passenger_car_up', 'passenger_car_down', 'non_passenger_car_up', 'non_passenger_car_down']
+2026-04-24 11:45:23,406 [INFO] 配置: 8_input_8_output
+2026-04-24 11:45:23,519 [INFO] 数据集创建完成: 5000 个样本
+2026-04-24 11:45:23,523 [INFO] 验证集创建完成: 628 个样本
+2026-04-24 11:45:23,523 [INFO] 训练样本: 5000 (312 batches) | 验证样本: 628
+2026-04-24 13:16:30,355 [INFO] ============================================================
+2026-04-24 13:16:30,355 [INFO] TimesFM 微调训练 - 8输入8输出配置
+2026-04-24 13:16:30,355 [INFO] ============================================================
+2026-04-24 13:16:30,355 [INFO] 输入窗口: 32 小时
+2026-04-24 13:16:30,355 [INFO] 预测窗口: 8 小时
+2026-04-24 13:16:30,355 [INFO] ============================================================
+2026-04-24 13:16:33,228 [INFO] 使用设备: cuda
+2026-04-24 13:16:33,228 [INFO] 加载模型: google/timesfm-2.5-200m-transformers
+2026-04-24 13:16:34,516 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:16:34,664 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:16:35,062 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:16:35,279 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:16:35,705 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-24 13:16:36,725 [INFO] 实际使用的 context_len: 32, horizon_len: 8
+2026-04-24 13:16:36,725 [INFO] 配置: 32输入8输出
+2026-04-24 13:16:36,725 [INFO] Patch 长度: 32
+2026-04-24 13:16:37,177 [INFO] 从 /home/user/Downloads/cai/timesfm-master/dataset/preprocessed 加载交通流量数据...
+2026-04-24 13:16:37,191 [INFO] 加载了 628 个训练序列
+2026-04-24 13:16:37,191 [INFO] 加载了 628 个验证序列
+2026-04-24 13:16:37,191 [INFO] 特征名称: ['passenger_car_up', 'passenger_car_down', 'non_passenger_car_up', 'non_passenger_car_down']
+2026-04-24 13:16:37,191 [INFO] 配置: 32_input_8_output
+2026-04-24 13:16:37,306 [INFO] 数据集创建完成: 5000 个样本
+2026-04-24 13:16:37,310 [INFO] 验证集创建完成: 628 个样本
+2026-04-24 13:16:37,311 [INFO] 训练样本: 5000 (312 batches) | 验证样本: 628
+2026-04-24 13:16:46,796 [INFO] Epoch 1/10 [50/312] Loss: 0.4521
+2026-04-24 13:16:55,393 [INFO] Epoch 1/10 [100/312] Loss: 0.3574
+2026-04-24 13:17:04,023 [INFO] Epoch 1/10 [150/312] Loss: 0.6859
+2026-04-24 13:17:12,822 [INFO] Epoch 1/10 [200/312] Loss: 0.4944
+2026-04-24 13:17:21,452 [INFO] Epoch 1/10 [250/312] Loss: 1.0386
+2026-04-24 13:17:30,084 [INFO] Epoch 1/10 [300/312] Loss: 0.4464
+2026-04-24 13:17:34,900 [INFO] Epoch 1/10 — Train Loss: 0.7693, Val Loss: 0.4394
+2026-04-24 13:17:37,181 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:17:37,660 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:17:37,698 [INFO] ✓ 保存最佳适配器到: checkpoints/traffic-lora-32x8
+2026-04-24 13:17:46,257 [INFO] Epoch 2/10 [50/312] Loss: 0.4695
+2026-04-24 13:17:54,849 [INFO] Epoch 2/10 [100/312] Loss: 0.4151
+2026-04-24 13:18:04,031 [INFO] Epoch 2/10 [150/312] Loss: 0.5778
+2026-04-24 13:18:12,831 [INFO] Epoch 2/10 [200/312] Loss: 0.2723
+2026-04-24 13:18:21,711 [INFO] Epoch 2/10 [250/312] Loss: 0.4260
+2026-04-24 13:18:30,575 [INFO] Epoch 2/10 [300/312] Loss: 0.5626
+2026-04-24 13:18:35,366 [INFO] Epoch 2/10 — Train Loss: 0.7000, Val Loss: 0.4310
+2026-04-24 13:18:36,156 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:18:36,972 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:18:37,007 [INFO] ✓ 保存最佳适配器到: checkpoints/traffic-lora-32x8
+2026-04-24 13:18:46,438 [INFO] Epoch 3/10 [50/312] Loss: 0.7134
+2026-04-24 13:18:55,745 [INFO] Epoch 3/10 [100/312] Loss: 0.2593
+2026-04-24 13:19:04,659 [INFO] Epoch 3/10 [150/312] Loss: 1.2450
+2026-04-24 13:19:13,647 [INFO] Epoch 3/10 [200/312] Loss: 0.6248
+2026-04-24 13:19:22,349 [INFO] Epoch 3/10 [250/312] Loss: 0.5730
+2026-04-24 13:19:31,037 [INFO] Epoch 3/10 [300/312] Loss: 2.4851
+2026-04-24 13:19:35,902 [INFO] Epoch 3/10 — Train Loss: 0.6701, Val Loss: 0.4376
+2026-04-24 13:19:44,791 [INFO] Epoch 4/10 [50/312] Loss: 0.3449
+2026-04-24 13:19:53,497 [INFO] Epoch 4/10 [100/312] Loss: 0.4450
+2026-04-24 13:20:02,180 [INFO] Epoch 4/10 [150/312] Loss: 0.5066
+2026-04-24 13:20:10,853 [INFO] Epoch 4/10 [200/312] Loss: 0.3518
+2026-04-24 13:20:19,543 [INFO] Epoch 4/10 [250/312] Loss: 0.2578
+2026-04-24 13:20:28,232 [INFO] Epoch 4/10 [300/312] Loss: 0.3164
+2026-04-24 13:20:33,273 [INFO] Epoch 4/10 — Train Loss: 0.6378, Val Loss: 0.4490
+2026-04-24 13:20:42,156 [INFO] Epoch 5/10 [50/312] Loss: 0.5657
+2026-04-24 13:20:50,883 [INFO] Epoch 5/10 [100/312] Loss: 0.4448
+2026-04-24 13:20:59,604 [INFO] Epoch 5/10 [150/312] Loss: 0.4680
+2026-04-24 13:21:08,365 [INFO] Epoch 5/10 [200/312] Loss: 0.5083
+2026-04-24 13:21:17,101 [INFO] Epoch 5/10 [250/312] Loss: 13.2675
+2026-04-24 13:21:25,833 [INFO] Epoch 5/10 [300/312] Loss: 0.7953
+2026-04-24 13:21:30,719 [INFO] Epoch 5/10 — Train Loss: 0.6096, Val Loss: 0.4659
+2026-04-24 13:21:39,640 [INFO] Epoch 6/10 [50/312] Loss: 0.6149
+2026-04-24 13:21:48,367 [INFO] Epoch 6/10 [100/312] Loss: 0.4745
+2026-04-24 13:21:57,063 [INFO] Epoch 6/10 [150/312] Loss: 0.2530
+2026-04-24 13:22:05,735 [INFO] Epoch 6/10 [200/312] Loss: 0.4548
+2026-04-24 13:22:14,355 [INFO] Epoch 6/10 [250/312] Loss: 0.2492
+2026-04-24 13:22:23,031 [INFO] Epoch 6/10 [300/312] Loss: 0.6494
+2026-04-24 13:22:27,931 [INFO] Epoch 6/10 — Train Loss: 0.5854, Val Loss: 0.4570
+2026-04-24 13:22:36,800 [INFO] Epoch 7/10 [50/312] Loss: 0.5000
+2026-04-24 13:22:45,250 [INFO] Epoch 7/10 [100/312] Loss: 0.8684
+2026-04-24 13:22:53,491 [INFO] Epoch 7/10 [150/312] Loss: 1.0489
+2026-04-24 13:23:01,916 [INFO] Epoch 7/10 [200/312] Loss: 0.3415
+2026-04-24 13:23:10,554 [INFO] Epoch 7/10 [250/312] Loss: 0.4950
+2026-04-24 13:23:19,205 [INFO] Epoch 7/10 [300/312] Loss: 0.4004
+2026-04-24 13:23:24,044 [INFO] Epoch 7/10 — Train Loss: 0.5666, Val Loss: 0.4643
+2026-04-24 13:23:32,767 [INFO] Epoch 8/10 [50/312] Loss: 0.7811
+2026-04-24 13:23:41,324 [INFO] Epoch 8/10 [100/312] Loss: 0.3783
+2026-04-24 13:23:49,848 [INFO] Epoch 8/10 [150/312] Loss: 0.3000
+2026-04-24 13:23:58,388 [INFO] Epoch 8/10 [200/312] Loss: 0.3592
+2026-04-24 13:24:06,929 [INFO] Epoch 8/10 [250/312] Loss: 0.6326
+2026-04-24 13:24:15,546 [INFO] Epoch 8/10 [300/312] Loss: 2.4161
+2026-04-24 13:24:20,461 [INFO] Epoch 8/10 — Train Loss: 0.5521, Val Loss: 0.4635
+2026-04-24 13:24:29,541 [INFO] Epoch 9/10 [50/312] Loss: 0.2709
+2026-04-24 13:24:38,191 [INFO] Epoch 9/10 [100/312] Loss: 1.3396
+2026-04-24 13:24:46,801 [INFO] Epoch 9/10 [150/312] Loss: 0.3316
+2026-04-24 13:24:55,226 [INFO] Epoch 9/10 [200/312] Loss: 0.3940
+2026-04-24 13:25:03,882 [INFO] Epoch 9/10 [250/312] Loss: 11.9581
+2026-04-24 13:25:12,567 [INFO] Epoch 9/10 [300/312] Loss: 0.3621
+2026-04-24 13:25:17,424 [INFO] Epoch 9/10 — Train Loss: 0.5427, Val Loss: 0.4636
+2026-04-24 13:25:26,181 [INFO] Epoch 10/10 [50/312] Loss: 0.2918
+2026-04-24 13:25:34,829 [INFO] Epoch 10/10 [100/312] Loss: 2.8552
+2026-04-24 13:25:43,310 [INFO] Epoch 10/10 [150/312] Loss: 0.5450
+2026-04-24 13:25:51,815 [INFO] Epoch 10/10 [200/312] Loss: 0.2005
+2026-04-24 13:26:00,546 [INFO] Epoch 10/10 [250/312] Loss: 0.2972
+2026-04-24 13:26:08,991 [INFO] Epoch 10/10 [300/312] Loss: 0.3375
+2026-04-24 13:26:13,792 [INFO] Epoch 10/10 — Train Loss: 0.5391, Val Loss: 0.4634
+2026-04-24 13:26:13,792 [INFO] 训练完成！最佳验证损失: 0.4310
+2026-04-24 13:26:13,808 [INFO] 
+============================================================
+2026-04-24 13:26:13,809 [INFO] 开始评估
+2026-04-24 13:26:13,809 [INFO] ============================================================
+2026-04-24 13:26:13,809 [INFO] 加载基础模型...
+2026-04-24 13:26:17,614 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:26:18,068 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:26:18,612 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-24 13:26:19,083 [INFO] HTTP Request: HEAD https://hf-mirror.com/api/resolve-cache/models/google/timesfm-2.5-200m-transformers/5a9806b9b291fad9233b5249d88263f1846304d3/config.json "HTTP/1.1 200 OK"
+2026-04-24 13:26:19,623 [INFO] HTTP Request: HEAD https://hf-mirror.com/google/timesfm-2.5-200m-transformers/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-04-24 13:26:19,909 [INFO] 从 checkpoints/traffic-lora-32x8 加载 LoRA 适配器...
+2026-04-24 13:26:20,715 [INFO] 测试序列数: 628
+2026-04-24 13:26:20,715 [INFO] 配置: 32输入8输出
+2026-04-24 13:26:21,422 [INFO] 序列 0 — Zero-shot MAE: 282.78, Fine-tuned MAE: 282.78
+2026-04-24 13:26:22,107 [INFO] 序列 1 — Zero-shot MAE: 258.18, Fine-tuned MAE: 258.18
+2026-04-24 13:26:22,788 [INFO] 序列 2 — Zero-shot MAE: 106.67, Fine-tuned MAE: 106.67
+2026-04-24 13:26:23,473 [INFO] 序列 3 — Zero-shot MAE: 122.78, Fine-tuned MAE: 122.78
+2026-04-24 13:26:24,158 [INFO] 序列 4 — Zero-shot MAE: 371.23, Fine-tuned MAE: 371.23
+2026-04-24 13:26:24,843 [INFO] 序列 5 — Zero-shot MAE: 314.35, Fine-tuned MAE: 314.35
+2026-04-24 13:26:25,527 [INFO] 序列 6 — Zero-shot MAE: 179.60, Fine-tuned MAE: 179.60
+2026-04-24 13:26:26,212 [INFO] 序列 7 — Zero-shot MAE: 135.33, Fine-tuned MAE: 135.33
+2026-04-24 13:26:26,898 [INFO] 序列 8 — Zero-shot MAE: 311.62, Fine-tuned MAE: 311.62
+2026-04-24 13:26:27,581 [INFO] 序列 9 — Zero-shot MAE: 384.37, Fine-tuned MAE: 384.37
+2026-04-24 13:26:28,264 [INFO] 序列 10 — Zero-shot MAE: 146.94, Fine-tuned MAE: 146.94
+2026-04-24 13:26:28,952 [INFO] 序列 11 — Zero-shot MAE: 171.45, Fine-tuned MAE: 171.45
+2026-04-24 13:26:29,636 [INFO] 序列 12 — Zero-shot MAE: 383.26, Fine-tuned MAE: 383.26
+2026-04-24 13:26:30,321 [INFO] 序列 13 — Zero-shot MAE: 374.96, Fine-tuned MAE: 374.96
+2026-04-24 13:26:31,005 [INFO] 序列 14 — Zero-shot MAE: 124.40, Fine-tuned MAE: 124.40
+2026-04-24 13:26:31,688 [INFO] 序列 15 — Zero-shot MAE: 118.87, Fine-tuned MAE: 118.87
+2026-04-24 13:26:32,370 [INFO] 序列 16 — Zero-shot MAE: 395.60, Fine-tuned MAE: 395.60
+2026-04-24 13:26:33,051 [INFO] 序列 17 — Zero-shot MAE: 388.59, Fine-tuned MAE: 388.59
+2026-04-24 13:26:33,731 [INFO] 序列 18 — Zero-shot MAE: 147.75, Fine-tuned MAE: 147.75
+2026-04-24 13:26:34,411 [INFO] 序列 19 — Zero-shot MAE: 137.07, Fine-tuned MAE: 137.07
+2026-04-24 13:26:34,411 [INFO] ============================================================
+2026-04-24 13:26:34,411 [INFO] 平均 Zero-shot MAE: 242.79
+2026-04-24 13:26:34,411 [INFO] 平均 Fine-tuned MAE: 242.79
+2026-04-24 13:26:34,411 [INFO] 改进幅度: 0.0%
+2026-04-24 13:26:34,411 [INFO] ============================================================

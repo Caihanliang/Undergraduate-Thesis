@@ -1,0 +1,50 @@
+{
+  "Non-Passenger Car Down": {
+    "time_range": "2023-09-01 00:00:00 to 2023-10-12 00:00:00",
+    "avg_MAE": 21.437,
+    "avg_RMSE": 25.644,
+    "avg_SMAPE": 20.0,
+    "std_MAE": 23.974,
+    "std_RMSE": 27.86,
+    "min_MAE": 2.427,
+    "max_MAE": 166.189,
+    "avg_data_points": 8.0,
+    "num_stations": 157
+  },
+  "Non-Passenger Car Up": {
+    "time_range": "2023-09-01 00:00:00 to 2023-10-12 00:00:00",
+    "avg_MAE": 18.174,
+    "avg_RMSE": 22.409,
+    "avg_SMAPE": 20.4,
+    "std_MAE": 23.449,
+    "std_RMSE": 28.691,
+    "min_MAE": 1.84,
+    "max_MAE": 200.662,
+    "avg_data_points": 8.0,
+    "num_stations": 157
+  },
+  "Passenger Car Down": {
+    "time_range": "2023-09-01 00:00:00 to 2023-10-12 00:00:00",
+    "avg_MAE": 78.658,
+    "avg_RMSE": 92.919,
+    "avg_SMAPE": 19.6,
+    "std_MAE": 87.802,
+    "std_RMSE": 98.725,
+    "min_MAE": 3.414,
+    "max_MAE": 446.515,
+    "avg_data_points": 8.0,
+    "num_stations": 157
+  },
+  "Passenger Car Up": {
+    "time_range": "2023-09-01 00:00:00 to 2023-10-12 00:00:00",
+    "avg_MAE": 73.109,
+    "avg_RMSE": 88.532,
+    "avg_SMAPE": 18.7,
+    "std_MAE": 63.655,
+    "std_RMSE": 76.777,
+    "min_MAE": 6.259,
+    "max_MAE": 265.822,
+    "avg_data_points": 8.0,
+    "num_stations": 157
+  }
+}

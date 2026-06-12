@@ -1,0 +1,46 @@
+{
+  "Passenger Car Upstream": {
+    "prediction_step": 1,
+    "avg_MAE": 56.987,
+    "avg_RMSE": 87.841,
+    "avg_SMAPE": 15.7,
+    "std_MAE": 43.773,
+    "std_RMSE": 58.955,
+    "min_MAE": 11.449,
+    "max_MAE": 244.848,
+    "num_stations": 157
+  },
+  "Passenger Car Downstream": {
+    "prediction_step": 1,
+    "avg_MAE": 53.917,
+    "avg_RMSE": 83.463,
+    "avg_SMAPE": 15.8,
+    "std_MAE": 38.645,
+    "std_RMSE": 57.325,
+    "min_MAE": 11.01,
+    "max_MAE": 207.441,
+    "num_stations": 157
+  },
+  "Non-Passenger Car Upstream": {
+    "prediction_step": 1,
+    "avg_MAE": 16.787,
+    "avg_RMSE": 23.795,
+    "avg_SMAPE": 20.3,
+    "std_MAE": 11.93,
+    "std_RMSE": 18.257,
+    "min_MAE": 2.663,
+    "max_MAE": 62.508,
+    "num_stations": 157
+  },
+  "Non-Passenger Car Downstream": {
+    "prediction_step": 1,
+    "avg_MAE": 17.767,
+    "avg_RMSE": 25.033,
+    "avg_SMAPE": 18.9,
+    "std_MAE": 13.039,
+    "std_RMSE": 18.568,
+    "min_MAE": 3.193,
+    "max_MAE": 63.658,
+    "num_stations": 157
+  }
+}

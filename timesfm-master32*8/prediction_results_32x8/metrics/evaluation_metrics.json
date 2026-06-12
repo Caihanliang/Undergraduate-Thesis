@@ -1,0 +1,29 @@
+{
+  "dataset": "train",
+  "context_len": 32,
+  "horizon_len": 8,
+  "num_samples": 628,
+  "features": {
+    "Passenger Car Upstream": {
+      "mae": 73.10850916850339,
+      "rmse": 117.18592024471432,
+      "smape": 18.714095237729854
+    },
+    "Passenger Car Downstream": {
+      "mae": 78.65815432891725,
+      "rmse": 135.5744879754014,
+      "smape": 19.644525894380095
+    },
+    "Non-Passenger Car Upstream": {
+      "mae": 18.173651574523586,
+      "rmse": 36.405074268029665,
+      "smape": 20.370054810559655
+    },
+    "Non-Passenger Car Downstream": {
+      "mae": 21.437151512142957,
+      "rmse": 37.865303303560275,
+      "smape": 20.018619982635784
+    }
+  },
+  "timestamp": "2026-04-24 17:00:58"
+}

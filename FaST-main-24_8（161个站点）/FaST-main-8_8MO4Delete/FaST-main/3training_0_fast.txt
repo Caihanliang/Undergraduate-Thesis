@@ -1,0 +1,6 @@
+==((====))==  Unsloth 2025.12.8: Fast Llama patching. Transformers: 4.57.3.
+   \\   /|    NVIDIA RTX PRO 6000 Blackwell Workstation Edition. Num GPUs = 1. Max memory: 94.977 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.9.1+cu128. CUDA: 12.0. CUDA Toolkit: 12.8. Triton: 3.5.1
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.33.post2. FA2 = False]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!

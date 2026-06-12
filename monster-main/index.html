@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MONSTER: Monash Scalable Time Series Evaluation Repository</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      line-height: 1.8;
+      background-color: #fafafa;
+      color: #222;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+      text-align: center;
+      color: #222;
+    }
+    h3 {
+      font-weight: 400;
+      text-align: center;
+      color: #555;
+      margin-top: 0;
+    }
+    h2 {
+      color: #444;
+      margin-top: 40px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    img.logo {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 280px;
+    }
+    .badge-container {
+      text-align: center;
+      margin: 20px 0 40px;
+    }
+    .badge-container a img {
+      margin: 0 10px;
+      transition: transform 0.2s ease;
+    }
+    .badge-container a img:hover {
+      transform: scale(1.05);
+    }
+    blockquote {
+      background: #ffffff;
+      border-left: 5px solid #58a;
+      padding: 20px 25px;
+      font-size: 1.05em;
+      margin: 30px 0;
+      color: #333;
+    }
+    code, pre {
+      background-color: #f3f3f3;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: block;
+      overflow-x: auto;
+      font-size: 0.95em;
+    }
+    pre {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    .folder-structure {
+      background: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #ccc;
+      white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+      margin-bottom: 40px;
+    }
+    p {
+      margin: 16px 0;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      pre, code { font-size: 0.85em; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>MONSTER</h1>
+<h3><em>Monash Scalable Time Series Evaluation Repository</em></h3>
+  
+<h3 style="text-align:center; font-weight: 500; font-size: 1.2em; margin-top: 40px; line-height: 1.6;">
+  <a href="https://scholar.google.com.au/citations?user=3yRxnjEAAAAJ&hl=en" target="_blank" style="text-decoration: none; color: inherit;"><strong>Angus Dempster</strong></a><sup>*</sup>,
+  <a href="https://scholar.google.com.au/citations?hl=en&user=Ax62P1MAAAAJ" target="_blank" style="text-decoration: none; color: inherit;"><strong>Navid Mohammadi Foumani</strong></a><sup>*</sup>,
+  <a href="https://scholar.google.com.au/citations?hl=en&user=5qFM8OoAAAAJ" target="_blank" style="text-decoration: none; color: inherit;">Chang Wei Tan</a>,
+  <br>
+  <a href="https://scholar.google.com.au/citations?hl=en&user=6u0ajegAAAAJ" target="_blank" style="text-decoration: none; color: inherit;">Lynn Miller</a><sup>*</sup>,
+  <a href="#" target="_blank" style="text-decoration: none; color: inherit;">Amish Mishra</a><sup>*</sup>,
+  <a href="https://scholar.google.com.au/citations?hl=en&user=tTxJ1owAAAAJ" target="_blank" style="text-decoration: none; color: inherit;">Mahsa Salehi</a><sup>*</sup>,
+  <br>
+  <a href="https://scholar.google.com.au/citations?hl=en&user=0ZE58lcAAAAJ" target="_blank" style="text-decoration: none; color: inherit;">Charlotte Pelletier</a><sup>†</sup>,
+  <a href="https://scholar.google.com.au/citations?hl=en&user=z2YfSogAAAAJ" target="_blank" style="text-decoration: none; color: inherit;">Daniel Schmidt</a><sup>*</sup>,
+  <a href="https://scholar.google.com.au/citations?user=_1tpf8AAAAAJ&hl=en" target="_blank" style="text-decoration: none; color: inherit;">Geoffrey I. Webb</a><sup>*</sup>
+</h3>
+
+<p style="text-align:center; font-size: 0.95em; margin-top: 6px;">
+  <sup>*</sup>Monash University, Melbourne, Australia &nbsp; &nbsp;
+  <sup>†</sup>Université Bretagne Sud, IRISA, Vannes, France
+</p>
+
+
+<div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 20px;">
+  <a href="https://github.com/navidfoumani/monster" target="_blank">
+    <img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github" alt="Code on GitHub">
+  </a>
+  <a href="https://arxiv.org/abs/2502.15122" target="_blank">
+    <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv" alt="arXiv Paper">
+  </a>
+  <a href="https://huggingface.co/monster-monash" target="_blank">
+    <img src="https://img.shields.io/badge/Data-HuggingFace-orange?style=for-the-badge&logo=huggingface" alt="Dataset on HuggingFace">
+  </a>
+</div>
+
+
+  <blockquote>
+    <strong>MONSTER</strong> is a large-scale benchmark suite for time series classification. While UCR and UEA benchmarks offer common ground, they are limited by small dataset sizes—favoring models that reduce variance over those that scale.
+    <br><br>
+    Our goal is to expand the landscape with datasets that challenge models to be scalable, robust, and practical for real-world time series applications.
+  </blockquote>
+
+  <h2>Please cite as:</h2>
+  <pre><code>@article{dempster_etal_2025,
+  author  = {Dempster, Angus and Foumani, Navid Mohammadi and Tan, Chang Wei and Miller, Lynn and Mishra, Amish and Salehi, Mahsa and Pelletier, Charlotte and Schmidt, Daniel F and Webb, Geoffrey I},
+  title   = {MONSTER: Monash Scalable Time Series Evaluation Repository},
+  year    = {2025},
+  journal = {arXiv:2502.15122},
+}</code></pre>
+
+  <h2>Downloading Data</h2>
+
+  <h3><tt>hf_hub_download</tt></h3>
+  <pre><code>from huggingface_hub import hf_hub_download
+
+path = hf_hub_download(repo_id = "monster-monash/Pedestrian", filename = "Pedestrian_X.npy", repo_type = "dataset")
+X = np.load(path, mmap_mode = "r")</code></pre>
+
+  <h3><tt>load_data</tt></h3>
+  <pre><code>from datasets import load_dataset
+
+dataset = load_dataset("monster-monash/Pedestrian", "fold_0", trust_remote_code = True)</code></pre>
+
+  <h2>Run</h2>
+  <p>To view all command-line options:</p>
+  <code>python experiments/demo.py --help</code>
+
+  <p>Edit training parameters in <code>experiments.py</code>. For example:</p>
+  <code>self.parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs')</code>
+
+  <p>To run on a specific dataset:</p>
+  <code>python experiments/demo.py --dataset UCIActivity</code>
+
+  <h2>Project Folder Structure</h2>
+  <div class="folder-structure">
+.
+├── experiments              # Contains experimental scripts and demos
+│   └── demo.py              # Example demo for running the models
+├── figs                     # 
+│   └── Logo.png             # Project logo
+├── models                   # Includes model definitions
+│   ├── deep_learning        # Deep learning models for time series tasks
+│   │   ├── ConvTran.py      # ConvTran model for time series classification
+│   │   └── FCN.py           # Fully Convolutional Network (FCN)
+│   ├── loss.py              # Loss functions
+│   ├── model_factory.py     # Model factory for building models
+│   └── non_deep             # Non-deep learning models
+│       ├── hydra_gpu.py     #
+│       ├── quant.py         #
+│       ├── ridge.py         #
+│       └── utils.py         #
+├── notebook                 # Jupyter notebooks
+├── README.md                #
+├── requirements.txt         #
+├── results                  # Outputs and logs
+├── src                      # Source code
+│   ├── analysis.py          #
+│   ├── data_loader.py       #
+│   ├── trainer.py           #
+│   └── utils.py             #
+└── .gitignore               #
+  </div>
+
+</body>
+</html>

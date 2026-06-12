@@ -1,0 +1,18 @@
+{
+  "feature_columns": [
+    "小客车_上行",
+    "其他车辆_上行",
+    "小客车_下行",
+    "其他车辆_下行"
+  ],
+  "num_stations": 157,
+  "config": {
+    "context_length": 8,
+    "prediction_length": 8,
+    "stride": 1,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "data_dir": "./dataset",
+    "output_dir": "./processed_data"
+  }
+}

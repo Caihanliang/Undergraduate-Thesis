@@ -1,0 +1,514 @@
+{
+  "Non_Passenger_Car_Down": {
+    "total_samples": 157628,
+    "mean_absolute_error": 19.519100857715635,
+    "std_absolute_error": 26.602337298583322,
+    "max_absolute_error": 976.4200000000001,
+    "top_error_points": [
+      {
+        "station": 43,
+        "time": "2023-09-07 11:00:00",
+        "actual": 246.0,
+        "predicted": 1222.42,
+        "absolute_error": 976.4200000000001,
+        "relative_error": 396.91869917085694
+      },
+      {
+        "station": 43,
+        "time": "2023-09-07 10:00:00",
+        "actual": 1134.0,
+        "predicted": 379.59,
+        "absolute_error": 754.4100000000001,
+        "relative_error": 66.52645502586839
+      },
+      {
+        "station": 71,
+        "time": "2023-09-19 16:00:00",
+        "actual": 228.0,
+        "predicted": 910.09,
+        "absolute_error": 682.09,
+        "relative_error": 299.16228068863325
+      },
+      {
+        "station": 77,
+        "time": "2023-09-07 08:00:00",
+        "actual": 345.0,
+        "predicted": 929.87,
+        "absolute_error": 584.87,
+        "relative_error": 169.5275362269702
+      },
+      {
+        "station": 58,
+        "time": "2023-10-06 18:00:00",
+        "actual": 205.0,
+        "predicted": 719.75,
+        "absolute_error": 514.75,
+        "relative_error": 251.09756096336108
+      },
+      {
+        "station": 123,
+        "time": "2023-09-20 01:00:00",
+        "actual": 442.0,
+        "predicted": -9.09,
+        "absolute_error": 451.09,
+        "relative_error": 102.05656108366388
+      },
+      {
+        "station": 40,
+        "time": "2023-09-05 08:00:00",
+        "actual": 588.0,
+        "predicted": 143.51,
+        "absolute_error": 444.49,
+        "relative_error": 75.59353741368038
+      },
+      {
+        "station": 33,
+        "time": "2023-09-07 08:00:00",
+        "actual": 512.0,
+        "predicted": 67.84,
+        "absolute_error": 444.15999999999997,
+        "relative_error": 86.74999999830565
+      },
+      {
+        "station": 7,
+        "time": "2023-10-12 09:00:00",
+        "actual": 548.0,
+        "predicted": 104.9,
+        "absolute_error": 443.1,
+        "relative_error": 80.85766423210114
+      },
+      {
+        "station": 77,
+        "time": "2023-09-14 05:00:00",
+        "actual": 122.0,
+        "predicted": 556.19,
+        "absolute_error": 434.19000000000005,
+        "relative_error": 355.8934425937793
+      },
+      {
+        "station": 43,
+        "time": "2023-09-09 09:00:00",
+        "actual": 612.0,
+        "predicted": 178.55,
+        "absolute_error": 433.45,
+        "relative_error": 70.82516339753553
+      },
+      {
+        "station": 123,
+        "time": "2023-09-08 08:00:00",
+        "actual": 161.0,
+        "predicted": 590.98,
+        "absolute_error": 429.98,
+        "relative_error": 267.06832296477836
+      },
+      {
+        "station": 77,
+        "time": "2023-09-06 06:00:00",
+        "actual": 497.0,
+        "predicted": 88.06,
+        "absolute_error": 408.94,
+        "relative_error": 82.28169013918951
+      },
+      {
+        "station": 43,
+        "time": "2023-09-30 12:00:00",
+        "actual": 511.0,
+        "predicted": 106.3,
+        "absolute_error": 404.7,
+        "relative_error": 79.19765166185523
+      },
+      {
+        "station": 40,
+        "time": "2023-09-05 09:00:00",
+        "actual": 156.0,
+        "predicted": 560.29,
+        "absolute_error": 404.28999999999996,
+        "relative_error": 259.1602563936435
+      }
+    ]
+  },
+  "Non_Passenger_Car_Up": {
+    "total_samples": 157628,
+    "mean_absolute_error": 19.972789098383533,
+    "std_absolute_error": 27.58613784919952,
+    "max_absolute_error": 789.96,
+    "top_error_points": [
+      {
+        "station": 59,
+        "time": "2023-09-13 08:00:00",
+        "actual": 99.0,
+        "predicted": 888.96,
+        "absolute_error": 789.96,
+        "relative_error": 797.9393938587941
+      },
+      {
+        "station": 59,
+        "time": "2023-09-20 11:00:00",
+        "actual": 740.0,
+        "predicted": 87.03,
+        "absolute_error": 652.97,
+        "relative_error": 88.23918918799677
+      },
+      {
+        "station": 61,
+        "time": "2023-09-19 20:00:00",
+        "actual": 46.0,
+        "predicted": 605.29,
+        "absolute_error": 559.29,
+        "relative_error": 1215.8478258226417
+      },
+      {
+        "station": 59,
+        "time": "2023-09-13 14:00:00",
+        "actual": 841.0,
+        "predicted": 287.96,
+        "absolute_error": 553.04,
+        "relative_error": 65.75980974951534
+      },
+      {
+        "station": 59,
+        "time": "2023-09-13 09:00:00",
+        "actual": 619.0,
+        "predicted": 68.25,
+        "absolute_error": 550.75,
+        "relative_error": 88.97415185639784
+      },
+      {
+        "station": 59,
+        "time": "2023-10-07 10:00:00",
+        "actual": 64.0,
+        "predicted": 598.65,
+        "absolute_error": 534.65,
+        "relative_error": 835.3906248694702
+      },
+      {
+        "station": 59,
+        "time": "2023-09-12 12:00:00",
+        "actual": 649.0,
+        "predicted": 154.95,
+        "absolute_error": 494.05,
+        "relative_error": 76.12480739482088
+      },
+      {
+        "station": 61,
+        "time": "2023-09-05 14:00:00",
+        "actual": 582.0,
+        "predicted": 89.22,
+        "absolute_error": 492.78,
+        "relative_error": 84.67010309132868
+      },
+      {
+        "station": 59,
+        "time": "2023-09-11 05:00:00",
+        "actual": 546.0,
+        "predicted": 72.37,
+        "absolute_error": 473.63,
+        "relative_error": 86.7454212438325
+      },
+      {
+        "station": 32,
+        "time": "2023-09-02 10:00:00",
+        "actual": 587.0,
+        "predicted": 130.37,
+        "absolute_error": 456.63,
+        "relative_error": 77.79045996460323
+      },
+      {
+        "station": 61,
+        "time": "2023-09-05 18:00:00",
+        "actual": 524.0,
+        "predicted": 70.53,
+        "absolute_error": 453.47,
+        "relative_error": 86.54007633422634
+      },
+      {
+        "station": 59,
+        "time": "2023-09-11 13:00:00",
+        "actual": 275.0,
+        "predicted": 718.32,
+        "absolute_error": 443.32000000000005,
+        "relative_error": 161.20727272141067
+      },
+      {
+        "station": 59,
+        "time": "2023-10-07 07:00:00",
+        "actual": 757.0,
+        "predicted": 322.82,
+        "absolute_error": 434.18,
+        "relative_error": 57.355350065292534
+      },
+      {
+        "station": 59,
+        "time": "2023-09-13 15:00:00",
+        "actual": 292.0,
+        "predicted": 724.05,
+        "absolute_error": 432.04999999999995,
+        "relative_error": 147.96232876205607
+      },
+      {
+        "station": 59,
+        "time": "2023-09-18 11:00:00",
+        "actual": 793.0,
+        "predicted": 361.22,
+        "absolute_error": 431.78,
+        "relative_error": 54.44892812037264
+      }
+    ]
+  },
+  "Passenger_Car_Down": {
+    "total_samples": 157628,
+    "mean_absolute_error": 54.51571034334002,
+    "std_absolute_error": 90.48721758805864,
+    "max_absolute_error": 1912.52,
+    "top_error_points": [
+      {
+        "station": 11,
+        "time": "2023-09-30 08:00:00",
+        "actual": 4741.0,
+        "predicted": 2828.48,
+        "absolute_error": 1912.52,
+        "relative_error": 40.34001265547281
+      },
+      {
+        "station": 52,
+        "time": "2023-10-05 14:00:00",
+        "actual": 2906.0,
+        "predicted": 1013.09,
+        "absolute_error": 1892.9099999999999,
+        "relative_error": 65.13799036453841
+      },
+      {
+        "station": 52,
+        "time": "2023-10-04 10:00:00",
+        "actual": 3155.0,
+        "predicted": 1273.13,
+        "absolute_error": 1881.87,
+        "relative_error": 59.64722662421664
+      },
+      {
+        "station": 11,
+        "time": "2023-09-30 18:00:00",
+        "actual": 1769.0,
+        "predicted": 3577.64,
+        "absolute_error": 1808.6399999999999,
+        "relative_error": 102.24081401864194
+      },
+      {
+        "station": 52,
+        "time": "2023-10-01 15:00:00",
+        "actual": 733.0,
+        "predicted": 2521.26,
+        "absolute_error": 1788.2600000000002,
+        "relative_error": 243.96452932818607
+      },
+      {
+        "station": 11,
+        "time": "2023-09-30 09:00:00",
+        "actual": 3190.0,
+        "predicted": 4876.92,
+        "absolute_error": 1686.92,
+        "relative_error": 52.88150470202859
+      },
+      {
+        "station": 11,
+        "time": "2023-09-28 12:00:00",
+        "actual": 3967.0,
+        "predicted": 2305.38,
+        "absolute_error": 1661.62,
+        "relative_error": 41.88605999485282
+      },
+      {
+        "station": 11,
+        "time": "2023-09-29 10:00:00",
+        "actual": 4327.0,
+        "predicted": 2676.93,
+        "absolute_error": 1650.0700000000002,
+        "relative_error": 38.13427316838888
+      },
+      {
+        "station": 9,
+        "time": "2023-09-27 07:00:00",
+        "actual": 1760.0,
+        "predicted": 182.64,
+        "absolute_error": 1577.3600000000001,
+        "relative_error": 89.62272727221806
+      },
+      {
+        "station": 63,
+        "time": "2023-09-30 03:00:00",
+        "actual": 1985.0,
+        "predicted": 426.27,
+        "absolute_error": 1558.73,
+        "relative_error": 78.52544080564975
+      },
+      {
+        "station": 46,
+        "time": "2023-10-04 00:00:00",
+        "actual": 515.0,
+        "predicted": 2021.27,
+        "absolute_error": 1506.27,
+        "relative_error": 292.4796116448062
+      },
+      {
+        "station": 47,
+        "time": "2023-10-04 00:00:00",
+        "actual": 459.0,
+        "predicted": 1933.13,
+        "absolute_error": 1474.13,
+        "relative_error": 321.161220036576
+      },
+      {
+        "station": 44,
+        "time": "2023-10-04 00:00:00",
+        "actual": 560.0,
+        "predicted": 2002.74,
+        "absolute_error": 1442.74,
+        "relative_error": 257.6321428525423
+      },
+      {
+        "station": 80,
+        "time": "2023-10-05 14:00:00",
+        "actual": 1185.0,
+        "predicted": 2626.94,
+        "absolute_error": 1441.94,
+        "relative_error": 121.68270042091409
+      },
+      {
+        "station": 16,
+        "time": "2023-09-29 11:00:00",
+        "actual": 1523.0,
+        "predicted": 2946.87,
+        "absolute_error": 1423.87,
+        "relative_error": 93.49113591534149
+      }
+    ]
+  },
+  "Passenger_Car_Up": {
+    "total_samples": 157628,
+    "mean_absolute_error": 53.90980187530134,
+    "std_absolute_error": 90.0781397032478,
+    "max_absolute_error": 2190.09,
+    "top_error_points": [
+      {
+        "station": 9,
+        "time": "2023-10-05 12:00:00",
+        "actual": 2826.0,
+        "predicted": 635.91,
+        "absolute_error": 2190.09,
+        "relative_error": 77.49787685747525
+      },
+      {
+        "station": 61,
+        "time": "2023-10-03 09:00:00",
+        "actual": 2518.0,
+        "predicted": 511.42,
+        "absolute_error": 2006.58,
+        "relative_error": 79.68943606004889
+      },
+      {
+        "station": 47,
+        "time": "2023-10-01 09:00:00",
+        "actual": 2658.0,
+        "predicted": 826.93,
+        "absolute_error": 1831.0700000000002,
+        "relative_error": 68.88901429620434
+      },
+      {
+        "station": 14,
+        "time": "2023-10-03 10:00:00",
+        "actual": 1895.0,
+        "predicted": 3700.27,
+        "absolute_error": 1805.27,
+        "relative_error": 95.26490765121233
+      },
+      {
+        "station": 38,
+        "time": "2023-10-03 15:00:00",
+        "actual": 1122.0,
+        "predicted": 2907.46,
+        "absolute_error": 1785.46,
+        "relative_error": 159.13190730695962
+      },
+      {
+        "station": 124,
+        "time": "2023-09-29 08:00:00",
+        "actual": 1661.0,
+        "predicted": 3433.98,
+        "absolute_error": 1772.98,
+        "relative_error": 106.74172185366201
+      },
+      {
+        "station": 9,
+        "time": "2023-10-05 10:00:00",
+        "actual": 1960.0,
+        "predicted": 3682.12,
+        "absolute_error": 1722.12,
+        "relative_error": 87.86326530567416
+      },
+      {
+        "station": 61,
+        "time": "2023-10-05 10:00:00",
+        "actual": 2152.0,
+        "predicted": 444.71,
+        "absolute_error": 1707.29,
+        "relative_error": 79.33503717435254
+      },
+      {
+        "station": 14,
+        "time": "2023-10-03 11:00:00",
+        "actual": 3299.0,
+        "predicted": 1665.63,
+        "absolute_error": 1633.37,
+        "relative_error": 49.51106395862531
+      },
+      {
+        "station": 17,
+        "time": "2023-09-26 12:00:00",
+        "actual": 212.0,
+        "predicted": 1830.91,
+        "absolute_error": 1618.91,
+        "relative_error": 763.6367924168096
+      },
+      {
+        "station": 12,
+        "time": "2023-10-05 11:00:00",
+        "actual": 4131.0,
+        "predicted": 2543.84,
+        "absolute_error": 1587.1599999999999,
+        "relative_error": 38.420721374876734
+      },
+      {
+        "station": 45,
+        "time": "2023-09-29 03:00:00",
+        "actual": 2498.0,
+        "predicted": 912.19,
+        "absolute_error": 1585.81,
+        "relative_error": 63.48318654898526
+      },
+      {
+        "station": 38,
+        "time": "2023-10-04 15:00:00",
+        "actual": 1178.0,
+        "predicted": 2735.06,
+        "absolute_error": 1557.06,
+        "relative_error": 132.1782682501513
+      },
+      {
+        "station": 61,
+        "time": "2023-10-03 12:00:00",
+        "actual": 2004.0,
+        "predicted": 488.7,
+        "absolute_error": 1515.3,
+        "relative_error": 75.6137724547125
+      },
+      {
+        "station": 61,
+        "time": "2023-10-04 08:00:00",
+        "actual": 2041.0,
+        "predicted": 549.62,
+        "absolute_error": 1491.38,
+        "relative_error": 73.07104360571745
+      }
+    ]
+  }
+}

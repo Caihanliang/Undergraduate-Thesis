@@ -1,0 +1,394 @@
+{
+  "0": {
+    "station_code": "G0401L010430121",
+    "station_name": "黄兴"
+  },
+  "1": {
+    "station_code": "G0401L040430121",
+    "station_name": "红旗"
+  },
+  "2": {
+    "station_code": "G0401L050430111",
+    "station_name": "洞井"
+  },
+  "3": {
+    "station_code": "G0401L060430112",
+    "station_name": "星城"
+  },
+  "4": {
+    "station_code": "G0421L020430602",
+    "station_name": "岳阳东"
+  },
+  "5": {
+    "station_code": "G0421L060430112",
+    "station_name": "简家坳"
+  },
+  "6": {
+    "station_code": "G0421L070430302",
+    "station_name": "塔岭"
+  },
+  "7": {
+    "station_code": "G0421L120430422",
+    "station_name": "松柏"
+  },
+  "8": {
+    "station_code": "G0421L130430482",
+    "station_name": "常宁"
+  },
+  "9": {
+    "station_code": "G0421L140431021",
+    "station_name": "流峰"
+  },
+  "10": {
+    "station_code": "G0421L150431021",
+    "station_name": "余田"
+  },
+  "11": {
+    "station_code": "G0421L160431024",
+    "station_name": "嘉禾"
+  },
+  "12": {
+    "station_code": "G0421L170431025",
+    "station_name": "临武"
+  },
+  "13": {
+    "station_code": "G0421L180431022",
+    "station_name": "黄沙"
+  },
+  "14": {
+    "station_code": "G0422L040430181",
+    "station_name": "北盛"
+  },
+  "15": {
+    "station_code": "G0422L050430181",
+    "station_name": "跃龙"
+  },
+  "16": {
+    "station_code": "G0422L060430281",
+    "station_name": "板衫"
+  },
+  "17": {
+    "station_code": "G0422L070430281",
+    "station_name": "黎家冲"
+  },
+  "18": {
+    "station_code": "G0422L080430281",
+    "station_name": "皇图岭"
+  },
+  "19": {
+    "station_code": "G0422L100430224",
+    "station_name": "茶陵"
+  },
+  "20": {
+    "station_code": "G0422L110430225",
+    "station_name": "炎陵西"
+  },
+  "21": {
+    "station_code": "G0422L120431027",
+    "station_name": "八面山"
+  },
+  "22": {
+    "station_code": "G0422L130431026",
+    "station_name": "田庄"
+  },
+  "23": {
+    "station_code": "G0422L140431026",
+    "station_name": "九龙江"
+  },
+  "24": {
+    "station_code": "G4L010430682",
+    "station_name": "羊楼司"
+  },
+  "25": {
+    "station_code": "G4L020430682",
+    "station_name": "桃林"
+  },
+  "26": {
+    "station_code": "G4L030430681",
+    "station_name": "大荆"
+  },
+  "27": {
+    "station_code": "G4L040430121",
+    "station_name": "开慧"
+  },
+  "28": {
+    "station_code": "G4L050430121",
+    "station_name": "杨梓冲"
+  },
+  "29": {
+    "station_code": "G4L070430221",
+    "station_name": "伞铺"
+  },
+  "30": {
+    "station_code": "G4L080430424",
+    "station_name": "新塘"
+  },
+  "31": {
+    "station_code": "G4L090430422",
+    "station_name": "冠市"
+  },
+  "32": {
+    "station_code": "G4L100430481",
+    "station_name": "耒阳"
+  },
+  "33": {
+    "station_code": "G4L125431003",
+    "station_name": "良田"
+  },
+  "34": {
+    "station_code": "G4L130431022",
+    "station_name": "小塘"
+  },
+  "35": {
+    "station_code": "G5513L010430112",
+    "station_name": "金桥"
+  },
+  "36": {
+    "station_code": "G5513L011430112",
+    "station_name": "友仁"
+  },
+  "37": {
+    "station_code": "G5513L012430124",
+    "station_name": "关山"
+  },
+  "38": {
+    "station_code": "G5513L013430124",
+    "station_name": "金洲"
+  },
+  "39": {
+    "station_code": "G5513L016430124",
+    "station_name": "宁乡"
+  },
+  "40": {
+    "station_code": "G5513L018430903",
+    "station_name": "泉交河"
+  },
+  "41": {
+    "station_code": "G5513L019430903",
+    "station_name": "朝阳"
+  },
+  "42": {
+    "station_code": "G5513L020430902",
+    "station_name": "益阳北"
+  },
+  "43": {
+    "station_code": "G5513L030430722",
+    "station_name": "谢家铺"
+  },
+  "44": {
+    "station_code": "G5513L050430725",
+    "station_name": "热市"
+  },
+  "45": {
+    "station_code": "G5513L060430821",
+    "station_name": "慈利西"
+  },
+  "46": {
+    "station_code": "G55L110430523",
+    "station_name": "邵阳县"
+  },
+  "47": {
+    "station_code": "G55L120431103",
+    "station_name": "永州北"
+  },
+  "48": {
+    "station_code": "G55L170431127",
+    "station_name": "蓝山"
+  },
+  "49": {
+    "station_code": "G56L001430682",
+    "station_name": "詹桥"
+  },
+  "50": {
+    "station_code": "G56L007430725",
+    "station_name": "河洑"
+  },
+  "51": {
+    "station_code": "G56L030431222",
+    "station_name": "沅陵"
+  },
+  "52": {
+    "station_code": "G56L040433122",
+    "station_name": "泸溪"
+  },
+  "53": {
+    "station_code": "G56L050433101",
+    "station_name": "吉首东"
+  },
+  "54": {
+    "station_code": "G56L060433101",
+    "station_name": "吉首南"
+  },
+  "55": {
+    "station_code": "G6021L050430121",
+    "station_name": "黄花"
+  },
+  "56": {
+    "station_code": "G60L007430304",
+    "station_name": "株洲北"
+  },
+  "57": {
+    "station_code": "G60L010430321",
+    "station_name": "湘潭"
+  },
+  "58": {
+    "station_code": "G60L020430381",
+    "station_name": "湘乡"
+  },
+  "59": {
+    "station_code": "G60L030431321",
+    "station_name": "娄底"
+  },
+  "60": {
+    "station_code": "G60L040430521",
+    "station_name": "廉桥"
+  },
+  "61": {
+    "station_code": "G60L050430503",
+    "station_name": "邵阳南"
+  },
+  "62": {
+    "station_code": "G60L060430524",
+    "station_name": "隆回"
+  },
+  "63": {
+    "station_code": "G60L070430525",
+    "station_name": "洞口"
+  },
+  "64": {
+    "station_code": "G65L010433124",
+    "station_name": "茶峒"
+  },
+  "65": {
+    "station_code": "G65L020433101",
+    "station_name": "矮寨"
+  },
+  "66": {
+    "station_code": "G65L030433123",
+    "station_name": "凤凰"
+  },
+  "67": {
+    "station_code": "G65L040431202",
+    "station_name": "怀化西"
+  },
+  "68": {
+    "station_code": "G65L050431221",
+    "station_name": "怀化南"
+  },
+  "69": {
+    "station_code": "G65L080431229",
+    "station_name": "靖州"
+  },
+  "70": {
+    "station_code": "G65L100431230",
+    "station_name": "双江"
+  },
+  "71": {
+    "station_code": "G65L110431230",
+    "station_name": "通道"
+  },
+  "72": {
+    "station_code": "G72L002430224",
+    "station_name": "界化垄"
+  },
+  "73": {
+    "station_code": "G72L006430223",
+    "station_name": "攸县"
+  },
+  "74": {
+    "station_code": "G72L008430424",
+    "station_name": "衡东"
+  },
+  "75": {
+    "station_code": "G72L010430422",
+    "station_name": "洪市"
+  },
+  "76": {
+    "station_code": "G72L030431121",
+    "station_name": "大忠桥"
+  },
+  "77": {
+    "station_code": "G72L040431102",
+    "station_name": "枣木铺"
+  },
+  "78": {
+    "station_code": "G76L020431026",
+    "station_name": "岭秀"
+  },
+  "79": {
+    "station_code": "G76L030431022",
+    "station_name": "平和"
+  },
+  "80": {
+    "station_code": "G76L050431024",
+    "station_name": "燕塘"
+  },
+  "81": {
+    "station_code": "G76L060431127",
+    "station_name": "祠堂圩"
+  },
+  "82": {
+    "station_code": "S10L020433127",
+    "station_name": "芙蓉镇西"
+  },
+  "83": {
+    "station_code": "S21L020430204",
+    "station_name": "云龙"
+  },
+  "84": {
+    "station_code": "S41L010430112",
+    "station_name": "栗山塘"
+  },
+  "85": {
+    "station_code": "S50L010430104",
+    "station_name": "赤江互通东"
+  },
+  "86": {
+    "station_code": "S50L040430381",
+    "station_name": "岐山互通东"
+  },
+  "87": {
+    "station_code": "S50L090431224",
+    "station_name": "溆浦"
+  },
+  "88": {
+    "station_code": "S50L110431202",
+    "station_name": "怀化北"
+  },
+  "89": {
+    "station_code": "S50L120431202",
+    "station_name": "朱溪"
+  },
+  "90": {
+    "station_code": "S52L010430281",
+    "station_name": "姚家坝"
+  },
+  "91": {
+    "station_code": "S71L010430623",
+    "station_name": "华容"
+  },
+  "92": {
+    "station_code": "S71L050430903",
+    "station_name": "泥江口"
+  },
+  "93": {
+    "station_code": "S71L060430124",
+    "station_name": "心田"
+  },
+  "94": {
+    "station_code": "S71L090431321",
+    "station_name": "双峰西"
+  },
+  "95": {
+    "station_code": "S81L010431124",
+    "station_name": "道州南"
+  },
+  "96": {
+    "station_code": "S91L020430581",
+    "station_name": "武冈西"
+  },
+  "97": {
+    "station_code": "S99L050433126",
+    "station_name": "芙蓉镇"
+  }
+}

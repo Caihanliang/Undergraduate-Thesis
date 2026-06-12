@@ -1,0 +1,2538 @@
+{
+  "Non_Passenger_Car_Down": {
+    "average_MAE": 19.519,
+    "average_RMSE": 27.654,
+    "per_station": {
+      "Station_000": {
+        "MAE": 37.547,
+        "RMSE": 51.591
+      },
+      "Station_001": {
+        "MAE": 36.731,
+        "RMSE": 53.392
+      },
+      "Station_002": {
+        "MAE": 46.767,
+        "RMSE": 65.664
+      },
+      "Station_003": {
+        "MAE": 34.735,
+        "RMSE": 47.978
+      },
+      "Station_004": {
+        "MAE": 33.474,
+        "RMSE": 43.698
+      },
+      "Station_005": {
+        "MAE": 33.761,
+        "RMSE": 45.68
+      },
+      "Station_006": {
+        "MAE": 27.275,
+        "RMSE": 37.073
+      },
+      "Station_007": {
+        "MAE": 35.248,
+        "RMSE": 49.444
+      },
+      "Station_008": {
+        "MAE": 20.392,
+        "RMSE": 26.841
+      },
+      "Station_009": {
+        "MAE": 18.439,
+        "RMSE": 25.397
+      },
+      "Station_010": {
+        "MAE": 21.042,
+        "RMSE": 32.308
+      },
+      "Station_011": {
+        "MAE": 19.973,
+        "RMSE": 29.314
+      },
+      "Station_012": {
+        "MAE": 16.255,
+        "RMSE": 22.987
+      },
+      "Station_013": {
+        "MAE": 17.053,
+        "RMSE": 23.233
+      },
+      "Station_014": {
+        "MAE": 18.366,
+        "RMSE": 27.88
+      },
+      "Station_015": {
+        "MAE": 12.265,
+        "RMSE": 15.776
+      },
+      "Station_016": {
+        "MAE": 12.407,
+        "RMSE": 15.857
+      },
+      "Station_017": {
+        "MAE": 14.497,
+        "RMSE": 18.677
+      },
+      "Station_018": {
+        "MAE": 17.474,
+        "RMSE": 23.432
+      },
+      "Station_019": {
+        "MAE": 11.697,
+        "RMSE": 15.289
+      },
+      "Station_020": {
+        "MAE": 11.644,
+        "RMSE": 15.523
+      },
+      "Station_021": {
+        "MAE": 17.102,
+        "RMSE": 25.736
+      },
+      "Station_022": {
+        "MAE": 11.539,
+        "RMSE": 14.916
+      },
+      "Station_023": {
+        "MAE": 13.13,
+        "RMSE": 17.544
+      },
+      "Station_024": {
+        "MAE": 10.086,
+        "RMSE": 13.207
+      },
+      "Station_025": {
+        "MAE": 9.704,
+        "RMSE": 13.493
+      },
+      "Station_026": {
+        "MAE": 9.605,
+        "RMSE": 14.482
+      },
+      "Station_027": {
+        "MAE": 10.039,
+        "RMSE": 15.566
+      },
+      "Station_028": {
+        "MAE": 11.089,
+        "RMSE": 16.085
+      },
+      "Station_029": {
+        "MAE": 11.548,
+        "RMSE": 27.27
+      },
+      "Station_030": {
+        "MAE": 31.511,
+        "RMSE": 44.434
+      },
+      "Station_031": {
+        "MAE": 36.739,
+        "RMSE": 49.815
+      },
+      "Station_032": {
+        "MAE": 40.942,
+        "RMSE": 57.007
+      },
+      "Station_033": {
+        "MAE": 39.602,
+        "RMSE": 54.293
+      },
+      "Station_034": {
+        "MAE": 51.509,
+        "RMSE": 73.062
+      },
+      "Station_035": {
+        "MAE": 53.507,
+        "RMSE": 73.672
+      },
+      "Station_036": {
+        "MAE": 45.567,
+        "RMSE": 63.803
+      },
+      "Station_037": {
+        "MAE": 46.68,
+        "RMSE": 63.886
+      },
+      "Station_038": {
+        "MAE": 41.714,
+        "RMSE": 54.617
+      },
+      "Station_039": {
+        "MAE": 43.653,
+        "RMSE": 58.829
+      },
+      "Station_040": {
+        "MAE": 42.021,
+        "RMSE": 60.864
+      },
+      "Station_041": {
+        "MAE": 37.39,
+        "RMSE": 50.124
+      },
+      "Station_042": {
+        "MAE": 34.52,
+        "RMSE": 46.906
+      },
+      "Station_043": {
+        "MAE": 50.127,
+        "RMSE": 83.612
+      },
+      "Station_044": {
+        "MAE": 33.065,
+        "RMSE": 47.706
+      },
+      "Station_045": {
+        "MAE": 27.038,
+        "RMSE": 37.699
+      },
+      "Station_046": {
+        "MAE": 26.08,
+        "RMSE": 35.531
+      },
+      "Station_047": {
+        "MAE": 22.531,
+        "RMSE": 29.492
+      },
+      "Station_048": {
+        "MAE": 19.799,
+        "RMSE": 26.372
+      },
+      "Station_049": {
+        "MAE": 21.537,
+        "RMSE": 36.296
+      },
+      "Station_050": {
+        "MAE": 48.527,
+        "RMSE": 69.058
+      },
+      "Station_051": {
+        "MAE": 29.059,
+        "RMSE": 38.871
+      },
+      "Station_052": {
+        "MAE": 19.955,
+        "RMSE": 26.21
+      },
+      "Station_053": {
+        "MAE": 9.857,
+        "RMSE": 12.72
+      },
+      "Station_054": {
+        "MAE": 12.89,
+        "RMSE": 17.365
+      },
+      "Station_055": {
+        "MAE": 15.491,
+        "RMSE": 21.436
+      },
+      "Station_056": {
+        "MAE": 8.053,
+        "RMSE": 16.853
+      },
+      "Station_057": {
+        "MAE": 7.524,
+        "RMSE": 15.0
+      },
+      "Station_058": {
+        "MAE": 20.761,
+        "RMSE": 33.513
+      },
+      "Station_059": {
+        "MAE": 18.777,
+        "RMSE": 26.2
+      },
+      "Station_060": {
+        "MAE": 17.438,
+        "RMSE": 23.343
+      },
+      "Station_061": {
+        "MAE": 19.507,
+        "RMSE": 26.548
+      },
+      "Station_062": {
+        "MAE": 18.377,
+        "RMSE": 28.717
+      },
+      "Station_063": {
+        "MAE": 22.864,
+        "RMSE": 32.839
+      },
+      "Station_064": {
+        "MAE": 10.082,
+        "RMSE": 13.296
+      },
+      "Station_065": {
+        "MAE": 31.132,
+        "RMSE": 44.854
+      },
+      "Station_066": {
+        "MAE": 25.297,
+        "RMSE": 35.36
+      },
+      "Station_067": {
+        "MAE": 29.286,
+        "RMSE": 43.766
+      },
+      "Station_068": {
+        "MAE": 22.513,
+        "RMSE": 29.241
+      },
+      "Station_069": {
+        "MAE": 21.888,
+        "RMSE": 29.174
+      },
+      "Station_070": {
+        "MAE": 22.266,
+        "RMSE": 29.494
+      },
+      "Station_071": {
+        "MAE": 68.122,
+        "RMSE": 97.102
+      },
+      "Station_072": {
+        "MAE": 25.849,
+        "RMSE": 37.248
+      },
+      "Station_073": {
+        "MAE": 4.397,
+        "RMSE": 5.53
+      },
+      "Station_074": {
+        "MAE": 5.264,
+        "RMSE": 7.404
+      },
+      "Station_075": {
+        "MAE": 4.831,
+        "RMSE": 6.141
+      },
+      "Station_076": {
+        "MAE": 19.611,
+        "RMSE": 34.644
+      },
+      "Station_077": {
+        "MAE": 51.83,
+        "RMSE": 78.764
+      },
+      "Station_078": {
+        "MAE": 23.381,
+        "RMSE": 31.4
+      },
+      "Station_079": {
+        "MAE": 28.969,
+        "RMSE": 39.083
+      },
+      "Station_080": {
+        "MAE": 26.296,
+        "RMSE": 35.271
+      },
+      "Station_081": {
+        "MAE": 20.98,
+        "RMSE": 29.922
+      },
+      "Station_082": {
+        "MAE": 16.634,
+        "RMSE": 21.966
+      },
+      "Station_083": {
+        "MAE": 25.57,
+        "RMSE": 33.983
+      },
+      "Station_084": {
+        "MAE": 24.243,
+        "RMSE": 32.432
+      },
+      "Station_085": {
+        "MAE": 24.089,
+        "RMSE": 31.339
+      },
+      "Station_086": {
+        "MAE": 22.877,
+        "RMSE": 30.91
+      },
+      "Station_087": {
+        "MAE": 20.891,
+        "RMSE": 26.976
+      },
+      "Station_088": {
+        "MAE": 16.112,
+        "RMSE": 21.623
+      },
+      "Station_089": {
+        "MAE": 16.157,
+        "RMSE": 21.04
+      },
+      "Station_090": {
+        "MAE": 10.257,
+        "RMSE": 13.422
+      },
+      "Station_091": {
+        "MAE": 10.22,
+        "RMSE": 13.265
+      },
+      "Station_092": {
+        "MAE": 22.014,
+        "RMSE": 29.124
+      },
+      "Station_093": {
+        "MAE": 21.72,
+        "RMSE": 27.919
+      },
+      "Station_094": {
+        "MAE": 21.257,
+        "RMSE": 29.903
+      },
+      "Station_095": {
+        "MAE": 12.853,
+        "RMSE": 18.899
+      },
+      "Station_096": {
+        "MAE": 13.2,
+        "RMSE": 22.394
+      },
+      "Station_097": {
+        "MAE": 9.399,
+        "RMSE": 12.316
+      },
+      "Station_098": {
+        "MAE": 9.75,
+        "RMSE": 13.1
+      },
+      "Station_099": {
+        "MAE": 10.624,
+        "RMSE": 14.177
+      },
+      "Station_100": {
+        "MAE": 9.622,
+        "RMSE": 13.099
+      },
+      "Station_101": {
+        "MAE": 7.662,
+        "RMSE": 9.775
+      },
+      "Station_102": {
+        "MAE": 15.371,
+        "RMSE": 19.645
+      },
+      "Station_103": {
+        "MAE": 14.053,
+        "RMSE": 19.767
+      },
+      "Station_104": {
+        "MAE": 16.566,
+        "RMSE": 23.056
+      },
+      "Station_105": {
+        "MAE": 25.618,
+        "RMSE": 33.945
+      },
+      "Station_106": {
+        "MAE": 23.999,
+        "RMSE": 31.85
+      },
+      "Station_107": {
+        "MAE": 24.657,
+        "RMSE": 32.764
+      },
+      "Station_108": {
+        "MAE": 6.97,
+        "RMSE": 9.08
+      },
+      "Station_109": {
+        "MAE": 8.032,
+        "RMSE": 11.037
+      },
+      "Station_110": {
+        "MAE": 8.515,
+        "RMSE": 11.171
+      },
+      "Station_111": {
+        "MAE": 7.125,
+        "RMSE": 9.491
+      },
+      "Station_112": {
+        "MAE": 11.682,
+        "RMSE": 18.08
+      },
+      "Station_113": {
+        "MAE": 13.777,
+        "RMSE": 21.387
+      },
+      "Station_114": {
+        "MAE": 17.36,
+        "RMSE": 26.458
+      },
+      "Station_115": {
+        "MAE": 10.598,
+        "RMSE": 19.715
+      },
+      "Station_116": {
+        "MAE": 5.678,
+        "RMSE": 7.67
+      },
+      "Station_117": {
+        "MAE": 4.716,
+        "RMSE": 7.043
+      },
+      "Station_118": {
+        "MAE": 8.554,
+        "RMSE": 11.3
+      },
+      "Station_119": {
+        "MAE": 8.732,
+        "RMSE": 12.962
+      },
+      "Station_120": {
+        "MAE": 8.48,
+        "RMSE": 13.768
+      },
+      "Station_121": {
+        "MAE": 7.581,
+        "RMSE": 13.213
+      },
+      "Station_122": {
+        "MAE": 4.772,
+        "RMSE": 6.897
+      },
+      "Station_123": {
+        "MAE": 53.899,
+        "RMSE": 82.005
+      },
+      "Station_124": {
+        "MAE": 11.994,
+        "RMSE": 16.431
+      },
+      "Station_125": {
+        "MAE": 15.084,
+        "RMSE": 19.706
+      },
+      "Station_126": {
+        "MAE": 25.207,
+        "RMSE": 37.326
+      },
+      "Station_127": {
+        "MAE": 22.51,
+        "RMSE": 33.408
+      },
+      "Station_128": {
+        "MAE": 21.56,
+        "RMSE": 28.319
+      },
+      "Station_129": {
+        "MAE": 15.893,
+        "RMSE": 23.342
+      },
+      "Station_130": {
+        "MAE": 13.033,
+        "RMSE": 16.725
+      },
+      "Station_131": {
+        "MAE": 9.493,
+        "RMSE": 12.422
+      },
+      "Station_132": {
+        "MAE": 8.951,
+        "RMSE": 11.559
+      },
+      "Station_133": {
+        "MAE": 4.466,
+        "RMSE": 5.99
+      },
+      "Station_134": {
+        "MAE": 7.066,
+        "RMSE": 13.79
+      },
+      "Station_135": {
+        "MAE": 11.597,
+        "RMSE": 14.962
+      },
+      "Station_136": {
+        "MAE": 6.196,
+        "RMSE": 7.951
+      },
+      "Station_137": {
+        "MAE": 6.945,
+        "RMSE": 8.961
+      },
+      "Station_138": {
+        "MAE": 9.287,
+        "RMSE": 12.303
+      },
+      "Station_139": {
+        "MAE": 10.175,
+        "RMSE": 13.13
+      },
+      "Station_140": {
+        "MAE": 7.202,
+        "RMSE": 9.863
+      },
+      "Station_141": {
+        "MAE": 10.031,
+        "RMSE": 16.504
+      },
+      "Station_142": {
+        "MAE": 9.925,
+        "RMSE": 13.579
+      },
+      "Station_143": {
+        "MAE": 7.329,
+        "RMSE": 9.884
+      },
+      "Station_144": {
+        "MAE": 24.396,
+        "RMSE": 42.702
+      },
+      "Station_145": {
+        "MAE": 6.381,
+        "RMSE": 9.057
+      },
+      "Station_146": {
+        "MAE": 4.967,
+        "RMSE": 6.443
+      },
+      "Station_147": {
+        "MAE": 4.81,
+        "RMSE": 6.337
+      },
+      "Station_148": {
+        "MAE": 3.371,
+        "RMSE": 4.594
+      },
+      "Station_149": {
+        "MAE": 18.138,
+        "RMSE": 25.274
+      },
+      "Station_150": {
+        "MAE": 14.941,
+        "RMSE": 23.278
+      },
+      "Station_151": {
+        "MAE": 8.685,
+        "RMSE": 11.809
+      },
+      "Station_152": {
+        "MAE": 5.795,
+        "RMSE": 7.806
+      },
+      "Station_153": {
+        "MAE": 9.991,
+        "RMSE": 15.883
+      },
+      "Station_154": {
+        "MAE": 18.603,
+        "RMSE": 34.929
+      },
+      "Station_155": {
+        "MAE": 12.164,
+        "RMSE": 23.163
+      },
+      "Station_156": {
+        "MAE": 8.932,
+        "RMSE": 14.629
+      }
+    }
+  },
+  "Non_Passenger_Car_Up": {
+    "average_MAE": 19.973,
+    "average_RMSE": 28.292,
+    "per_station": {
+      "Station_000": {
+        "MAE": 40.475,
+        "RMSE": 52.214
+      },
+      "Station_001": {
+        "MAE": 38.867,
+        "RMSE": 59.857
+      },
+      "Station_002": {
+        "MAE": 43.834,
+        "RMSE": 58.397
+      },
+      "Station_003": {
+        "MAE": 33.675,
+        "RMSE": 47.294
+      },
+      "Station_004": {
+        "MAE": 34.089,
+        "RMSE": 43.75
+      },
+      "Station_005": {
+        "MAE": 36.037,
+        "RMSE": 48.82
+      },
+      "Station_006": {
+        "MAE": 35.926,
+        "RMSE": 50.94
+      },
+      "Station_007": {
+        "MAE": 35.37,
+        "RMSE": 46.234
+      },
+      "Station_008": {
+        "MAE": 25.341,
+        "RMSE": 33.175
+      },
+      "Station_009": {
+        "MAE": 25.059,
+        "RMSE": 33.413
+      },
+      "Station_010": {
+        "MAE": 25.457,
+        "RMSE": 33.924
+      },
+      "Station_011": {
+        "MAE": 24.575,
+        "RMSE": 31.697
+      },
+      "Station_012": {
+        "MAE": 23.609,
+        "RMSE": 32.109
+      },
+      "Station_013": {
+        "MAE": 23.768,
+        "RMSE": 35.43
+      },
+      "Station_014": {
+        "MAE": 20.348,
+        "RMSE": 27.092
+      },
+      "Station_015": {
+        "MAE": 10.56,
+        "RMSE": 14.036
+      },
+      "Station_016": {
+        "MAE": 16.078,
+        "RMSE": 26.22
+      },
+      "Station_017": {
+        "MAE": 16.152,
+        "RMSE": 24.051
+      },
+      "Station_018": {
+        "MAE": 14.021,
+        "RMSE": 19.16
+      },
+      "Station_019": {
+        "MAE": 10.99,
+        "RMSE": 13.626
+      },
+      "Station_020": {
+        "MAE": 10.255,
+        "RMSE": 12.997
+      },
+      "Station_021": {
+        "MAE": 13.607,
+        "RMSE": 17.704
+      },
+      "Station_022": {
+        "MAE": 11.848,
+        "RMSE": 15.832
+      },
+      "Station_023": {
+        "MAE": 10.466,
+        "RMSE": 14.259
+      },
+      "Station_024": {
+        "MAE": 17.984,
+        "RMSE": 27.668
+      },
+      "Station_025": {
+        "MAE": 9.908,
+        "RMSE": 13.948
+      },
+      "Station_026": {
+        "MAE": 9.139,
+        "RMSE": 13.555
+      },
+      "Station_027": {
+        "MAE": 8.642,
+        "RMSE": 12.426
+      },
+      "Station_028": {
+        "MAE": 8.376,
+        "RMSE": 10.909
+      },
+      "Station_029": {
+        "MAE": 2.985,
+        "RMSE": 3.951
+      },
+      "Station_030": {
+        "MAE": 29.298,
+        "RMSE": 39.362
+      },
+      "Station_031": {
+        "MAE": 29.454,
+        "RMSE": 38.949
+      },
+      "Station_032": {
+        "MAE": 41.408,
+        "RMSE": 57.649
+      },
+      "Station_033": {
+        "MAE": 37.127,
+        "RMSE": 50.056
+      },
+      "Station_034": {
+        "MAE": 38.117,
+        "RMSE": 51.726
+      },
+      "Station_035": {
+        "MAE": 48.212,
+        "RMSE": 65.942
+      },
+      "Station_036": {
+        "MAE": 38.608,
+        "RMSE": 50.581
+      },
+      "Station_037": {
+        "MAE": 46.16,
+        "RMSE": 63.218
+      },
+      "Station_038": {
+        "MAE": 40.646,
+        "RMSE": 55.473
+      },
+      "Station_039": {
+        "MAE": 34.631,
+        "RMSE": 45.941
+      },
+      "Station_040": {
+        "MAE": 31.815,
+        "RMSE": 43.212
+      },
+      "Station_041": {
+        "MAE": 33.93,
+        "RMSE": 48.356
+      },
+      "Station_042": {
+        "MAE": 37.699,
+        "RMSE": 55.961
+      },
+      "Station_043": {
+        "MAE": 32.082,
+        "RMSE": 43.371
+      },
+      "Station_044": {
+        "MAE": 28.523,
+        "RMSE": 38.516
+      },
+      "Station_045": {
+        "MAE": 29.605,
+        "RMSE": 40.618
+      },
+      "Station_046": {
+        "MAE": 28.619,
+        "RMSE": 39.602
+      },
+      "Station_047": {
+        "MAE": 23.692,
+        "RMSE": 34.039
+      },
+      "Station_048": {
+        "MAE": 18.995,
+        "RMSE": 25.516
+      },
+      "Station_049": {
+        "MAE": 19.728,
+        "RMSE": 31.533
+      },
+      "Station_050": {
+        "MAE": 29.614,
+        "RMSE": 38.395
+      },
+      "Station_051": {
+        "MAE": 29.772,
+        "RMSE": 38.63
+      },
+      "Station_052": {
+        "MAE": 29.392,
+        "RMSE": 41.615
+      },
+      "Station_053": {
+        "MAE": 11.928,
+        "RMSE": 15.502
+      },
+      "Station_054": {
+        "MAE": 14.319,
+        "RMSE": 18.965
+      },
+      "Station_055": {
+        "MAE": 33.672,
+        "RMSE": 54.158
+      },
+      "Station_056": {
+        "MAE": 5.568,
+        "RMSE": 9.571
+      },
+      "Station_057": {
+        "MAE": 6.17,
+        "RMSE": 8.449
+      },
+      "Station_058": {
+        "MAE": 17.439,
+        "RMSE": 22.181
+      },
+      "Station_059": {
+        "MAE": 49.828,
+        "RMSE": 99.734
+      },
+      "Station_060": {
+        "MAE": 18.786,
+        "RMSE": 25.878
+      },
+      "Station_061": {
+        "MAE": 41.556,
+        "RMSE": 76.726
+      },
+      "Station_062": {
+        "MAE": 7.971,
+        "RMSE": 28.723
+      },
+      "Station_063": {
+        "MAE": 16.671,
+        "RMSE": 22.023
+      },
+      "Station_064": {
+        "MAE": 8.658,
+        "RMSE": 11.286
+      },
+      "Station_065": {
+        "MAE": 18.518,
+        "RMSE": 23.416
+      },
+      "Station_066": {
+        "MAE": 31.307,
+        "RMSE": 45.225
+      },
+      "Station_067": {
+        "MAE": 27.804,
+        "RMSE": 36.578
+      },
+      "Station_068": {
+        "MAE": 26.426,
+        "RMSE": 34.955
+      },
+      "Station_069": {
+        "MAE": 23.015,
+        "RMSE": 29.043
+      },
+      "Station_070": {
+        "MAE": 22.505,
+        "RMSE": 30.447
+      },
+      "Station_071": {
+        "MAE": 26.88,
+        "RMSE": 36.481
+      },
+      "Station_072": {
+        "MAE": 35.276,
+        "RMSE": 52.23
+      },
+      "Station_073": {
+        "MAE": 4.904,
+        "RMSE": 6.365
+      },
+      "Station_074": {
+        "MAE": 5.043,
+        "RMSE": 6.558
+      },
+      "Station_075": {
+        "MAE": 5.436,
+        "RMSE": 7.175
+      },
+      "Station_076": {
+        "MAE": 21.081,
+        "RMSE": 37.515
+      },
+      "Station_077": {
+        "MAE": 50.945,
+        "RMSE": 74.315
+      },
+      "Station_078": {
+        "MAE": 26.107,
+        "RMSE": 38.516
+      },
+      "Station_079": {
+        "MAE": 26.62,
+        "RMSE": 33.909
+      },
+      "Station_080": {
+        "MAE": 21.336,
+        "RMSE": 27.704
+      },
+      "Station_081": {
+        "MAE": 17.416,
+        "RMSE": 22.635
+      },
+      "Station_082": {
+        "MAE": 16.048,
+        "RMSE": 20.68
+      },
+      "Station_083": {
+        "MAE": 22.306,
+        "RMSE": 28.637
+      },
+      "Station_084": {
+        "MAE": 26.953,
+        "RMSE": 34.63
+      },
+      "Station_085": {
+        "MAE": 74.609,
+        "RMSE": 105.259
+      },
+      "Station_086": {
+        "MAE": 24.278,
+        "RMSE": 31.077
+      },
+      "Station_087": {
+        "MAE": 40.475,
+        "RMSE": 60.573
+      },
+      "Station_088": {
+        "MAE": 26.167,
+        "RMSE": 41.129
+      },
+      "Station_089": {
+        "MAE": 39.52,
+        "RMSE": 61.567
+      },
+      "Station_090": {
+        "MAE": 9.298,
+        "RMSE": 12.2
+      },
+      "Station_091": {
+        "MAE": 11.836,
+        "RMSE": 16.606
+      },
+      "Station_092": {
+        "MAE": 17.161,
+        "RMSE": 22.299
+      },
+      "Station_093": {
+        "MAE": 18.1,
+        "RMSE": 25.34
+      },
+      "Station_094": {
+        "MAE": 17.041,
+        "RMSE": 22.257
+      },
+      "Station_095": {
+        "MAE": 10.995,
+        "RMSE": 14.84
+      },
+      "Station_096": {
+        "MAE": 16.408,
+        "RMSE": 26.232
+      },
+      "Station_097": {
+        "MAE": 8.558,
+        "RMSE": 11.331
+      },
+      "Station_098": {
+        "MAE": 9.003,
+        "RMSE": 12.308
+      },
+      "Station_099": {
+        "MAE": 10.309,
+        "RMSE": 14.405
+      },
+      "Station_100": {
+        "MAE": 8.956,
+        "RMSE": 11.962
+      },
+      "Station_101": {
+        "MAE": 8.682,
+        "RMSE": 11.107
+      },
+      "Station_102": {
+        "MAE": 13.69,
+        "RMSE": 17.589
+      },
+      "Station_103": {
+        "MAE": 14.065,
+        "RMSE": 18.232
+      },
+      "Station_104": {
+        "MAE": 14.154,
+        "RMSE": 18.261
+      },
+      "Station_105": {
+        "MAE": 44.795,
+        "RMSE": 65.67
+      },
+      "Station_106": {
+        "MAE": 24.528,
+        "RMSE": 32.005
+      },
+      "Station_107": {
+        "MAE": 22.425,
+        "RMSE": 28.742
+      },
+      "Station_108": {
+        "MAE": 6.682,
+        "RMSE": 9.053
+      },
+      "Station_109": {
+        "MAE": 7.11,
+        "RMSE": 9.688
+      },
+      "Station_110": {
+        "MAE": 7.693,
+        "RMSE": 10.119
+      },
+      "Station_111": {
+        "MAE": 9.857,
+        "RMSE": 18.64
+      },
+      "Station_112": {
+        "MAE": 7.93,
+        "RMSE": 9.934
+      },
+      "Station_113": {
+        "MAE": 27.189,
+        "RMSE": 41.097
+      },
+      "Station_114": {
+        "MAE": 10.806,
+        "RMSE": 14.505
+      },
+      "Station_115": {
+        "MAE": 4.784,
+        "RMSE": 6.883
+      },
+      "Station_116": {
+        "MAE": 4.579,
+        "RMSE": 6.638
+      },
+      "Station_117": {
+        "MAE": 10.431,
+        "RMSE": 20.721
+      },
+      "Station_118": {
+        "MAE": 10.038,
+        "RMSE": 15.381
+      },
+      "Station_119": {
+        "MAE": 17.085,
+        "RMSE": 30.632
+      },
+      "Station_120": {
+        "MAE": 10.518,
+        "RMSE": 14.971
+      },
+      "Station_121": {
+        "MAE": 8.883,
+        "RMSE": 15.832
+      },
+      "Station_122": {
+        "MAE": 8.072,
+        "RMSE": 15.442
+      },
+      "Station_123": {
+        "MAE": 53.356,
+        "RMSE": 74.148
+      },
+      "Station_124": {
+        "MAE": 9.993,
+        "RMSE": 12.633
+      },
+      "Station_125": {
+        "MAE": 11.525,
+        "RMSE": 15.577
+      },
+      "Station_126": {
+        "MAE": 17.752,
+        "RMSE": 24.293
+      },
+      "Station_127": {
+        "MAE": 15.441,
+        "RMSE": 20.969
+      },
+      "Station_128": {
+        "MAE": 15.974,
+        "RMSE": 21.387
+      },
+      "Station_129": {
+        "MAE": 13.128,
+        "RMSE": 17.196
+      },
+      "Station_130": {
+        "MAE": 13.732,
+        "RMSE": 20.911
+      },
+      "Station_131": {
+        "MAE": 9.023,
+        "RMSE": 11.495
+      },
+      "Station_132": {
+        "MAE": 8.006,
+        "RMSE": 10.25
+      },
+      "Station_133": {
+        "MAE": 4.647,
+        "RMSE": 6.865
+      },
+      "Station_134": {
+        "MAE": 3.304,
+        "RMSE": 4.388
+      },
+      "Station_135": {
+        "MAE": 10.057,
+        "RMSE": 13.674
+      },
+      "Station_136": {
+        "MAE": 6.006,
+        "RMSE": 7.954
+      },
+      "Station_137": {
+        "MAE": 6.891,
+        "RMSE": 8.932
+      },
+      "Station_138": {
+        "MAE": 9.957,
+        "RMSE": 12.989
+      },
+      "Station_139": {
+        "MAE": 29.603,
+        "RMSE": 43.788
+      },
+      "Station_140": {
+        "MAE": 7.965,
+        "RMSE": 10.943
+      },
+      "Station_141": {
+        "MAE": 10.006,
+        "RMSE": 15.389
+      },
+      "Station_142": {
+        "MAE": 9.013,
+        "RMSE": 11.643
+      },
+      "Station_143": {
+        "MAE": 24.947,
+        "RMSE": 39.414
+      },
+      "Station_144": {
+        "MAE": 7.06,
+        "RMSE": 9.098
+      },
+      "Station_145": {
+        "MAE": 7.26,
+        "RMSE": 9.557
+      },
+      "Station_146": {
+        "MAE": 6.784,
+        "RMSE": 9.529
+      },
+      "Station_147": {
+        "MAE": 5.915,
+        "RMSE": 8.228
+      },
+      "Station_148": {
+        "MAE": 4.372,
+        "RMSE": 8.661
+      },
+      "Station_149": {
+        "MAE": 13.766,
+        "RMSE": 17.888
+      },
+      "Station_150": {
+        "MAE": 12.003,
+        "RMSE": 16.314
+      },
+      "Station_151": {
+        "MAE": 28.455,
+        "RMSE": 42.707
+      },
+      "Station_152": {
+        "MAE": 4.338,
+        "RMSE": 5.559
+      },
+      "Station_153": {
+        "MAE": 12.97,
+        "RMSE": 22.065
+      },
+      "Station_154": {
+        "MAE": 5.757,
+        "RMSE": 7.415
+      },
+      "Station_155": {
+        "MAE": 8.419,
+        "RMSE": 11.162
+      },
+      "Station_156": {
+        "MAE": 8.534,
+        "RMSE": 15.184
+      }
+    }
+  },
+  "Passenger_Car_Down": {
+    "average_MAE": 54.516,
+    "average_RMSE": 91.704,
+    "per_station": {
+      "Station_000": {
+        "MAE": 78.545,
+        "RMSE": 115.856
+      },
+      "Station_001": {
+        "MAE": 94.277,
+        "RMSE": 146.232
+      },
+      "Station_002": {
+        "MAE": 133.445,
+        "RMSE": 200.895
+      },
+      "Station_003": {
+        "MAE": 151.064,
+        "RMSE": 219.125
+      },
+      "Station_004": {
+        "MAE": 140.03,
+        "RMSE": 208.19
+      },
+      "Station_005": {
+        "MAE": 66.2,
+        "RMSE": 115.084
+      },
+      "Station_006": {
+        "MAE": 59.725,
+        "RMSE": 94.568
+      },
+      "Station_007": {
+        "MAE": 105.488,
+        "RMSE": 156.833
+      },
+      "Station_008": {
+        "MAE": 81.367,
+        "RMSE": 126.582
+      },
+      "Station_009": {
+        "MAE": 79.959,
+        "RMSE": 148.91
+      },
+      "Station_010": {
+        "MAE": 82.538,
+        "RMSE": 161.216
+      },
+      "Station_011": {
+        "MAE": 114.28,
+        "RMSE": 235.015
+      },
+      "Station_012": {
+        "MAE": 89.948,
+        "RMSE": 163.666
+      },
+      "Station_013": {
+        "MAE": 89.841,
+        "RMSE": 171.375
+      },
+      "Station_014": {
+        "MAE": 93.829,
+        "RMSE": 179.05
+      },
+      "Station_015": {
+        "MAE": 29.956,
+        "RMSE": 58.005
+      },
+      "Station_016": {
+        "MAE": 36.439,
+        "RMSE": 88.119
+      },
+      "Station_017": {
+        "MAE": 56.25,
+        "RMSE": 101.863
+      },
+      "Station_018": {
+        "MAE": 61.021,
+        "RMSE": 114.362
+      },
+      "Station_019": {
+        "MAE": 43.965,
+        "RMSE": 84.923
+      },
+      "Station_020": {
+        "MAE": 42.834,
+        "RMSE": 84.023
+      },
+      "Station_021": {
+        "MAE": 68.496,
+        "RMSE": 123.822
+      },
+      "Station_022": {
+        "MAE": 55.875,
+        "RMSE": 109.364
+      },
+      "Station_023": {
+        "MAE": 44.052,
+        "RMSE": 84.442
+      },
+      "Station_024": {
+        "MAE": 41.023,
+        "RMSE": 80.826
+      },
+      "Station_025": {
+        "MAE": 40.231,
+        "RMSE": 88.256
+      },
+      "Station_026": {
+        "MAE": 40.435,
+        "RMSE": 97.852
+      },
+      "Station_027": {
+        "MAE": 39.835,
+        "RMSE": 80.649
+      },
+      "Station_028": {
+        "MAE": 33.385,
+        "RMSE": 75.298
+      },
+      "Station_029": {
+        "MAE": 11.946,
+        "RMSE": 19.883
+      },
+      "Station_030": {
+        "MAE": 45.84,
+        "RMSE": 72.921
+      },
+      "Station_031": {
+        "MAE": 45.729,
+        "RMSE": 72.216
+      },
+      "Station_032": {
+        "MAE": 69.563,
+        "RMSE": 109.326
+      },
+      "Station_033": {
+        "MAE": 75.332,
+        "RMSE": 118.531
+      },
+      "Station_034": {
+        "MAE": 100.93,
+        "RMSE": 148.405
+      },
+      "Station_035": {
+        "MAE": 133.395,
+        "RMSE": 193.814
+      },
+      "Station_036": {
+        "MAE": 100.843,
+        "RMSE": 163.734
+      },
+      "Station_037": {
+        "MAE": 91.21,
+        "RMSE": 153.251
+      },
+      "Station_038": {
+        "MAE": 71.173,
+        "RMSE": 129.09
+      },
+      "Station_039": {
+        "MAE": 52.748,
+        "RMSE": 93.451
+      },
+      "Station_040": {
+        "MAE": 56.996,
+        "RMSE": 105.974
+      },
+      "Station_041": {
+        "MAE": 59.698,
+        "RMSE": 111.931
+      },
+      "Station_042": {
+        "MAE": 52.643,
+        "RMSE": 107.713
+      },
+      "Station_043": {
+        "MAE": 53.739,
+        "RMSE": 102.059
+      },
+      "Station_044": {
+        "MAE": 148.166,
+        "RMSE": 211.946
+      },
+      "Station_045": {
+        "MAE": 143.181,
+        "RMSE": 203.992
+      },
+      "Station_046": {
+        "MAE": 130.506,
+        "RMSE": 191.351
+      },
+      "Station_047": {
+        "MAE": 114.042,
+        "RMSE": 177.657
+      },
+      "Station_048": {
+        "MAE": 100.111,
+        "RMSE": 160.949
+      },
+      "Station_049": {
+        "MAE": 93.793,
+        "RMSE": 148.379
+      },
+      "Station_050": {
+        "MAE": 152.039,
+        "RMSE": 222.886
+      },
+      "Station_051": {
+        "MAE": 114.309,
+        "RMSE": 172.82
+      },
+      "Station_052": {
+        "MAE": 105.953,
+        "RMSE": 203.511
+      },
+      "Station_053": {
+        "MAE": 39.011,
+        "RMSE": 64.416
+      },
+      "Station_054": {
+        "MAE": 51.41,
+        "RMSE": 81.381
+      },
+      "Station_055": {
+        "MAE": 52.556,
+        "RMSE": 86.307
+      },
+      "Station_056": {
+        "MAE": 23.082,
+        "RMSE": 36.356
+      },
+      "Station_057": {
+        "MAE": 21.431,
+        "RMSE": 35.643
+      },
+      "Station_058": {
+        "MAE": 24.196,
+        "RMSE": 39.475
+      },
+      "Station_059": {
+        "MAE": 31.688,
+        "RMSE": 52.504
+      },
+      "Station_060": {
+        "MAE": 48.552,
+        "RMSE": 85.165
+      },
+      "Station_061": {
+        "MAE": 75.815,
+        "RMSE": 139.196
+      },
+      "Station_062": {
+        "MAE": 59.572,
+        "RMSE": 110.217
+      },
+      "Station_063": {
+        "MAE": 74.055,
+        "RMSE": 152.009
+      },
+      "Station_064": {
+        "MAE": 27.086,
+        "RMSE": 54.564
+      },
+      "Station_065": {
+        "MAE": 56.302,
+        "RMSE": 88.706
+      },
+      "Station_066": {
+        "MAE": 50.401,
+        "RMSE": 85.264
+      },
+      "Station_067": {
+        "MAE": 38.546,
+        "RMSE": 67.777
+      },
+      "Station_068": {
+        "MAE": 34.686,
+        "RMSE": 54.822
+      },
+      "Station_069": {
+        "MAE": 38.334,
+        "RMSE": 61.053
+      },
+      "Station_070": {
+        "MAE": 31.963,
+        "RMSE": 49.017
+      },
+      "Station_071": {
+        "MAE": 49.497,
+        "RMSE": 80.209
+      },
+      "Station_072": {
+        "MAE": 41.071,
+        "RMSE": 67.515
+      },
+      "Station_073": {
+        "MAE": 13.537,
+        "RMSE": 29.104
+      },
+      "Station_074": {
+        "MAE": 15.799,
+        "RMSE": 27.213
+      },
+      "Station_075": {
+        "MAE": 21.999,
+        "RMSE": 43.165
+      },
+      "Station_076": {
+        "MAE": 28.244,
+        "RMSE": 48.084
+      },
+      "Station_077": {
+        "MAE": 177.189,
+        "RMSE": 250.639
+      },
+      "Station_078": {
+        "MAE": 54.757,
+        "RMSE": 88.354
+      },
+      "Station_079": {
+        "MAE": 99.21,
+        "RMSE": 146.841
+      },
+      "Station_080": {
+        "MAE": 115.485,
+        "RMSE": 197.682
+      },
+      "Station_081": {
+        "MAE": 83.612,
+        "RMSE": 135.575
+      },
+      "Station_082": {
+        "MAE": 71.714,
+        "RMSE": 109.925
+      },
+      "Station_083": {
+        "MAE": 78.396,
+        "RMSE": 122.758
+      },
+      "Station_084": {
+        "MAE": 78.955,
+        "RMSE": 142.83
+      },
+      "Station_085": {
+        "MAE": 50.375,
+        "RMSE": 78.193
+      },
+      "Station_086": {
+        "MAE": 55.287,
+        "RMSE": 98.807
+      },
+      "Station_087": {
+        "MAE": 48.781,
+        "RMSE": 69.58
+      },
+      "Station_088": {
+        "MAE": 36.047,
+        "RMSE": 51.187
+      },
+      "Station_089": {
+        "MAE": 37.439,
+        "RMSE": 60.23
+      },
+      "Station_090": {
+        "MAE": 19.923,
+        "RMSE": 32.272
+      },
+      "Station_091": {
+        "MAE": 28.887,
+        "RMSE": 48.723
+      },
+      "Station_092": {
+        "MAE": 40.194,
+        "RMSE": 62.064
+      },
+      "Station_093": {
+        "MAE": 39.239,
+        "RMSE": 59.079
+      },
+      "Station_094": {
+        "MAE": 58.099,
+        "RMSE": 86.094
+      },
+      "Station_095": {
+        "MAE": 32.626,
+        "RMSE": 49.293
+      },
+      "Station_096": {
+        "MAE": 20.458,
+        "RMSE": 31.093
+      },
+      "Station_097": {
+        "MAE": 20.02,
+        "RMSE": 30.425
+      },
+      "Station_098": {
+        "MAE": 17.16,
+        "RMSE": 27.392
+      },
+      "Station_099": {
+        "MAE": 20.303,
+        "RMSE": 33.01
+      },
+      "Station_100": {
+        "MAE": 18.48,
+        "RMSE": 32.02
+      },
+      "Station_101": {
+        "MAE": 22.783,
+        "RMSE": 37.679
+      },
+      "Station_102": {
+        "MAE": 29.879,
+        "RMSE": 47.535
+      },
+      "Station_103": {
+        "MAE": 35.501,
+        "RMSE": 60.348
+      },
+      "Station_104": {
+        "MAE": 42.935,
+        "RMSE": 72.522
+      },
+      "Station_105": {
+        "MAE": 37.061,
+        "RMSE": 61.934
+      },
+      "Station_106": {
+        "MAE": 36.186,
+        "RMSE": 56.939
+      },
+      "Station_107": {
+        "MAE": 29.993,
+        "RMSE": 49.245
+      },
+      "Station_108": {
+        "MAE": 12.845,
+        "RMSE": 20.864
+      },
+      "Station_109": {
+        "MAE": 22.42,
+        "RMSE": 36.76
+      },
+      "Station_110": {
+        "MAE": 24.878,
+        "RMSE": 48.563
+      },
+      "Station_111": {
+        "MAE": 24.57,
+        "RMSE": 55.306
+      },
+      "Station_112": {
+        "MAE": 30.207,
+        "RMSE": 58.164
+      },
+      "Station_113": {
+        "MAE": 45.819,
+        "RMSE": 88.059
+      },
+      "Station_114": {
+        "MAE": 35.808,
+        "RMSE": 62.407
+      },
+      "Station_115": {
+        "MAE": 21.466,
+        "RMSE": 48.1
+      },
+      "Station_116": {
+        "MAE": 17.662,
+        "RMSE": 38.745
+      },
+      "Station_117": {
+        "MAE": 31.086,
+        "RMSE": 51.397
+      },
+      "Station_118": {
+        "MAE": 30.947,
+        "RMSE": 49.856
+      },
+      "Station_119": {
+        "MAE": 29.142,
+        "RMSE": 47.079
+      },
+      "Station_120": {
+        "MAE": 29.955,
+        "RMSE": 46.617
+      },
+      "Station_121": {
+        "MAE": 46.873,
+        "RMSE": 93.061
+      },
+      "Station_122": {
+        "MAE": 23.068,
+        "RMSE": 34.863
+      },
+      "Station_123": {
+        "MAE": 89.297,
+        "RMSE": 127.719
+      },
+      "Station_124": {
+        "MAE": 57.791,
+        "RMSE": 80.083
+      },
+      "Station_125": {
+        "MAE": 53.865,
+        "RMSE": 82.842
+      },
+      "Station_126": {
+        "MAE": 133.011,
+        "RMSE": 192.68
+      },
+      "Station_127": {
+        "MAE": 89.309,
+        "RMSE": 144.109
+      },
+      "Station_128": {
+        "MAE": 71.199,
+        "RMSE": 120.11
+      },
+      "Station_129": {
+        "MAE": 60.024,
+        "RMSE": 104.02
+      },
+      "Station_130": {
+        "MAE": 40.694,
+        "RMSE": 74.159
+      },
+      "Station_131": {
+        "MAE": 29.208,
+        "RMSE": 50.057
+      },
+      "Station_132": {
+        "MAE": 21.586,
+        "RMSE": 33.084
+      },
+      "Station_133": {
+        "MAE": 49.797,
+        "RMSE": 88.121
+      },
+      "Station_134": {
+        "MAE": 40.022,
+        "RMSE": 69.192
+      },
+      "Station_135": {
+        "MAE": 34.603,
+        "RMSE": 70.089
+      },
+      "Station_136": {
+        "MAE": 37.514,
+        "RMSE": 75.773
+      },
+      "Station_137": {
+        "MAE": 45.433,
+        "RMSE": 87.117
+      },
+      "Station_138": {
+        "MAE": 40.427,
+        "RMSE": 64.243
+      },
+      "Station_139": {
+        "MAE": 21.245,
+        "RMSE": 38.111
+      },
+      "Station_140": {
+        "MAE": 28.145,
+        "RMSE": 51.178
+      },
+      "Station_141": {
+        "MAE": 40.566,
+        "RMSE": 74.235
+      },
+      "Station_142": {
+        "MAE": 40.34,
+        "RMSE": 77.453
+      },
+      "Station_143": {
+        "MAE": 43.872,
+        "RMSE": 93.458
+      },
+      "Station_144": {
+        "MAE": 43.202,
+        "RMSE": 90.145
+      },
+      "Station_145": {
+        "MAE": 37.677,
+        "RMSE": 69.416
+      },
+      "Station_146": {
+        "MAE": 23.43,
+        "RMSE": 44.983
+      },
+      "Station_147": {
+        "MAE": 28.022,
+        "RMSE": 65.147
+      },
+      "Station_148": {
+        "MAE": 16.913,
+        "RMSE": 30.473
+      },
+      "Station_149": {
+        "MAE": 45.678,
+        "RMSE": 76.06
+      },
+      "Station_150": {
+        "MAE": 28.746,
+        "RMSE": 45.077
+      },
+      "Station_151": {
+        "MAE": 19.133,
+        "RMSE": 32.993
+      },
+      "Station_152": {
+        "MAE": 14.76,
+        "RMSE": 25.741
+      },
+      "Station_153": {
+        "MAE": 33.849,
+        "RMSE": 53.124
+      },
+      "Station_154": {
+        "MAE": 24.781,
+        "RMSE": 38.673
+      },
+      "Station_155": {
+        "MAE": 16.958,
+        "RMSE": 26.369
+      },
+      "Station_156": {
+        "MAE": 27.099,
+        "RMSE": 42.088
+      }
+    }
+  },
+  "Passenger_Car_Up": {
+    "average_MAE": 53.91,
+    "average_RMSE": 91.535,
+    "per_station": {
+      "Station_000": {
+        "MAE": 80.419,
+        "RMSE": 113.52
+      },
+      "Station_001": {
+        "MAE": 108.835,
+        "RMSE": 169.529
+      },
+      "Station_002": {
+        "MAE": 100.476,
+        "RMSE": 140.275
+      },
+      "Station_003": {
+        "MAE": 160.286,
+        "RMSE": 237.223
+      },
+      "Station_004": {
+        "MAE": 149.916,
+        "RMSE": 219.821
+      },
+      "Station_005": {
+        "MAE": 71.839,
+        "RMSE": 129.237
+      },
+      "Station_006": {
+        "MAE": 72.044,
+        "RMSE": 127.455
+      },
+      "Station_007": {
+        "MAE": 95.89,
+        "RMSE": 153.021
+      },
+      "Station_008": {
+        "MAE": 68.515,
+        "RMSE": 105.111
+      },
+      "Station_009": {
+        "MAE": 82.299,
+        "RMSE": 164.81
+      },
+      "Station_010": {
+        "MAE": 82.635,
+        "RMSE": 153.486
+      },
+      "Station_011": {
+        "MAE": 86.32,
+        "RMSE": 164.234
+      },
+      "Station_012": {
+        "MAE": 88.934,
+        "RMSE": 167.808
+      },
+      "Station_013": {
+        "MAE": 93.769,
+        "RMSE": 172.309
+      },
+      "Station_014": {
+        "MAE": 93.488,
+        "RMSE": 173.046
+      },
+      "Station_015": {
+        "MAE": 34.233,
+        "RMSE": 69.265
+      },
+      "Station_016": {
+        "MAE": 43.834,
+        "RMSE": 97.355
+      },
+      "Station_017": {
+        "MAE": 68.474,
+        "RMSE": 150.733
+      },
+      "Station_018": {
+        "MAE": 63.574,
+        "RMSE": 122.058
+      },
+      "Station_019": {
+        "MAE": 39.296,
+        "RMSE": 80.673
+      },
+      "Station_020": {
+        "MAE": 37.045,
+        "RMSE": 75.043
+      },
+      "Station_021": {
+        "MAE": 64.255,
+        "RMSE": 129.929
+      },
+      "Station_022": {
+        "MAE": 57.682,
+        "RMSE": 111.5
+      },
+      "Station_023": {
+        "MAE": 39.571,
+        "RMSE": 72.037
+      },
+      "Station_024": {
+        "MAE": 51.585,
+        "RMSE": 113.554
+      },
+      "Station_025": {
+        "MAE": 41.42,
+        "RMSE": 82.592
+      },
+      "Station_026": {
+        "MAE": 39.582,
+        "RMSE": 87.76
+      },
+      "Station_027": {
+        "MAE": 42.804,
+        "RMSE": 85.232
+      },
+      "Station_028": {
+        "MAE": 40.465,
+        "RMSE": 84.246
+      },
+      "Station_029": {
+        "MAE": 12.398,
+        "RMSE": 25.286
+      },
+      "Station_030": {
+        "MAE": 41.465,
+        "RMSE": 67.614
+      },
+      "Station_031": {
+        "MAE": 42.759,
+        "RMSE": 71.179
+      },
+      "Station_032": {
+        "MAE": 63.052,
+        "RMSE": 102.341
+      },
+      "Station_033": {
+        "MAE": 84.183,
+        "RMSE": 136.22
+      },
+      "Station_034": {
+        "MAE": 104.065,
+        "RMSE": 146.331
+      },
+      "Station_035": {
+        "MAE": 120.182,
+        "RMSE": 172.649
+      },
+      "Station_036": {
+        "MAE": 91.485,
+        "RMSE": 151.907
+      },
+      "Station_037": {
+        "MAE": 99.229,
+        "RMSE": 173.118
+      },
+      "Station_038": {
+        "MAE": 81.03,
+        "RMSE": 154.404
+      },
+      "Station_039": {
+        "MAE": 57.761,
+        "RMSE": 104.257
+      },
+      "Station_040": {
+        "MAE": 55.023,
+        "RMSE": 94.672
+      },
+      "Station_041": {
+        "MAE": 59.363,
+        "RMSE": 105.353
+      },
+      "Station_042": {
+        "MAE": 59.997,
+        "RMSE": 108.683
+      },
+      "Station_043": {
+        "MAE": 52.65,
+        "RMSE": 96.994
+      },
+      "Station_044": {
+        "MAE": 149.718,
+        "RMSE": 219.861
+      },
+      "Station_045": {
+        "MAE": 149.788,
+        "RMSE": 225.662
+      },
+      "Station_046": {
+        "MAE": 132.244,
+        "RMSE": 199.414
+      },
+      "Station_047": {
+        "MAE": 122.471,
+        "RMSE": 205.656
+      },
+      "Station_048": {
+        "MAE": 86.768,
+        "RMSE": 135.709
+      },
+      "Station_049": {
+        "MAE": 87.624,
+        "RMSE": 138.727
+      },
+      "Station_050": {
+        "MAE": 135.343,
+        "RMSE": 197.396
+      },
+      "Station_051": {
+        "MAE": 110.761,
+        "RMSE": 170.727
+      },
+      "Station_052": {
+        "MAE": 113.256,
+        "RMSE": 196.073
+      },
+      "Station_053": {
+        "MAE": 35.47,
+        "RMSE": 55.456
+      },
+      "Station_054": {
+        "MAE": 47.358,
+        "RMSE": 68.852
+      },
+      "Station_055": {
+        "MAE": 62.245,
+        "RMSE": 100.315
+      },
+      "Station_056": {
+        "MAE": 19.003,
+        "RMSE": 30.453
+      },
+      "Station_057": {
+        "MAE": 16.55,
+        "RMSE": 24.453
+      },
+      "Station_058": {
+        "MAE": 43.109,
+        "RMSE": 81.319
+      },
+      "Station_059": {
+        "MAE": 82.043,
+        "RMSE": 185.007
+      },
+      "Station_060": {
+        "MAE": 34.809,
+        "RMSE": 76.896
+      },
+      "Station_061": {
+        "MAE": 80.216,
+        "RMSE": 176.574
+      },
+      "Station_062": {
+        "MAE": 45.448,
+        "RMSE": 84.037
+      },
+      "Station_063": {
+        "MAE": 56.32,
+        "RMSE": 110.769
+      },
+      "Station_064": {
+        "MAE": 25.341,
+        "RMSE": 43.67
+      },
+      "Station_065": {
+        "MAE": 43.349,
+        "RMSE": 71.802
+      },
+      "Station_066": {
+        "MAE": 46.244,
+        "RMSE": 77.534
+      },
+      "Station_067": {
+        "MAE": 34.177,
+        "RMSE": 50.95
+      },
+      "Station_068": {
+        "MAE": 37.7,
+        "RMSE": 60.715
+      },
+      "Station_069": {
+        "MAE": 31.128,
+        "RMSE": 47.808
+      },
+      "Station_070": {
+        "MAE": 32.856,
+        "RMSE": 60.954
+      },
+      "Station_071": {
+        "MAE": 50.14,
+        "RMSE": 80.756
+      },
+      "Station_072": {
+        "MAE": 42.47,
+        "RMSE": 70.717
+      },
+      "Station_073": {
+        "MAE": 14.456,
+        "RMSE": 35.018
+      },
+      "Station_074": {
+        "MAE": 16.024,
+        "RMSE": 24.926
+      },
+      "Station_075": {
+        "MAE": 23.148,
+        "RMSE": 38.645
+      },
+      "Station_076": {
+        "MAE": 28.429,
+        "RMSE": 45.821
+      },
+      "Station_077": {
+        "MAE": 181.049,
+        "RMSE": 244.89
+      },
+      "Station_078": {
+        "MAE": 52.665,
+        "RMSE": 80.269
+      },
+      "Station_079": {
+        "MAE": 90.868,
+        "RMSE": 140.753
+      },
+      "Station_080": {
+        "MAE": 81.773,
+        "RMSE": 127.01
+      },
+      "Station_081": {
+        "MAE": 79.78,
+        "RMSE": 132.755
+      },
+      "Station_082": {
+        "MAE": 49.249,
+        "RMSE": 77.071
+      },
+      "Station_083": {
+        "MAE": 64.363,
+        "RMSE": 111.033
+      },
+      "Station_084": {
+        "MAE": 66.267,
+        "RMSE": 101.218
+      },
+      "Station_085": {
+        "MAE": 57.661,
+        "RMSE": 91.971
+      },
+      "Station_086": {
+        "MAE": 48.617,
+        "RMSE": 84.429
+      },
+      "Station_087": {
+        "MAE": 62.315,
+        "RMSE": 104.799
+      },
+      "Station_088": {
+        "MAE": 35.342,
+        "RMSE": 56.38
+      },
+      "Station_089": {
+        "MAE": 48.051,
+        "RMSE": 83.527
+      },
+      "Station_090": {
+        "MAE": 21.15,
+        "RMSE": 37.069
+      },
+      "Station_091": {
+        "MAE": 31.485,
+        "RMSE": 49.99
+      },
+      "Station_092": {
+        "MAE": 40.085,
+        "RMSE": 64.784
+      },
+      "Station_093": {
+        "MAE": 34.446,
+        "RMSE": 52.35
+      },
+      "Station_094": {
+        "MAE": 50.739,
+        "RMSE": 76.005
+      },
+      "Station_095": {
+        "MAE": 35.752,
+        "RMSE": 55.692
+      },
+      "Station_096": {
+        "MAE": 23.321,
+        "RMSE": 36.722
+      },
+      "Station_097": {
+        "MAE": 24.425,
+        "RMSE": 38.839
+      },
+      "Station_098": {
+        "MAE": 18.688,
+        "RMSE": 31.97
+      },
+      "Station_099": {
+        "MAE": 20.904,
+        "RMSE": 36.59
+      },
+      "Station_100": {
+        "MAE": 18.744,
+        "RMSE": 32.642
+      },
+      "Station_101": {
+        "MAE": 24.583,
+        "RMSE": 46.845
+      },
+      "Station_102": {
+        "MAE": 31.137,
+        "RMSE": 53.761
+      },
+      "Station_103": {
+        "MAE": 36.108,
+        "RMSE": 57.823
+      },
+      "Station_104": {
+        "MAE": 41.955,
+        "RMSE": 71.448
+      },
+      "Station_105": {
+        "MAE": 42.579,
+        "RMSE": 65.347
+      },
+      "Station_106": {
+        "MAE": 38.255,
+        "RMSE": 61.061
+      },
+      "Station_107": {
+        "MAE": 29.398,
+        "RMSE": 46.281
+      },
+      "Station_108": {
+        "MAE": 13.188,
+        "RMSE": 24.863
+      },
+      "Station_109": {
+        "MAE": 22.125,
+        "RMSE": 38.417
+      },
+      "Station_110": {
+        "MAE": 27.213,
+        "RMSE": 55.783
+      },
+      "Station_111": {
+        "MAE": 22.057,
+        "RMSE": 39.68
+      },
+      "Station_112": {
+        "MAE": 29.278,
+        "RMSE": 53.653
+      },
+      "Station_113": {
+        "MAE": 50.988,
+        "RMSE": 86.936
+      },
+      "Station_114": {
+        "MAE": 34.705,
+        "RMSE": 65.055
+      },
+      "Station_115": {
+        "MAE": 19.604,
+        "RMSE": 42.92
+      },
+      "Station_116": {
+        "MAE": 17.671,
+        "RMSE": 37.232
+      },
+      "Station_117": {
+        "MAE": 32.281,
+        "RMSE": 59.373
+      },
+      "Station_118": {
+        "MAE": 27.448,
+        "RMSE": 41.828
+      },
+      "Station_119": {
+        "MAE": 31.859,
+        "RMSE": 51.189
+      },
+      "Station_120": {
+        "MAE": 29.648,
+        "RMSE": 44.022
+      },
+      "Station_121": {
+        "MAE": 40.74,
+        "RMSE": 80.155
+      },
+      "Station_122": {
+        "MAE": 20.292,
+        "RMSE": 29.574
+      },
+      "Station_123": {
+        "MAE": 85.721,
+        "RMSE": 140.956
+      },
+      "Station_124": {
+        "MAE": 63.903,
+        "RMSE": 113.305
+      },
+      "Station_125": {
+        "MAE": 50.634,
+        "RMSE": 86.559
+      },
+      "Station_126": {
+        "MAE": 108.727,
+        "RMSE": 163.941
+      },
+      "Station_127": {
+        "MAE": 85.05,
+        "RMSE": 145.701
+      },
+      "Station_128": {
+        "MAE": 72.375,
+        "RMSE": 121.425
+      },
+      "Station_129": {
+        "MAE": 58.3,
+        "RMSE": 105.047
+      },
+      "Station_130": {
+        "MAE": 47.416,
+        "RMSE": 89.208
+      },
+      "Station_131": {
+        "MAE": 31.584,
+        "RMSE": 52.068
+      },
+      "Station_132": {
+        "MAE": 23.236,
+        "RMSE": 37.082
+      },
+      "Station_133": {
+        "MAE": 54.936,
+        "RMSE": 94.608
+      },
+      "Station_134": {
+        "MAE": 35.066,
+        "RMSE": 56.847
+      },
+      "Station_135": {
+        "MAE": 33.599,
+        "RMSE": 57.783
+      },
+      "Station_136": {
+        "MAE": 27.578,
+        "RMSE": 45.068
+      },
+      "Station_137": {
+        "MAE": 40.424,
+        "RMSE": 65.845
+      },
+      "Station_138": {
+        "MAE": 37.326,
+        "RMSE": 59.682
+      },
+      "Station_139": {
+        "MAE": 30.139,
+        "RMSE": 54.724
+      },
+      "Station_140": {
+        "MAE": 36.866,
+        "RMSE": 71.562
+      },
+      "Station_141": {
+        "MAE": 41.461,
+        "RMSE": 89.584
+      },
+      "Station_142": {
+        "MAE": 40.269,
+        "RMSE": 74.846
+      },
+      "Station_143": {
+        "MAE": 38.438,
+        "RMSE": 64.82
+      },
+      "Station_144": {
+        "MAE": 29.492,
+        "RMSE": 53.406
+      },
+      "Station_145": {
+        "MAE": 42.002,
+        "RMSE": 78.637
+      },
+      "Station_146": {
+        "MAE": 30.074,
+        "RMSE": 59.705
+      },
+      "Station_147": {
+        "MAE": 29.078,
+        "RMSE": 57.494
+      },
+      "Station_148": {
+        "MAE": 20.796,
+        "RMSE": 37.834
+      },
+      "Station_149": {
+        "MAE": 36.401,
+        "RMSE": 60.052
+      },
+      "Station_150": {
+        "MAE": 28.635,
+        "RMSE": 42.798
+      },
+      "Station_151": {
+        "MAE": 22.707,
+        "RMSE": 37.769
+      },
+      "Station_152": {
+        "MAE": 13.287,
+        "RMSE": 22.149
+      },
+      "Station_153": {
+        "MAE": 35.935,
+        "RMSE": 62.253
+      },
+      "Station_154": {
+        "MAE": 24.879,
+        "RMSE": 39.439
+      },
+      "Station_155": {
+        "MAE": 17.552,
+        "RMSE": 25.63
+      },
+      "Station_156": {
+        "MAE": 28.965,
+        "RMSE": 44.685
+      }
+    }
+  }
+}
